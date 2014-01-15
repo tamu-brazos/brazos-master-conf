@@ -1,0 +1,6 @@
+/auth.conf
+/fileserver.conf
+/puppet.conf
+.tmp/
+modules/
+Gemfile.lock
