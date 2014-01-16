@@ -9,7 +9,7 @@ mod 'puppetlabs/puppetdb', '3.0.0'
 mod 'puppetlabs/stdlib', '4.1.0'
 mod 'puppetlabs/concat', :git => 'git://github.com/puppetlabs/puppetlabs-concat.git', :ref => '1.0.0'
 #mod 'puppetlabs/apache', '0.9.0'
-mod 'stahnma/epel', :git => 'git://github.com/treydock/puppet-module-epel.git'
+mod 'stahnma/epel', '0.0.6'
 
 # Foreman modules
 mod 'theforeman/foreman', '1.3.0'
@@ -40,6 +40,7 @@ mod 'nfs', :git => 'git://github.com/treydock/puppet-nfs.git', :ref => '0.0.1-RC
 mod 'ramdisk', :git => 'git://github.com/treydock/puppet-module-ramdisk.git'
 mod 'repoforge', :git => 'git://github.com/treydock/puppet-repoforge.git'
 #mod 'rvm', :git => 'git://github.com/treydock/puppet-rvm.git'
+mod 'osg', :git => 'git://github.com/treydock/puppet-osg.git'
 mod 'ssh', :git => 'git://github.com/treydock/puppet-ssh.git'
 mod 'augeasproviders_sysctl', :git => 'git://github.com/treydock/puppet-augeasproviders_sysctl.git'
 mod 'zabbix20', :git => 'git://github.com/treydock/puppet-zabbix20.git'
@@ -47,15 +48,14 @@ mod 'zfsonlinux', :git => 'git://github.com/treydock/puppet-zfsonlinux.git'
 mod 'zram', :git => 'git://github.com/treydock/puppet-zram.git'
 
 # Internal modules
-mod 'acpid', :git => 'git@gitlab.tamu.edu:puppet-modules/acpid.git'
-mod 'areca', :git => 'git@gitlab.tamu.edu:puppet-modules/areca.git'
-mod 'brazos', :git => 'git@gitlab.tamu.edu:puppet-modules/puppet-brazos.git'
+#mod 'acpid', :git => 'git@gitlab.tamu.edu:puppet-modules/acpid.git'
+mod 'areca', :git => 'git@gitlab.tamu.edu:puppet-modules/puppet-areca.git'
+#mod 'brazos', :git => 'git@gitlab.tamu.edu:puppet-modules/puppet-brazos.git'
 mod 'cron', :git => 'git@gitlab.tamu.edu:puppet-modules/puppet-cron.git'
 mod 'fhgfs', :git => 'git@gitlab.tamu.edu:puppet-modules/puppet-fhgfs.git'
 mod 'iptables', :git => 'git@gitlab.tamu.edu:puppet-modules/puppet-iptables.git'
 mod 'logrotate', :git => 'git@gitlab.tamu.edu:puppet-modules/puppet-logrotate.git' # UPDATES PENDING
 mod 'openldap', :git => 'git@gitlab.tamu.edu:puppet-modules/puppet-openldap.git'
-mod 'osg', :git => 'git@gitlab.tamu.edu:puppet-modules/puppet-osg.git'
 mod 'puppetlabs_yum', :git => 'git@gitlab.tamu.edu:puppet-modules/puppet-puppetlabs_yum.git'
 mod 'root', :git => 'git@gitlab.tamu.edu:puppet-modules/puppet-root.git'
 #mod 'timezone', :git => 'git@gitlab.tamu.edu:puppet-modules/puppet-timezone.git' # MERGE with upstream

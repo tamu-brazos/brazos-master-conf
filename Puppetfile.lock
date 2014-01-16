@@ -1,0 +1,307 @@
+FORGE
+  remote: http://forge.puppetlabs.com
+  specs:
+    bashtoni/timezone (0.1.1)
+    csail/shell_config (0.0.1)
+    domcleal/augeasproviders (1.0.2)
+    fsalum/redis (0.0.6)
+    jhoblitt/smartd (2.0.0)
+      csail/shell_config (>= 0.0.1)
+      puppetlabs/stdlib (>= 3.0.0)
+    puppetlabs/apache (0.10.0)
+      puppetlabs/concat (>= 1.0.0)
+      puppetlabs/stdlib (>= 2.4.0)
+    puppetlabs/apt (1.4.0)
+      puppetlabs/stdlib (>= 2.2.1)
+    puppetlabs/firewall (0.4.2)
+    puppetlabs/gcc (0.1.0)
+    puppetlabs/inifile (1.0.0)
+    puppetlabs/mysql (0.9.0)
+      puppetlabs/stdlib (>= 2.2.1)
+    puppetlabs/ntp (2.0.1)
+      puppetlabs/stdlib (>= 0.1.6)
+    puppetlabs/postgresql (3.2.0)
+      puppetlabs/apt (< 2.0.0, >= 1.1.0)
+      puppetlabs/concat (< 2.0.0, >= 1.0.0)
+      puppetlabs/firewall (>= 0.0.4)
+      puppetlabs/stdlib (< 5.0.0, >= 3.2.0)
+    puppetlabs/puppetdb (3.0.0)
+      puppetlabs/firewall (>= 0.0.4)
+      puppetlabs/inifile (~> 1.0)
+      puppetlabs/postgresql (< 4.0.0, >= 3.1.0)
+      puppetlabs/stdlib (>= 2.2.0)
+    puppetlabs/stdlib (4.1.0)
+    puppetlabs/xinetd (1.2.0)
+      puppetlabs/stdlib (>= 2.2.1)
+    saz/sudo (2.2.0)
+    stahnma/epel (0.0.6)
+    theforeman/apache (1.4.0)
+    theforeman/concat_native (1.3.0)
+    theforeman/dhcp (1.3.0)
+      theforeman/concat_native (>= 1.3.0)
+    theforeman/dns (1.3.0)
+      theforeman/concat_native (>= 1.3.0)
+    theforeman/foreman (1.3.0)
+      puppetlabs/postgresql (>= 2.2.0)
+      puppetlabs/stdlib (>= 0.0.0)
+      theforeman/apache (>= 1.3.0)
+      theforeman/concat_native (>= 1.3.0)
+      theforeman/passenger (>= 1.3.0)
+    theforeman/foreman_proxy (1.3.0)
+      puppetlabs/stdlib (>= 0.0.0)
+      theforeman/dhcp (>= 1.3.0)
+      theforeman/dns (>= 1.3.0)
+      theforeman/puppet (>= 1.3.0)
+      theforeman/tftp (>= 1.3.0)
+    theforeman/git (1.3.0)
+    theforeman/passenger (1.3.0)
+      theforeman/apache (>= 1.3.0)
+    theforeman/puppet (1.4.0)
+      puppetlabs/stdlib (>= 0.0.0)
+      theforeman/apache (>= 1.3.0)
+      theforeman/concat_native (>= 1.3.0)
+      theforeman/git (>= 1.3.0)
+      theforeman/passenger (>= 1.3.0)
+    theforeman/tftp (1.3.0)
+      puppetlabs/xinetd (>= 0.0.0)
+    treydock/edac (0.0.4)
+      puppetlabs/stdlib (>= 0.0.0)
+      theforeman/concat_native (>= 0.0.0)
+    treydock/gpg_key (0.0.1)
+    treydock/scl (0.0.1)
+      puppetlabs/stdlib (< 5.0.0, >= 3.2.0)
+    treydock/yum_cron (1.0.0)
+      domcleal/augeasproviders (>= 1.0.2)
+      puppetlabs/stdlib (>= 2.2.1)
+
+GIT
+  remote: git://github.com/puppetlabs/puppetlabs-concat.git
+  ref: 1.0.0
+  sha: 04356974f72b90a1d0f57346a00e95a717924e43
+  specs:
+    puppetlabs/concat (1.0.0)
+
+GIT
+  remote: git://github.com/treydock/puppet-augeasproviders_sysctl.git
+  ref: master
+  sha: 7d73b7902219c8eddc570e12cb00ab5b15423de1
+  specs:
+    augeasproviders_sysctl (0.0.1)
+      domcleal/augeasproviders (>= 1.0.2)
+      puppetlabs/stdlib (< 5.0.0, >= 3.2.0)
+
+GIT
+  remote: git://github.com/treydock/puppet-infiniband.git
+  ref: master
+  sha: 96bb936ae5e66f64f4904e41dda3936018842c60
+  specs:
+    infiniband (0.0.1)
+      puppetlabs/stdlib (>= 3.2.0)
+
+GIT
+  remote: git://github.com/treydock/puppet-module-ramdisk.git
+  ref: master
+  sha: 4c129fd2a084ae115181c8f031cbda805beb5c72
+  specs:
+    ramdisk (0.0.1)
+
+GIT
+  remote: git://github.com/treydock/puppet-motd.git
+  ref: fix_modulefile
+  sha: 958e82125e248da4d7a02bbfed63cab0e32f9cb8
+  specs:
+    CERNOps/motd (0.1.1)
+      puppetlabs/concat (>= 1.0.0)
+      puppetlabs/stdlib (>= 3.0.0)
+
+GIT
+  remote: git://github.com/treydock/puppet-nfs.git
+  ref: 0.0.1-RC1
+  sha: b65f3dc38c68c82dab044555c1b622a587ca7f64
+  specs:
+    nfs (0.0.1)
+      domcleal/augeasproviders (>= 1.0.2)
+      puppetlabs/firewall (>= 0.4.0)
+      puppetlabs/stdlib (< 5.0.0, >= 3.2.0)
+
+GIT
+  remote: git://github.com/treydock/puppet-osg.git
+  ref: master
+  sha: 0daf5ddab4da4eea2fe0f0d414e304082d9f6f64
+  specs:
+    osg (0.0.3)
+      puppetlabs/apache (>= 0.9.0)
+      puppetlabs/firewall (~> 0.4.0)
+      puppetlabs/mysql (~> 0.9.0)
+      puppetlabs/stdlib (< 5.0.0, >= 3.2.0)
+      saz/sudo (~> 2.2.0)
+      stahnma/epel (~> 0.0.5)
+      treydock/gpg_key (~> 0.0.0)
+
+GIT
+  remote: git://github.com/treydock/puppet-repoforge.git
+  ref: master
+  sha: 12020838c2a11cae81d7d3265f4ba387ce77b872
+  specs:
+    repoforge (0.0.1)
+      puppetlabs/stdlib (>= 3.2.0)
+      treydock/gpg_key (>= 0)
+
+GIT
+  remote: git://github.com/treydock/puppet-ssh.git
+  ref: master
+  sha: d10aa608c4083f2361c225eddebd5c767f35a07c
+  specs:
+    ssh (0.0.1)
+      domcleal/augeasproviders (>= 1.0.2)
+      puppetlabs/stdlib (>= 3.2.0)
+
+GIT
+  remote: git://github.com/treydock/puppet-zabbix20.git
+  ref: master
+  sha: 9edf4266230f2c8099768f2503f00db8ddca1069
+  specs:
+    zabbix20 (0.1.0)
+      puppetlabs/firewall (>= 0.4.0)
+      puppetlabs/mysql (< 1.0.0, >= 0.9.0)
+      puppetlabs/stdlib (< 5.0.0, >= 3.2.0)
+      saz/sudo (>= 2.0.0)
+      stahnma/epel (>= 0.0.5)
+
+GIT
+  remote: git://github.com/treydock/puppet-zfsonlinux.git
+  ref: master
+  sha: 7d4e29de11e39269e217a78668084cc615e3132a
+  specs:
+    zfsonlinux (0.0.2)
+      puppetlabs/stdlib (>= 3.2.0)
+      stahnma/epel (>= 0.0.5)
+      treydock/gpg_key (~> 0.0.0)
+
+GIT
+  remote: git://github.com/treydock/puppet-zram.git
+  ref: master
+  sha: 9d571f4f1b125b6e9f4b6c678688f3750abcb00a
+  specs:
+    zram (0.0.1)
+      puppetlabs/stdlib (>= 2.6.0)
+
+GIT
+  remote: git@gitlab.tamu.edu:puppet-modules/puppet-areca.git
+  ref: master
+  sha: f5a0bef84672046d7cc46bfd37f32808e79ee5fa
+  specs:
+    areca (0.0.1)
+      puppetlabs/stdlib (< 5.0.0, >= 3.2.0)
+
+GIT
+  remote: git@gitlab.tamu.edu:puppet-modules/puppet-cron.git
+  ref: master
+  sha: 4c8fc4b1511144a136cc80d040851e612eceb093
+  specs:
+    cron (1.0.0)
+      puppetlabs/stdlib (>= 3.2.0)
+
+GIT
+  remote: git@gitlab.tamu.edu:puppet-modules/puppet-fhgfs.git
+  ref: master
+  sha: 2b1e8283428b8d5a926e5f23005add779af6033f
+  specs:
+    fhgfs (0.0.1)
+      puppetlabs/stdlib (>= 3.2.0)
+      treydock/gpg_key (>= 0)
+
+GIT
+  remote: git@gitlab.tamu.edu:puppet-modules/puppet-iptables.git
+  ref: master
+  sha: 6a28eeb93a577bdead7e308fab37ced1540c4d8d
+  specs:
+    iptables (1.0.1)
+      puppetlabs/firewall (~> 0.4.0)
+      puppetlabs/stdlib (>= 3.2.0)
+
+GIT
+  remote: git@gitlab.tamu.edu:puppet-modules/puppet-logrotate.git
+  ref: master
+  sha: 96ca2910a704294ce8f5284bf12259428cfb335e
+  specs:
+    logrotate (0.0.1)
+
+GIT
+  remote: git@gitlab.tamu.edu:puppet-modules/puppet-openldap.git
+  ref: master
+  sha: 9070527ce24c83f00a6477a92d942d6e708a05df
+  specs:
+    openldap (0.0.1)
+      puppetlabs/stdlib (>= 3.2.0)
+
+GIT
+  remote: git@gitlab.tamu.edu:puppet-modules/puppet-puppetlabs_yum.git
+  ref: master
+  sha: 77d6f31d29398739358a0a6a17c07fe83534012a
+  specs:
+    puppetlabs_yum (0.1.2)
+
+GIT
+  remote: git@gitlab.tamu.edu:puppet-modules/puppet-root.git
+  ref: master
+  sha: cc0b4ca8ae3a82433f37b8745afb3f0b6d944662
+  specs:
+    root (0.0.3)
+      puppetlabs/stdlib (>= 3.2.0)
+
+GIT
+  remote: git@gitlab.tamu.edu:puppet-modules/puppet-webmin.git
+  ref: master
+  sha: f1479e7ce31e1cdcb7091e5a0261b48117aa26ff
+  specs:
+    webmin (0.1.0)
+      puppetlabs/firewall (>= 0.4.2)
+      puppetlabs/stdlib (>= 3.2.0)
+      treydock/gpg_key (~> 0.0.0)
+
+DEPENDENCIES
+  CERNOps/motd (>= 0)
+  areca (>= 0)
+  augeasproviders_sysctl (>= 0)
+  bashtoni/timezone (= 0.1.1)
+  cron (>= 0)
+  domcleal/augeasproviders (= 1.0.2)
+  fhgfs (>= 0)
+  fsalum/redis (= 0.0.6)
+  infiniband (>= 0)
+  iptables (>= 0)
+  jhoblitt/smartd (= 2.0.0)
+  logrotate (>= 0)
+  nfs (>= 0)
+  openldap (>= 0)
+  osg (>= 0)
+  puppetlabs/concat (>= 0)
+  puppetlabs/firewall (= 0.4.2)
+  puppetlabs/gcc (>= 0)
+  puppetlabs/mysql (= 0.9.0)
+  puppetlabs/ntp (= 2.0.1)
+  puppetlabs/puppetdb (= 3.0.0)
+  puppetlabs/stdlib (= 4.1.0)
+  puppetlabs_yum (>= 0)
+  ramdisk (>= 0)
+  repoforge (>= 0)
+  root (>= 0)
+  saz/sudo (= 2.2.0)
+  ssh (>= 0)
+  stahnma/epel (= 0.0.6)
+  theforeman/concat_native (= 1.3.0)
+  theforeman/dhcp (= 1.3.0)
+  theforeman/dns (= 1.3.0)
+  theforeman/foreman (= 1.3.0)
+  theforeman/foreman_proxy (= 1.3.0)
+  theforeman/tftp (= 1.3.0)
+  treydock/edac (= 0.0.4)
+  treydock/gpg_key (= 0.0.1)
+  treydock/scl (= 0.0.1)
+  treydock/yum_cron (= 1.0.0)
+  webmin (>= 0)
+  zabbix20 (>= 0)
+  zfsonlinux (>= 0)
+  zram (>= 0)
+
