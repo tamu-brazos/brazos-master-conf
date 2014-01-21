@@ -24,12 +24,12 @@ mod 'puppetlabs/neutron', '3.0.0'
 mod 'puppetlabs/openstack', '3.0.0'
 
 # Foreman modules
-#mod 'theforeman/foreman', '1.3.0' # Can't add or we get theforeman/apache
-mod 'theforeman/foreman_proxy', '1.3.0'
+mod 'theforeman/foreman', '2.0.1'
+mod 'theforeman/foreman_proxy', '1.4.0'
 mod 'theforeman/concat_native', '1.3.0'
-mod 'theforeman/dhcp', '1.3.0'
-mod 'theforeman/dns', '1.3.0'
-mod 'theforeman/tftp', '1.3.0'
+mod 'theforeman/dhcp', '1.3.1'
+mod 'theforeman/dns', '1.4.0'
+mod 'theforeman/tftp', '1.4.0'
 
 # Community modules
 #mod 'CERNOps/motd', '0.1.1'
