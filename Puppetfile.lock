@@ -238,6 +238,15 @@ GIT
       treydock/gpg_key (>= 0)
 
 GIT
+  remote: git://github.com/treydock/puppet-ssh.git
+  ref: master
+  sha: 63a68eda2a0bffe6b5db4e7f853ed19029c8428d
+  specs:
+    ssh (0.0.1)
+      domcleal/augeasproviders (>= 1.0.2)
+      puppetlabs/stdlib (>= 3.2.0)
+
+GIT
   remote: git://github.com/treydock/puppet-zabbix20.git
   ref: master
   sha: 9edf4266230f2c8099768f2503f00db8ddca1069
@@ -375,6 +384,7 @@ DEPENDENCIES
   repoforge (>= 0)
   root (>= 0)
   saz/sudo (= 2.2.0)
+  ssh (>= 0)
   stahnma/epel (= 0.0.6)
   stahnma/puppetlabs_yum (= 0.1.4)
   theforeman/concat_native (= 1.3.0)
