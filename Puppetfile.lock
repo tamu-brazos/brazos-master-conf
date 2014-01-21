@@ -19,7 +19,7 @@ FORGE
       puppetlabs/stdlib (>= 2.4.0)
     puppetlabs/apt (1.4.0)
       puppetlabs/stdlib (>= 2.2.1)
-    puppetlabs/ceilometer (3.0.0-rc3)
+    puppetlabs/ceilometer (3.0.0)
       puppetlabs/inifile (< 2.0.0, >= 1.0.0)
       puppetlabs/keystone (< 4.0.0, >= 3.0.0)
       puppetlabs/mysql (< 1.0.0, >= 0.6.1)
@@ -249,9 +249,9 @@ GIT
 GIT
   remote: git://github.com/treydock/puppet-zabbix20.git
   ref: master
-  sha: 9edf4266230f2c8099768f2503f00db8ddca1069
+  sha: 2d1329c51db055ef494203196bb825c2cbe4758e
   specs:
-    zabbix20 (0.1.0)
+    zabbix20 (1.0.0)
       puppetlabs/firewall (>= 0.4.0)
       puppetlabs/mysql (< 1.0.0, >= 0.9.0)
       puppetlabs/stdlib (< 5.0.0, >= 3.2.0)
