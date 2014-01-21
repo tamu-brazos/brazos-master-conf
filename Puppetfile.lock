@@ -4,7 +4,13 @@ FORGE
     bashtoni/timezone (0.1.1)
     csail/shell_config (0.0.1)
     domcleal/augeasproviders (1.0.2)
+    dprince/qpid (1.0.2)
+      puppetlabs/stdlib (>= 0.0.1)
+    duritong/sysctl (0.0.2)
     fsalum/redis (0.0.6)
+    jhoblitt/ksm (0.0.1)
+      puppetlabs/stdlib (>= 4.0.0)
+      rodjek/logrotate (>= 1.1.1)
     jhoblitt/smartd (2.0.0)
       csail/shell_config (>= 0.0.1)
       puppetlabs/stdlib (>= 3.0.0)
@@ -13,13 +19,71 @@ FORGE
       puppetlabs/stdlib (>= 2.4.0)
     puppetlabs/apt (1.4.0)
       puppetlabs/stdlib (>= 2.2.1)
+    puppetlabs/ceilometer (3.0.0-rc3)
+      puppetlabs/inifile (< 2.0.0, >= 1.0.0)
+      puppetlabs/keystone (< 4.0.0, >= 3.0.0)
+      puppetlabs/mysql (< 1.0.0, >= 0.6.1)
+      puppetlabs/stdlib (>= 3.2.0)
+    puppetlabs/cinder (3.0.0)
+      dprince/qpid (< 2.0.0, >= 1.0.0)
+      puppetlabs/inifile (< 2.0.0, >= 1.0.0)
+      puppetlabs/keystone (< 4.0.0, >= 3.0.0)
+      puppetlabs/mysql (< 1.0.0, >= 0.6.1)
+      puppetlabs/rabbitmq (< 3.0.0, >= 2.0.2)
+      puppetlabs/stdlib (>= 2.5.0)
+    puppetlabs/concat (1.0.0)
     puppetlabs/firewall (0.4.2)
     puppetlabs/gcc (0.1.0)
+    puppetlabs/glance (3.0.0)
+      puppetlabs/inifile (< 2.0.0, >= 1.0.0)
+      puppetlabs/keystone (< 4.0.0, >= 3.0.0)
+      puppetlabs/mysql (< 1.0.0, >= 0.6.1)
+      puppetlabs/stdlib (>= 2.5.0)
+    puppetlabs/heat (3.0.0-rc3)
+      puppetlabs/inifile (< 2.0.0, >= 1.0.0)
+      puppetlabs/mysql (< 1.0.0, >= 0.6.1)
+      puppetlabs/stdlib (>= 3.2.0)
+    puppetlabs/horizon (3.0.0)
+      puppetlabs/apache (< 1.0.0, >= 0.4.0)
+      puppetlabs/stdlib (>= 2.5.0)
+      saz/memcached (< 3.0.0, >= 2.0.2)
     puppetlabs/inifile (1.0.0)
+    puppetlabs/keystone (3.0.0)
+      puppetlabs/apache (< 1.0.0, >= 0.9.0)
+      puppetlabs/inifile (< 2.0.0, >= 1.0.0)
+      puppetlabs/mysql (< 1.0.0, >= 0.6.1)
+      puppetlabs/stdlib (>= 2.5.0)
     puppetlabs/mysql (0.9.0)
       puppetlabs/stdlib (>= 2.2.1)
+    puppetlabs/neutron (3.0.0)
+      puppetlabs/inifile (< 2.0.0, >= 1.0.0)
+      puppetlabs/keystone (< 4.0.0, >= 3.0.0)
+      puppetlabs/mysql (< 1.0.0, >= 0.6.1)
+      puppetlabs/nova (< 4.0.0, >= 3.0.0)
+      puppetlabs/stdlib (>= 2.3.0)
+      puppetlabs/vswitch (< 1.0.0, >= 0.0.1)
+    puppetlabs/nova (3.0.0)
+      dprince/qpid (< 2.0.0, >= 1.0.0)
+      duritong/sysctl (< 1.0.0, >= 0.0.1)
+      puppetlabs/cinder (< 4.0.0, >= 3.0.0)
+      puppetlabs/glance (< 4.0.0, >= 3.0.0)
+      puppetlabs/inifile (< 2.0.0, >= 1.0.0)
+      puppetlabs/keystone (< 4.0.0, >= 3.0.0)
+      puppetlabs/mysql (< 1.0.0, >= 0.6.1)
+      puppetlabs/rabbitmq (< 3.0.0, >= 2.0.2)
+      puppetlabs/stdlib (>= 2.5.0)
     puppetlabs/ntp (2.0.1)
       puppetlabs/stdlib (>= 0.1.6)
+    puppetlabs/openstack (3.0.0)
+      puppetlabs/ceilometer (< 4.0.0, >= 3.0.0)
+      puppetlabs/cinder (< 4.0.0, >= 3.0.0)
+      puppetlabs/glance (< 4.0.0, >= 3.0.0)
+      puppetlabs/heat (< 4.0.0, >= 3.0.0)
+      puppetlabs/horizon (< 4.0.0, >= 3.0.0)
+      puppetlabs/keystone (< 4.0.0, >= 3.0.0)
+      puppetlabs/neutron (< 4.0.0, >= 3.0.0)
+      puppetlabs/nova (< 4.0.0, >= 3.0.0)
+      puppetlabs/swift (< 4.0.0, >= 3.0.0)
     puppetlabs/postgresql (3.2.0)
       puppetlabs/apt (< 2.0.0, >= 1.1.0)
       puppetlabs/concat (< 2.0.0, >= 1.0.0)
@@ -30,23 +94,39 @@ FORGE
       puppetlabs/inifile (~> 1.0)
       puppetlabs/postgresql (< 4.0.0, >= 3.1.0)
       puppetlabs/stdlib (>= 2.2.0)
+    puppetlabs/rabbitmq (2.1.0)
+      puppetlabs/apt (>= 0.0.3)
+      puppetlabs/stdlib (>= 2.0.0)
+    puppetlabs/rsync (0.1.0)
+      puppetlabs/xinetd (>= 1.1.0)
+    puppetlabs/ruby (0.1.0)
     puppetlabs/stdlib (4.1.0)
+    puppetlabs/swift (3.0.0-rc3)
+      puppetlabs/concat (< 2.0.0, >= 1.0.0)
+      puppetlabs/inifile (< 2.0.0, >= 1.0.0)
+      puppetlabs/keystone (< 4.0.0, >= 3.0.0)
+      puppetlabs/mysql (< 1.0.0, >= 0.6.1)
+      puppetlabs/rsync (< 1.0.0, >= 0.1.0)
+      puppetlabs/stdlib (>= 2.3.0)
+      puppetlabs/xinetd (< 2.0.0, >= 1.0.1)
+      saz/memcached (< 3.0.0, >= 2.0.2)
+      saz/ssh (< 2.0.0, >= 1.0.2)
+    puppetlabs/vswitch (0.2.0)
     puppetlabs/xinetd (1.2.0)
+      puppetlabs/stdlib (>= 2.2.1)
+    rodjek/logrotate (1.1.1)
+    saz/memcached (2.2.4)
+    saz/ssh (1.2.0)
       puppetlabs/stdlib (>= 2.2.1)
     saz/sudo (2.2.0)
     stahnma/epel (0.0.6)
+    stahnma/puppetlabs_yum (0.1.4)
     theforeman/apache (1.4.0)
     theforeman/concat_native (1.3.0)
     theforeman/dhcp (1.3.0)
       theforeman/concat_native (>= 1.3.0)
     theforeman/dns (1.3.0)
       theforeman/concat_native (>= 1.3.0)
-    theforeman/foreman (1.3.0)
-      puppetlabs/postgresql (>= 2.2.0)
-      puppetlabs/stdlib (>= 0.0.0)
-      theforeman/apache (>= 1.3.0)
-      theforeman/concat_native (>= 1.3.0)
-      theforeman/passenger (>= 1.3.0)
     theforeman/foreman_proxy (1.3.0)
       puppetlabs/stdlib (>= 0.0.0)
       theforeman/dhcp (>= 1.3.0)
@@ -75,11 +155,12 @@ FORGE
       puppetlabs/stdlib (>= 2.2.1)
 
 GIT
-  remote: git://github.com/puppetlabs/puppetlabs-concat.git
-  ref: 1.0.0
-  sha: 04356974f72b90a1d0f57346a00e95a717924e43
+  remote: git://github.com/treydock/puppet-acpid.git
+  ref: master
+  sha: 375f512527284a2612739e2be90bdd82b8441e90
   specs:
-    puppetlabs/concat (1.0.0)
+    acpid (0.0.1)
+      puppetlabs/stdlib (< 5.0.0, >= 3.2.0)
 
 GIT
   remote: git://github.com/treydock/puppet-augeasproviders_sysctl.git
@@ -99,6 +180,14 @@ GIT
       puppetlabs/stdlib (>= 3.2.0)
 
 GIT
+  remote: git://github.com/treydock/puppet-libvirt.git
+  ref: master
+  sha: fb6493e10c67214b7fe2a5aeacfdd360f78c3255
+  specs:
+    libvirt (0.2.3)
+      puppetlabs/stdlib (>= 0)
+
+GIT
   remote: git://github.com/treydock/puppet-module-ramdisk.git
   ref: master
   sha: 4c129fd2a084ae115181c8f031cbda805beb5c72
@@ -110,7 +199,7 @@ GIT
   ref: fix_modulefile
   sha: 958e82125e248da4d7a02bbfed63cab0e32f9cb8
   specs:
-    CERNOps/motd (0.1.1)
+    motd (0.1.1)
       puppetlabs/concat (>= 1.0.0)
       puppetlabs/stdlib (>= 3.0.0)
 
@@ -146,15 +235,6 @@ GIT
     repoforge (0.0.1)
       puppetlabs/stdlib (>= 3.2.0)
       treydock/gpg_key (>= 0)
-
-GIT
-  remote: git://github.com/treydock/puppet-ssh.git
-  ref: master
-  sha: d10aa608c4083f2361c225eddebd5c767f35a07c
-  specs:
-    ssh (0.0.1)
-      domcleal/augeasproviders (>= 1.0.2)
-      puppetlabs/stdlib (>= 3.2.0)
 
 GIT
   remote: git://github.com/treydock/puppet-zabbix20.git
@@ -236,13 +316,6 @@ GIT
       puppetlabs/stdlib (>= 3.2.0)
 
 GIT
-  remote: git@gitlab.tamu.edu:puppet-modules/puppet-puppetlabs_yum.git
-  ref: master
-  sha: 77d6f31d29398739358a0a6a17c07fe83534012a
-  specs:
-    puppetlabs_yum (0.1.2)
-
-GIT
   remote: git@gitlab.tamu.edu:puppet-modules/puppet-root.git
   ref: master
   sha: cc0b4ca8ae3a82433f37b8745afb3f0b6d944662
@@ -261,7 +334,7 @@ GIT
       treydock/gpg_key (~> 0.0.0)
 
 DEPENDENCIES
-  CERNOps/motd (>= 0)
+  acpid (>= 0)
   areca (>= 0)
   augeasproviders_sysctl (>= 0)
   bashtoni/timezone (= 0.1.1)
@@ -271,29 +344,41 @@ DEPENDENCIES
   fsalum/redis (= 0.0.6)
   infiniband (>= 0)
   iptables (>= 0)
+  jhoblitt/ksm (= 0.0.1)
   jhoblitt/smartd (= 2.0.0)
+  libvirt (>= 0)
   logrotate (>= 0)
+  motd (>= 0)
   nfs (>= 0)
   openldap (>= 0)
   osg (>= 0)
-  puppetlabs/concat (>= 0)
+  puppetlabs/apache (= 0.10.0)
+  puppetlabs/ceilometer (= 3.0.0)
+  puppetlabs/cinder (= 3.0.0)
+  puppetlabs/concat (= 1.0.0)
   puppetlabs/firewall (= 0.4.2)
   puppetlabs/gcc (>= 0)
+  puppetlabs/glance (= 3.0.0)
+  puppetlabs/horizon (= 3.0.0)
+  puppetlabs/keystone (= 3.0.0)
   puppetlabs/mysql (= 0.9.0)
+  puppetlabs/neutron (= 3.0.0)
+  puppetlabs/nova (= 3.0.0)
   puppetlabs/ntp (= 2.0.1)
+  puppetlabs/openstack (= 3.0.0)
   puppetlabs/puppetdb (= 3.0.0)
+  puppetlabs/ruby (= 0.1.0)
   puppetlabs/stdlib (= 4.1.0)
-  puppetlabs_yum (>= 0)
+  puppetlabs/swift (< 4.0.0, >= 3.0.0)
   ramdisk (>= 0)
   repoforge (>= 0)
   root (>= 0)
   saz/sudo (= 2.2.0)
-  ssh (>= 0)
   stahnma/epel (= 0.0.6)
+  stahnma/puppetlabs_yum (= 0.1.4)
   theforeman/concat_native (= 1.3.0)
   theforeman/dhcp (= 1.3.0)
   theforeman/dns (= 1.3.0)
-  theforeman/foreman (= 1.3.0)
   theforeman/foreman_proxy (= 1.3.0)
   theforeman/tftp (= 1.3.0)
   treydock/edac (= 0.0.4)
