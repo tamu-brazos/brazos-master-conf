@@ -43,7 +43,7 @@ mod 'bashtoni/timezone', '0.1.1'
 mod 'libvirt', :git => 'git://github.com/treydock/puppet-libvirt.git'
 mod 'stahnma/puppetlabs_yum', '0.1.4'
 mod 'treydock/edac', '0.0.4'
-mod 'treydock/gpg_key', '0.0.1'
+mod 'treydock/gpg_key', '0.0.2'
 mod 'treydock/yum_cron', '1.0.0'
 mod 'treydock/scl', '0.0.1'
 
@@ -71,7 +71,6 @@ mod 'fhgfs', :git => 'git@gitlab.tamu.edu:puppet-modules/puppet-fhgfs.git'
 mod 'iptables', :git => 'git@gitlab.tamu.edu:puppet-modules/puppet-iptables.git'
 mod 'logrotate', :git => 'git@gitlab.tamu.edu:puppet-modules/puppet-logrotate.git' # UPDATES PENDING
 mod 'openldap', :git => 'git@gitlab.tamu.edu:puppet-modules/puppet-openldap.git'
-#mod 'puppetlabs_yum', :git => 'git@gitlab.tamu.edu:puppet-modules/puppet-puppetlabs_yum.git' # Replaced by upstream
 mod 'root', :git => 'git@gitlab.tamu.edu:puppet-modules/puppet-root.git'
 #mod 'timezone', :git => 'git@gitlab.tamu.edu:puppet-modules/puppet-timezone.git' # MERGE with upstream
 mod 'webmin', :git => 'git@gitlab.tamu.edu:puppet-modules/puppet-webmin.git'
