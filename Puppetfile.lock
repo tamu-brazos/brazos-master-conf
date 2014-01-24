@@ -39,7 +39,7 @@ FORGE
       puppetlabs/keystone (< 4.0.0, >= 3.0.0)
       puppetlabs/mysql (< 1.0.0, >= 0.6.1)
       puppetlabs/stdlib (>= 2.5.0)
-    puppetlabs/heat (3.0.0-rc3)
+    puppetlabs/heat (3.0.0)
       puppetlabs/inifile (< 2.0.0, >= 1.0.0)
       puppetlabs/mysql (< 1.0.0, >= 0.6.1)
       puppetlabs/stdlib (>= 3.2.0)
@@ -116,7 +116,7 @@ FORGE
       puppetlabs/stdlib (>= 2.2.1)
     rodjek/logrotate (1.1.1)
     saz/memcached (2.2.4)
-    saz/ssh (1.2.0)
+    saz/ssh (1.4.0)
       puppetlabs/stdlib (>= 2.2.1)
     saz/sudo (2.2.0)
     stahnma/epel (0.0.6)
@@ -175,9 +175,10 @@ GIT
 GIT
   remote: git://github.com/treydock/puppet-infiniband.git
   ref: master
-  sha: 96bb936ae5e66f64f4904e41dda3936018842c60
+  sha: 7a77381dd1152ec2b55209159c7916aa11dab4ad
   specs:
-    infiniband (0.0.1)
+    infiniband (0.1.0)
+      domcleal/augeasproviders (>= 1.0.2)
       puppetlabs/stdlib (>= 3.2.0)
 
 GIT
@@ -206,10 +207,10 @@ GIT
 
 GIT
   remote: git://github.com/treydock/puppet-nfs.git
-  ref: 0.0.1-RC1
-  sha: b65f3dc38c68c82dab044555c1b622a587ca7f64
+  ref: 0.1.0
+  sha: 3ff25f2ad00697242b447cc1e1b15fbe736ec6c6
   specs:
-    nfs (0.0.1)
+    nfs (0.1.0)
       domcleal/augeasproviders (>= 1.0.2)
       puppetlabs/firewall (>= 0.4.0)
       puppetlabs/stdlib (< 5.0.0, >= 3.2.0)
