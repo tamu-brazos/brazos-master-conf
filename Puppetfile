@@ -3,7 +3,7 @@ forge "http://forge.puppetlabs.com"
 # Puppetlabs modules
 mod 'puppetlabs/firewall', '0.4.2'
 mod 'puppetlabs/gcc'
-mod 'puppetlabs/mysql', '0.9.0'
+mod 'puppetlabs/mysql', '2.1.0'
 mod 'puppetlabs/ntp', '3.0.1'
 mod 'puppetlabs/puppetdb', '3.0.0'
 mod 'puppetlabs/ruby', '0.1.0'

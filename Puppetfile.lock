@@ -20,7 +20,7 @@ FORGE
     puppetlabs/firewall (0.4.2)
     puppetlabs/gcc (0.1.0)
     puppetlabs/inifile (1.0.0)
-    puppetlabs/mysql (0.9.0)
+    puppetlabs/mysql (2.1.0)
       puppetlabs/stdlib (>= 2.2.1)
     puppetlabs/ntp (3.0.1)
       puppetlabs/stdlib (>= 0.1.6)
@@ -139,16 +139,16 @@ GIT
 GIT
   remote: git://github.com/treydock/puppet-osg.git
   ref: master
-  sha: 0daf5ddab4da4eea2fe0f0d414e304082d9f6f64
+  sha: 31f8a5f1b3ccc91523eec9cb514ac10e1734264b
   specs:
-    osg (0.0.3)
-      puppetlabs/apache (>= 0.9.0)
-      puppetlabs/firewall (~> 0.4.0)
-      puppetlabs/mysql (~> 0.9.0)
+    osg (0.0.4)
+      puppetlabs/apache (< 1.0.0, >= 0.9.0)
+      puppetlabs/firewall (< 1.0.0, >= 0.4.2)
+      puppetlabs/mysql (>= 0.9.0)
       puppetlabs/stdlib (< 5.0.0, >= 3.2.0)
-      saz/sudo (~> 2.2.0)
-      stahnma/epel (~> 0.0.5)
-      treydock/gpg_key (~> 0.0.0)
+      saz/sudo (< 4.0.0, >= 2.0.0)
+      stahnma/epel (< 1.0.0, >= 0.0.1)
+      treydock/gpg_key (< 1.0.0, >= 0.0.1)
 
 GIT
   remote: git://github.com/treydock/puppet-ovirt.git
@@ -183,14 +183,14 @@ GIT
 GIT
   remote: git://github.com/treydock/puppet-zabbix20.git
   ref: master
-  sha: 2d1329c51db055ef494203196bb825c2cbe4758e
+  sha: e11e423ccbc1118c13df15f6666e05efa2207ec5
   specs:
-    zabbix20 (1.0.0)
-      puppetlabs/firewall (>= 0.4.0)
-      puppetlabs/mysql (< 1.0.0, >= 0.9.0)
+    zabbix20 (1.0.2)
+      puppetlabs/firewall (< 1.0.0, >= 0.4.2)
+      puppetlabs/mysql (>= 0.9.0)
       puppetlabs/stdlib (< 5.0.0, >= 3.2.0)
-      saz/sudo (>= 2.0.0)
-      stahnma/epel (>= 0.0.5)
+      saz/sudo (< 4.0.0, >= 2.0.0)
+      stahnma/epel (< 1.0.0, >= 0.0.1)
 
 GIT
   remote: git://github.com/treydock/puppet-zfsonlinux.git
@@ -301,7 +301,7 @@ DEPENDENCIES
   puppetlabs/concat (= 1.0.0)
   puppetlabs/firewall (= 0.4.2)
   puppetlabs/gcc (>= 0)
-  puppetlabs/mysql (= 0.9.0)
+  puppetlabs/mysql (= 2.1.0)
   puppetlabs/ntp (= 3.0.1)
   puppetlabs/puppetdb (= 3.0.0)
   puppetlabs/ruby (= 0.1.0)

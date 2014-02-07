@@ -6,3 +6,4 @@ gem 'puppet' unless RUBY_PLATFORM =~ /linux/
 #gem 'librarian-puppet', :git => 'git://github.com/treydock/librarian-puppet.git'
 gem 'librarian-puppet', :git => 'git://github.com/rodjek/librarian-puppet.git'
 #gem 'librarian-puppet', :path => '/Users/treydock/git/librarian-puppet'
+#gem 'r10k'
