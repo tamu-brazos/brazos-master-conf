@@ -229,11 +229,11 @@ GIT
 GIT
   remote: git@gitlab.tamu.edu:puppet-modules/puppet-fhgfs.git
   ref: master
-  sha: 2b1e8283428b8d5a926e5f23005add779af6033f
+  sha: 8c0afccb59157736f2c3244ae2ba7cf7c8ff57c6
   specs:
     fhgfs (0.0.1)
-      puppetlabs/stdlib (>= 3.2.0)
-      treydock/gpg_key (>= 0)
+      puppetlabs/stdlib (< 5.0.0, >= 3.2.0)
+      treydock/gpg_key (>= 0.0.2)
 
 GIT
   remote: git@gitlab.tamu.edu:puppet-modules/puppet-iptables.git
