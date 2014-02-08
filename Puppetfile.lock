@@ -96,7 +96,7 @@ GIT
 GIT
   remote: git://github.com/treydock/puppet-infiniband.git
   ref: master
-  sha: 7a77381dd1152ec2b55209159c7916aa11dab4ad
+  sha: 82e51abc755bd784eb44e557a7085ff9e1bdacee
   specs:
     infiniband (0.1.0)
       domcleal/augeasproviders (>= 1.0.2)
@@ -183,7 +183,7 @@ GIT
 GIT
   remote: git://github.com/treydock/puppet-zabbix20.git
   ref: master
-  sha: b2eae02adbb44bf35fc9db61919d2f9dbf2d4026
+  sha: 099428641e25c9f804b15d8ad4c7883af129ffa2
   specs:
     zabbix20 (1.0.2)
       puppetlabs/firewall (< 1.0.0, >= 0.4.2)
