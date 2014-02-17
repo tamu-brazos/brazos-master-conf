@@ -19,7 +19,7 @@ FORGE
     puppetlabs/concat (1.0.0)
     puppetlabs/firewall (0.4.2)
     puppetlabs/gcc (0.1.0)
-    puppetlabs/inifile (1.0.0)
+    puppetlabs/inifile (1.0.1)
     puppetlabs/mysql (2.1.0)
       puppetlabs/stdlib (>= 2.2.1)
     puppetlabs/ntp (3.0.1)
@@ -128,12 +128,13 @@ GIT
 
 GIT
   remote: git://github.com/treydock/puppet-nfs.git
-  ref: 0.1.0
-  sha: 3ff25f2ad00697242b447cc1e1b15fbe736ec6c6
+  ref: 0.3.0
+  sha: 0ef2b7822d05e15ff985dc933197e27f0bd4db1c
   specs:
-    nfs (0.1.0)
+    nfs (0.3.0)
       domcleal/augeasproviders (>= 1.0.2)
       puppetlabs/firewall (>= 0.4.0)
+      puppetlabs/inifile (< 2.0.0, >= 1.0.1)
       puppetlabs/stdlib (< 5.0.0, >= 3.2.0)
 
 GIT
@@ -153,7 +154,7 @@ GIT
 GIT
   remote: git://github.com/treydock/puppet-ovirt.git
   ref: master
-  sha: 921b38795887cbc0b5eb39f05d76b336d0efbacf
+  sha: 5c54cd247bfeaabc603541ac008486749767c984
   specs:
     ovirt (0.0.1)
       puppetlabs/firewall (< 1.0.0, >= 0.4.2)
