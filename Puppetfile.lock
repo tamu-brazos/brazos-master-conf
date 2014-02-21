@@ -175,9 +175,9 @@ GIT
 GIT
   remote: git://github.com/treydock/puppet-ssh.git
   ref: master
-  sha: 63a68eda2a0bffe6b5db4e7f853ed19029c8428d
+  sha: def18cd6771d11de452bce1dab85daf50299efb7
   specs:
-    ssh (0.0.1)
+    ssh (1.0.0)
       domcleal/augeasproviders (>= 1.0.2)
       puppetlabs/stdlib (>= 3.2.0)
 
