@@ -140,7 +140,7 @@ GIT
 GIT
   remote: git://github.com/treydock/puppet-osg.git
   ref: master
-  sha: 31f8a5f1b3ccc91523eec9cb514ac10e1734264b
+  sha: 9a53440b76dd0709c9adc348f452712ada5a0f47
   specs:
     osg (0.0.4)
       puppetlabs/apache (< 1.0.0, >= 0.9.0)
