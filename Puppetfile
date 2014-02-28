@@ -10,6 +10,7 @@ mod 'puppetlabs/ruby', '0.1.0'
 mod 'puppetlabs/stdlib', '4.1.0'
 mod 'puppetlabs/concat', '1.0.0'
 mod 'puppetlabs/apache', '0.10.0'
+mod 'puppetlabs/postgresql', '3.3.0'
 mod 'stahnma/epel', '0.0.6'
 
 # Foreman modules
@@ -21,8 +22,7 @@ mod 'theforeman/dns', '1.4.0'
 mod 'theforeman/tftp', '1.4.0'
 
 # Community modules
-#mod 'CERNOps/motd', '0.1.1'
-mod 'motd', :git => 'git://github.com/treydock/puppet-motd.git', :ref => 'fix_modulefile'
+mod 'CERNOps/motd', '0.1.2'
 mod 'fsalum/redis', '0.0.6'
 mod 'jhoblitt/ksm', '0.0.1'
 mod 'jhoblitt/smartd', '2.0.0'

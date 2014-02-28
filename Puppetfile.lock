@@ -1,6 +1,9 @@
 FORGE
   remote: http://forge.puppetlabs.com
   specs:
+    CERNOps/motd (0.1.2)
+      puppetlabs/concat (>= 1.0.0)
+      puppetlabs/stdlib (>= 3.0.0)
     bashtoni/timezone (0.1.1)
     csail/shell_config (0.0.1)
     domcleal/augeasproviders (1.0.2)
@@ -14,7 +17,7 @@ FORGE
     puppetlabs/apache (0.10.0)
       puppetlabs/concat (>= 1.0.0)
       puppetlabs/stdlib (>= 2.4.0)
-    puppetlabs/apt (1.4.0)
+    puppetlabs/apt (1.4.1)
       puppetlabs/stdlib (>= 2.2.1)
     puppetlabs/concat (1.0.0)
     puppetlabs/firewall (0.4.2)
@@ -24,7 +27,7 @@ FORGE
       puppetlabs/stdlib (>= 2.2.1)
     puppetlabs/ntp (3.0.1)
       puppetlabs/stdlib (>= 0.1.6)
-    puppetlabs/postgresql (3.2.0)
+    puppetlabs/postgresql (3.3.0)
       puppetlabs/apt (< 2.0.0, >= 1.1.0)
       puppetlabs/concat (< 2.0.0, >= 1.0.0)
       puppetlabs/firewall (>= 0.0.4)
@@ -118,15 +121,6 @@ GIT
     ramdisk (0.0.1)
 
 GIT
-  remote: git://github.com/treydock/puppet-motd.git
-  ref: fix_modulefile
-  sha: 958e82125e248da4d7a02bbfed63cab0e32f9cb8
-  specs:
-    motd (0.1.1)
-      puppetlabs/concat (>= 1.0.0)
-      puppetlabs/stdlib (>= 3.0.0)
-
-GIT
   remote: git://github.com/treydock/puppet-nfs.git
   ref: 0.3.0
   sha: 0ef2b7822d05e15ff985dc933197e27f0bd4db1c
@@ -154,11 +148,12 @@ GIT
 GIT
   remote: git://github.com/treydock/puppet-ovirt.git
   ref: master
-  sha: 5c54cd247bfeaabc603541ac008486749767c984
+  sha: dbcff76411b01623d4637a2172470d43f1b8beb1
   specs:
     ovirt (0.0.1)
       puppetlabs/firewall (< 1.0.0, >= 0.4.2)
       puppetlabs/inifile (< 2.0.0, >= 1.0.0)
+      puppetlabs/postgresql (< 4.0.0, >= 3.0.0)
       puppetlabs/stdlib (< 5.0.0, >= 3.2.0)
       saz/sudo (< 4.0.0, >= 2.0.0)
       stahnma/epel (< 1.0.0, >= 0.0.1)
@@ -279,6 +274,7 @@ GIT
       treydock/gpg_key (~> 0.0.0)
 
 DEPENDENCIES
+  CERNOps/motd (= 0.1.2)
   acpid (>= 0)
   areca (>= 0)
   augeasproviders_sysctl (>= 0)
@@ -293,7 +289,6 @@ DEPENDENCIES
   jhoblitt/smartd (= 2.0.0)
   libvirt (>= 0)
   logrotate (>= 0)
-  motd (>= 0)
   nfs (>= 0)
   openldap (>= 0)
   osg (>= 0)
@@ -304,6 +299,7 @@ DEPENDENCIES
   puppetlabs/gcc (>= 0)
   puppetlabs/mysql (= 2.1.0)
   puppetlabs/ntp (= 3.0.1)
+  puppetlabs/postgresql (= 3.3.0)
   puppetlabs/puppetdb (= 3.0.0)
   puppetlabs/ruby (= 0.1.0)
   puppetlabs/stdlib (= 4.1.0)
