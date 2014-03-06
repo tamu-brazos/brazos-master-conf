@@ -17,12 +17,12 @@ FORGE
     puppetlabs/apache (0.10.0)
       puppetlabs/concat (>= 1.0.0)
       puppetlabs/stdlib (>= 2.4.0)
-    puppetlabs/apt (1.4.1)
+    puppetlabs/apt (1.4.2)
       puppetlabs/stdlib (>= 2.2.1)
     puppetlabs/concat (1.0.0)
     puppetlabs/firewall (0.4.2)
     puppetlabs/gcc (0.1.0)
-    puppetlabs/inifile (1.0.1)
+    puppetlabs/inifile (1.0.3)
     puppetlabs/mysql (2.1.0)
       puppetlabs/stdlib (>= 2.2.1)
     puppetlabs/ntp (3.0.1)
@@ -179,9 +179,9 @@ GIT
 GIT
   remote: git://github.com/treydock/puppet-zabbix20.git
   ref: master
-  sha: 099428641e25c9f804b15d8ad4c7883af129ffa2
+  sha: 46f247d4d6d4bd3c4ec93d8d5ec003f66cba91c4
   specs:
-    zabbix20 (1.0.2)
+    zabbix20 (1.1.0)
       puppetlabs/firewall (< 1.0.0, >= 0.4.2)
       puppetlabs/mysql (>= 0.9.0)
       puppetlabs/stdlib (< 5.0.0, >= 3.2.0)
