@@ -179,9 +179,9 @@ GIT
 GIT
   remote: git://github.com/treydock/puppet-zabbix20.git
   ref: master
-  sha: 46f247d4d6d4bd3c4ec93d8d5ec003f66cba91c4
+  sha: 779e4305d24b9fda31eccfcee4d6a02f70399009
   specs:
-    zabbix20 (1.1.0)
+    zabbix20 (1.1.1)
       puppetlabs/firewall (< 1.0.0, >= 0.4.2)
       puppetlabs/mysql (>= 0.9.0)
       puppetlabs/stdlib (< 5.0.0, >= 3.2.0)
