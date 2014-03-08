@@ -35,6 +35,7 @@ mod 'treydock/edac', '0.0.4'
 mod 'treydock/gpg_key', '0.0.2'
 mod 'treydock/yum_cron', '1.0.0'
 mod 'treydock/scl', '0.0.1'
+mod 'razorsedge/network', '3.2.0'
 
 # Github modules
 mod 'acpid', :git => 'git://github.com/treydock/puppet-acpid.git'
