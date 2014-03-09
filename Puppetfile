@@ -56,7 +56,7 @@ mod 'zram', :git => 'git://github.com/treydock/puppet-zram.git'
 
 # Internal modules
 mod 'areca', :git => 'git@gitlab.tamu.edu:puppet-modules/puppet-areca.git'
-#mod 'brazos', :git => 'git@gitlab.tamu.edu:puppet-modules/puppet-brazos.git'
+mod 'brazos', :git => 'git@gitlab.tamu.edu:puppet-modules/puppet-brazos.git'
 mod 'cron', :git => 'git@gitlab.tamu.edu:puppet-modules/puppet-cron.git'
 mod 'fhgfs', :git => 'git@gitlab.tamu.edu:puppet-modules/puppet-fhgfs.git'
 mod 'iptables', :git => 'git@gitlab.tamu.edu:puppet-modules/puppet-iptables.git'

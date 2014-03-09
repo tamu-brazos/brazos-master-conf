@@ -217,6 +217,15 @@ GIT
       puppetlabs/stdlib (< 5.0.0, >= 3.2.0)
 
 GIT
+  remote: git@gitlab.tamu.edu:puppet-modules/puppet-brazos.git
+  ref: master
+  sha: c5e412927a61f67cf01619ba004f0533e517fec1
+  specs:
+    brazos (0.0.1)
+      puppetlabs/stdlib (< 5.0.0, >= 3.2.0)
+      razorsedge/network (< 4.0.0, >= 3.2.0)
+
+GIT
   remote: git@gitlab.tamu.edu:puppet-modules/puppet-cron.git
   ref: master
   sha: 4c8fc4b1511144a136cc80d040851e612eceb093
@@ -281,6 +290,7 @@ DEPENDENCIES
   areca (>= 0)
   augeasproviders_sysctl (>= 0)
   bashtoni/timezone (= 0.1.1)
+  brazos (>= 0)
   cron (>= 0)
   domcleal/augeasproviders (= 1.0.2)
   fhgfs (>= 0)
