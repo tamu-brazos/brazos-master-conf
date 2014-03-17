@@ -150,7 +150,7 @@ GIT
 GIT
   remote: git://github.com/treydock/puppet-ovirt.git
   ref: master
-  sha: dbcff76411b01623d4637a2172470d43f1b8beb1
+  sha: d825941c5e18da6986f49f597e3be6dc22c9010d
   specs:
     ovirt (0.0.1)
       puppetlabs/firewall (< 1.0.0, >= 0.4.2)
