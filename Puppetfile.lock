@@ -82,6 +82,14 @@ FORGE
       puppetlabs/stdlib (>= 2.2.1)
 
 GIT
+  remote: git://github.com/treydock/evenup-sssd.git
+  ref: master
+  sha: 638cd9a76a9807a2fdbf4450b1fd010d6a85a361
+  specs:
+    sssd (0.3.0)
+      puppetlabs/stdlib (>= 3.2.0)
+
+GIT
   remote: git://github.com/treydock/puppet-acpid.git
   ref: master
   sha: 375f512527284a2612739e2be90bdd82b8441e90
@@ -150,7 +158,7 @@ GIT
 GIT
   remote: git://github.com/treydock/puppet-ovirt.git
   ref: master
-  sha: d825941c5e18da6986f49f597e3be6dc22c9010d
+  sha: 4e2665e821525eeafc001aa681812a835e79d2e4
   specs:
     ovirt (0.0.1)
       puppetlabs/firewall (< 1.0.0, >= 0.4.2)
@@ -321,6 +329,7 @@ DEPENDENCIES
   root (>= 0)
   saz/sudo (= 2.2.0)
   ssh (>= 0)
+  sssd (>= 0)
   stahnma/epel (= 0.0.6)
   stahnma/puppetlabs_yum (= 0.1.4)
   theforeman/dhcp (= 1.3.1)

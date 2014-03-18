@@ -36,6 +36,7 @@ mod 'treydock/gpg_key', '0.0.2'
 mod 'treydock/yum_cron', '1.0.0'
 mod 'treydock/scl', '0.0.1'
 mod 'razorsedge/network', '3.2.0'
+#mod 'eirc/single_user_rvm', '0.3.0' #FORK! Does not currently support EL
 
 # Github modules
 mod 'acpid', :git => 'git://github.com/treydock/puppet-acpid.git'
@@ -46,6 +47,7 @@ mod 'nfs', :git => 'git://github.com/treydock/puppet-nfs.git', :ref => '0.3.0'
 mod 'ramdisk', :git => 'git://github.com/treydock/puppet-module-ramdisk.git'
 mod 'repoforge', :git => 'git://github.com/treydock/puppet-repoforge.git'
 mod 'ssh', :git => 'git://github.com/treydock/puppet-ssh.git'
+mod 'sssd', :git => 'git://github.com/treydock/evenup-sssd.git'
 #mod 'rvm', :git => 'git://github.com/treydock/puppet-rvm.git'
 mod 'osg', :git => 'git://github.com/treydock/puppet-osg.git'
 mod 'ovirt', :git => 'git://github.com/treydock/puppet-ovirt.git'
