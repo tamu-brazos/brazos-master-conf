@@ -106,7 +106,7 @@ FORGE
 GIT
   remote: git://github.com/treydock/evenup-sssd.git
   ref: master
-  sha: 638cd9a76a9807a2fdbf4450b1fd010d6a85a361
+  sha: e0d8c432ef90bee2d75e009889e3328f5ababfdd
   specs:
     sssd (0.3.0)
       puppetlabs/stdlib (>= 3.2.0)
