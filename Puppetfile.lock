@@ -249,7 +249,7 @@ GIT
 GIT
   remote: git@gitlab.tamu.edu:puppet-modules/puppet-brazos.git
   ref: master
-  sha: 5747589e2dbb11b08ac92e011a5e7e1f3c09b4da
+  sha: 3435d3aca0cb1be8ff10321f01da5e7da357f898
   specs:
     brazos (0.0.1)
       puppetlabs/stdlib (< 5.0.0, >= 3.2.0)
