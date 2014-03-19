@@ -249,12 +249,13 @@ GIT
 GIT
   remote: git@gitlab.tamu.edu:puppet-modules/puppet-brazos.git
   ref: master
-  sha: 188aee7d61ba2ffd62fc0236c94b3b94ebf5b839
+  sha: 6de412bd8417b546d5ed1437e8900139d55cfd5e
   specs:
     brazos (0.0.1)
       domcleal/augeasproviders (>= 1.0.2)
       puppetlabs/stdlib (< 5.0.0, >= 3.2.0)
       razorsedge/network (< 4.0.0, >= 3.2.0)
+      theforeman/dhcp (< 1.4.0, >= 1.3.0)
       theforeman/dns (< 1.5.0, >= 1.4.0)
 
 GIT
