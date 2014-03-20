@@ -16,7 +16,8 @@ mod 'stahnma/epel', '0.0.6'
 
 # Foreman modules
 mod 'theforeman/foreman', '2.0.1'
-mod 'theforeman/foreman_proxy', '1.4.0'
+#mod 'theforeman/foreman_proxy', '1.5.0'
+mod 'foreman_proxy', :git => 'git://github.com/treydock/puppet-foreman_proxy.git'
 #mod 'theforeman/concat_native', '1.3.0'
 mod 'theforeman/dhcp', '1.3.1'
 mod 'theforeman/dns', '1.4.0'

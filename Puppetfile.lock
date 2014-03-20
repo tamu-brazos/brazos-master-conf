@@ -79,12 +79,6 @@ FORGE
       puppetlabs/postgresql (>= 3.0.0)
       puppetlabs/stdlib (>= 2.0.0)
       theforeman/concat_native (>= 1.3.0)
-    theforeman/foreman_proxy (1.4.0)
-      puppetlabs/stdlib (>= 2.0.0)
-      theforeman/dhcp (>= 1.3.0)
-      theforeman/dns (>= 1.3.0)
-      theforeman/puppet (>= 1.3.0)
-      theforeman/tftp (>= 1.3.0)
     theforeman/git (1.3.0)
     theforeman/puppet (2.0.0)
       puppetlabs/apache (~> 0.10)
@@ -127,6 +121,19 @@ GIT
     augeasproviders_sysctl (0.0.1)
       domcleal/augeasproviders (>= 1.0.2)
       puppetlabs/stdlib (< 5.0.0, >= 3.2.0)
+
+GIT
+  remote: git://github.com/treydock/puppet-foreman_proxy.git
+  ref: master
+  sha: b4c14b00e0c8b9fccf586f2d095dd9f6065c88b0
+  specs:
+    foreman_proxy (1.5.0)
+      puppetlabs/stdlib (>= 2.0.0)
+      theforeman/dhcp (>= 1.3.0)
+      theforeman/dns (>= 1.3.0)
+      theforeman/foreman (>= 1.3.0)
+      theforeman/puppet (>= 1.3.0)
+      theforeman/tftp (>= 1.3.0)
 
 GIT
   remote: git://github.com/treydock/puppet-infiniband.git
@@ -328,6 +335,7 @@ DEPENDENCIES
   cron (>= 0)
   domcleal/augeasproviders (= 1.0.2)
   fhgfs (>= 0)
+  foreman_proxy (>= 0)
   fsalum/redis (= 0.0.6)
   infiniband (>= 0)
   iptables (>= 0)
@@ -362,7 +370,6 @@ DEPENDENCIES
   theforeman/dhcp (= 1.3.1)
   theforeman/dns (= 1.4.0)
   theforeman/foreman (= 2.0.1)
-  theforeman/foreman_proxy (= 1.4.0)
   theforeman/tftp (= 1.4.0)
   treydock/edac (= 0.0.4)
   treydock/gpg_key (= 0.0.2)
