@@ -38,6 +38,7 @@ mod 'treydock/gpg_key', '0.0.2'
 mod 'treydock/yum_cron', '1.0.0'
 mod 'treydock/scl', '0.0.1'
 mod 'razorsedge/network', '3.2.0'
+mod 'ghoneycutt/dnsclient', '3.1.0'
 #mod 'eirc/single_user_rvm', '0.3.0' #FORK! Does not currently support EL
 
 # Github modules
