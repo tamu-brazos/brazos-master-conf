@@ -2,26 +2,27 @@ forge "http://forge.puppetlabs.com"
 
 # Puppetlabs modules
 mod 'puppetlabs/firewall', '0.4.2'
-mod 'puppetlabs/gcc'
+mod 'puppetlabs/gcc', '0.1.0'
 mod 'puppetlabs/mysql', '2.1.0'
 mod 'puppetlabs/ntp', '3.0.1'
 mod 'puppetlabs/puppetdb', '3.0.1'
 mod 'puppetlabs/ruby', '0.1.0'
 mod 'puppetlabs/stdlib', '4.1.0'
 mod 'puppetlabs/concat', '1.0.0'
-mod 'puppetlabs/apache', '0.10.0'
+mod 'puppetlabs/apache', '1.0.1'
 mod 'puppetlabs/postgresql', '3.3.0'
 mod 'puppetlabs/mcollective', '1.1.3'
 mod 'stahnma/epel', '0.0.6'
 
 # Foreman modules
-mod 'theforeman/foreman', '2.0.1'
+mod 'theforeman/foreman', '2.1.0'
+mod 'theforeman/puppet', '2.1.0'
 #mod 'theforeman/foreman_proxy', '1.5.0'
 mod 'foreman_proxy', :git => 'git://github.com/treydock/puppet-foreman_proxy.git'
 #mod 'theforeman/concat_native', '1.3.0'
 mod 'theforeman/dhcp', '1.3.1'
 mod 'theforeman/dns', '1.4.0'
-mod 'theforeman/tftp', '1.4.0'
+mod 'theforeman/tftp', '1.4.1'
 
 # Community modules
 mod 'CERNOps/motd', '0.1.2'

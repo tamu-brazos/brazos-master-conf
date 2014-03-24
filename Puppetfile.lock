@@ -353,7 +353,6 @@ DEPENDENCIES
   openldap (>= 0)
   osg (>= 0)
   ovirt (>= 0)
-  puppetlabs/apache (= 0.10.0)
   puppetlabs/concat (= 1.0.0)
   puppetlabs/firewall (= 0.4.2)
   puppetlabs/gcc (>= 0)
