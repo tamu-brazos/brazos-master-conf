@@ -1,7 +1,7 @@
 forge "http://forge.puppetlabs.com"
 
 # Puppetlabs modules
-mod 'puppetlabs/firewall', '0.4.2'
+mod 'puppetlabs/firewall', '1.0.2'
 mod 'puppetlabs/gcc', '0.1.0'
 mod 'puppetlabs/mysql', '2.1.0'
 mod 'puppetlabs/ntp', '3.0.1'
@@ -17,9 +17,9 @@ mod 'stahnma/epel', '0.0.6'
 # Foreman modules
 mod 'theforeman/foreman', '2.1.0'
 mod 'theforeman/puppet', '2.1.0'
+# Use treydock repo till PR merged
 #mod 'theforeman/foreman_proxy', '1.5.0'
 mod 'foreman_proxy', :git => 'git://github.com/treydock/puppet-foreman_proxy.git'
-#mod 'theforeman/concat_native', '1.3.0'
 mod 'theforeman/dhcp', '1.3.1'
 mod 'theforeman/dns', '1.4.0'
 mod 'theforeman/tftp', '1.4.1'
@@ -56,11 +56,13 @@ mod 'sssd', :git => 'git://github.com/treydock/evenup-sssd.git'
 #mod 'rvm', :git => 'git://github.com/treydock/puppet-rvm.git'
 mod 'osg', :git => 'git://github.com/treydock/puppet-osg.git'
 mod 'ovirt', :git => 'git://github.com/treydock/puppet-ovirt.git'
+# TODO!! Remove augeasproviders_sysctl and use PR to upstream provider
 mod 'augeasproviders_sysctl', :git => 'git://github.com/treydock/puppet-augeasproviders_sysctl.git'
 mod 'zabbix20', :git => 'git://github.com/treydock/puppet-zabbix20.git'
 mod 'zfsonlinux', :git => 'git://github.com/treydock/puppet-zfsonlinux.git'
 mod 'zram', :git => 'git://github.com/treydock/puppet-zram.git'
 
+#=begin
 # Internal modules
 mod 'areca', :git => 'git@gitlab.tamu.edu:puppet-modules/puppet-areca.git'
 mod 'brazos', :git => 'git@gitlab.tamu.edu:puppet-modules/puppet-brazos.git'
@@ -72,7 +74,7 @@ mod 'openldap', :git => 'git@gitlab.tamu.edu:puppet-modules/puppet-openldap.git'
 mod 'root', :git => 'git@gitlab.tamu.edu:puppet-modules/puppet-root.git'
 #mod 'timezone', :git => 'git@gitlab.tamu.edu:puppet-modules/puppet-timezone.git' # MERGE with upstream
 mod 'webmin', :git => 'git@gitlab.tamu.edu:puppet-modules/puppet-webmin.git'
-
+#=end
 =begin
 Modules not being re-added
 

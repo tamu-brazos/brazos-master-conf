@@ -25,13 +25,13 @@ FORGE
     puppetlabs/activemq (0.2.0)
       puppetlabs/java (>= 0.1.0)
       puppetlabs/stdlib (>= 0.1.6)
-    puppetlabs/apache (0.10.0)
+    puppetlabs/apache (1.0.1)
       puppetlabs/concat (>= 1.0.0)
       puppetlabs/stdlib (>= 2.4.0)
     puppetlabs/apt (1.4.2)
       puppetlabs/stdlib (>= 2.2.1)
     puppetlabs/concat (1.0.0)
-    puppetlabs/firewall (0.4.2)
+    puppetlabs/firewall (1.0.2)
     puppetlabs/gcc (0.1.0)
     puppetlabs/inifile (1.0.3)
     puppetlabs/java (1.1.0)
@@ -78,19 +78,20 @@ FORGE
       theforeman/concat_native (>= 1.3.0)
     theforeman/dns (1.4.0)
       theforeman/concat_native (>= 1.3.0)
-    theforeman/foreman (2.0.1)
-      puppetlabs/apache (~> 0.10)
+    theforeman/foreman (2.1.0)
+      puppetlabs/apache (< 2.0.0, >= 1.0.0)
       puppetlabs/postgresql (>= 3.0.0)
       puppetlabs/stdlib (>= 2.0.0)
       theforeman/concat_native (>= 1.3.0)
     theforeman/git (1.3.0)
-    theforeman/puppet (2.0.0)
-      puppetlabs/apache (~> 0.10)
+    theforeman/puppet (2.1.0)
+      puppetlabs/apache (< 2.0.0, >= 1.0.0)
       puppetlabs/stdlib (>= 2.0.0)
       theforeman/concat_native (>= 1.3.0)
+      theforeman/foreman (>= 1.3.0)
       theforeman/git (>= 1.3.0)
-    theforeman/tftp (1.4.0)
-      puppetlabs/xinetd (>= 0.0.0)
+    theforeman/tftp (1.4.1)
+      puppetlabs/xinetd (~> 1.1)
     treydock/edac (0.0.4)
       puppetlabs/stdlib (>= 0.0.0)
       theforeman/concat_native (>= 0.0.0)
@@ -104,7 +105,7 @@ FORGE
 GIT
   remote: git://github.com/treydock/evenup-sssd.git
   ref: master
-  sha: e0d8c432ef90bee2d75e009889e3328f5ababfdd
+  sha: c8ceb8419e83da66c3f129a3f5f60ee187fad7c6
   specs:
     sssd (0.3.0)
       puppetlabs/stdlib (>= 3.2.0)
@@ -177,11 +178,11 @@ GIT
 GIT
   remote: git://github.com/treydock/puppet-osg.git
   ref: master
-  sha: 3c547b7a7aca9682bb86fb3811402d430b9cb657
+  sha: 1ec4cda756ff23bd467e50b6d6cae6b80bf455ab
   specs:
     osg (0.0.4)
-      puppetlabs/apache (< 1.0.0, >= 0.9.0)
-      puppetlabs/firewall (< 1.0.0, >= 0.4.2)
+      puppetlabs/apache (< 2.0.0, >= 1.0.0)
+      puppetlabs/firewall (< 2.0.0, >= 1.0.0)
       puppetlabs/mysql (>= 0.9.0)
       puppetlabs/stdlib (< 5.0.0, >= 3.2.0)
       saz/sudo (< 4.0.0, >= 2.0.0)
@@ -191,10 +192,10 @@ GIT
 GIT
   remote: git://github.com/treydock/puppet-ovirt.git
   ref: master
-  sha: 4e2665e821525eeafc001aa681812a835e79d2e4
+  sha: 54dbc4a8eca5927fea5a83192f366f5132245dfa
   specs:
     ovirt (0.0.1)
-      puppetlabs/firewall (< 1.0.0, >= 0.4.2)
+      puppetlabs/firewall (< 2.0.0, >= 1.0.0)
       puppetlabs/inifile (< 2.0.0, >= 1.0.0)
       puppetlabs/postgresql (< 4.0.0, >= 3.0.0)
       puppetlabs/stdlib (< 5.0.0, >= 3.2.0)
@@ -222,10 +223,10 @@ GIT
 GIT
   remote: git://github.com/treydock/puppet-zabbix20.git
   ref: master
-  sha: 0e23773aa7b65c8645adeb91a51759112af761d4
+  sha: c7046b70e17da50d0d13713c23eeb49de2db55a1
   specs:
     zabbix20 (1.1.2)
-      puppetlabs/firewall (< 1.0.0, >= 0.4.2)
+      puppetlabs/firewall (< 2.0.0, >= 1.0.0)
       puppetlabs/mysql (>= 0.9.0)
       puppetlabs/stdlib (< 5.0.0, >= 3.2.0)
       saz/sudo (< 4.0.0, >= 2.0.0)
@@ -260,11 +261,11 @@ GIT
 GIT
   remote: git@gitlab.tamu.edu:puppet-modules/puppet-brazos.git
   ref: master
-  sha: 1b4fdd2df1329fb6359ebb731ec758349fbb6544
+  sha: 4354789b165f00162cf1f8b63b1e13807d82a6ec
   specs:
     brazos (0.0.1)
       domcleal/augeasproviders (>= 1.0.2)
-      puppetlabs/firewall (< 1.0.0, >= 0.4.0)
+      puppetlabs/firewall (< 2.0.0, >= 1.0.0)
       puppetlabs/stdlib (< 5.0.0, >= 3.2.0)
       razorsedge/network (< 4.0.0, >= 3.2.0)
       theforeman/dhcp (< 1.4.0, >= 1.3.0)
@@ -290,10 +291,10 @@ GIT
 GIT
   remote: git@gitlab.tamu.edu:puppet-modules/puppet-iptables.git
   ref: master
-  sha: 6a28eeb93a577bdead7e308fab37ced1540c4d8d
+  sha: 1b41a2597b3bd24ee2777836a6324d85a51fddb1
   specs:
     iptables (1.0.1)
-      puppetlabs/firewall (~> 0.4.0)
+      puppetlabs/firewall (>= 0.4.0)
       puppetlabs/stdlib (>= 3.2.0)
 
 GIT
@@ -353,9 +354,10 @@ DEPENDENCIES
   openldap (>= 0)
   osg (>= 0)
   ovirt (>= 0)
+  puppetlabs/apache (= 1.0.1)
   puppetlabs/concat (= 1.0.0)
-  puppetlabs/firewall (= 0.4.2)
-  puppetlabs/gcc (>= 0)
+  puppetlabs/firewall (= 1.0.2)
+  puppetlabs/gcc (= 0.1.0)
   puppetlabs/mcollective (= 1.1.3)
   puppetlabs/mysql (= 2.1.0)
   puppetlabs/ntp (= 3.0.1)
@@ -374,8 +376,9 @@ DEPENDENCIES
   stahnma/puppetlabs_yum (= 0.1.4)
   theforeman/dhcp (= 1.3.1)
   theforeman/dns (= 1.4.0)
-  theforeman/foreman (= 2.0.1)
-  theforeman/tftp (= 1.4.0)
+  theforeman/foreman (= 2.1.0)
+  theforeman/puppet (= 2.1.0)
+  theforeman/tftp (= 1.4.1)
   treydock/edac (= 0.0.4)
   treydock/gpg_key (= 0.0.2)
   treydock/scl (= 0.0.1)
