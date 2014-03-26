@@ -41,6 +41,7 @@ mod 'treydock/scl', '0.0.1'
 mod 'razorsedge/network', '3.2.0'
 mod 'ghoneycutt/dnsclient', '3.1.0'
 mod 'flakrat/repo_centos', '1.0.0'
+mod 'jhoblitt/port389', '0.1.0'
 #mod 'eirc/single_user_rvm', '0.3.0' #FORK! Does not currently support EL
 
 # Github modules
