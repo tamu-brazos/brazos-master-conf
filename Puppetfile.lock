@@ -111,6 +111,9 @@ FORGE
       puppetlabs/stdlib (>= 0.0.0)
       theforeman/concat_native (>= 0.0.0)
     treydock/gpg_key (0.0.2)
+    treydock/infiniband (0.0.1)
+      domcleal/augeasproviders (>= 1.0.2)
+      puppetlabs/stdlib (>= 3.2.0)
     treydock/scl (0.0.1)
       puppetlabs/stdlib (< 5.0.0, >= 3.2.0)
     treydock/yum_cron (1.0.0)
@@ -154,15 +157,6 @@ GIT
       theforeman/foreman (>= 1.3.0)
       theforeman/puppet (>= 1.3.0)
       theforeman/tftp (>= 1.3.0)
-
-GIT
-  remote: git://github.com/treydock/puppet-infiniband.git
-  ref: master
-  sha: 82e51abc755bd784eb44e557a7085ff9e1bdacee
-  specs:
-    infiniband (0.1.0)
-      domcleal/augeasproviders (>= 1.0.2)
-      puppetlabs/stdlib (>= 3.2.0)
 
 GIT
   remote: git://github.com/treydock/puppet-libvirt.git
@@ -359,7 +353,6 @@ DEPENDENCIES
   foreman_proxy (>= 0)
   fsalum/redis (= 0.0.6)
   ghoneycutt/dnsclient (= 3.1.0)
-  infiniband (>= 0)
   iptables (>= 0)
   jhoblitt/ksm (= 0.0.1)
   jhoblitt/port389 (= 0.1.0)
@@ -397,6 +390,7 @@ DEPENDENCIES
   theforeman/tftp (= 1.4.1)
   treydock/edac (= 0.0.4)
   treydock/gpg_key (= 0.0.2)
+  treydock/infiniband (= 0.0.1)
   treydock/scl (= 0.0.1)
   treydock/yum_cron (= 1.0.0)
   webmin (>= 0)
