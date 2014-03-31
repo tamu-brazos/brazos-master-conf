@@ -12,8 +12,6 @@ FORGE
       puppetlabs/stdlib (>= 2.0.0)
     csail/shell_config (0.0.1)
     domcleal/augeasproviders (1.0.2)
-    flakrat/repo_centos (1.0.0)
-      puppetlabs/stdlib (>= 2.0.0)
     fsalum/redis (0.0.6)
     garethr/erlang (0.2.0)
       puppetlabs/apt (>= 0.0.0)
@@ -268,6 +266,15 @@ GIT
       puppetlabs/stdlib (>= 2.6.0)
 
 GIT
+  remote: git://github.com/treydock/repo_centos.git
+  ref: master
+  sha: 469d6de0bd3ff4339596fa58bfbfc8981a805d65
+  specs:
+    repo_centos (1.0.0)
+      puppetlabs/stdlib (>= 2.0.0)
+      treydock/gpg_key (~> 0.0.0)
+
+GIT
   remote: git@gitlab.tamu.edu:puppet-modules/puppet-areca.git
   ref: master
   sha: f5a0bef84672046d7cc46bfd37f32808e79ee5fa
@@ -357,7 +364,6 @@ DEPENDENCIES
   cron (>= 0)
   domcleal/augeasproviders (= 1.0.2)
   fhgfs (>= 0)
-  flakrat/repo_centos (= 1.0.0)
   foreman_proxy (>= 0)
   fsalum/redis (= 0.0.6)
   ghoneycutt/dnsclient (= 3.1.0)
@@ -384,6 +390,7 @@ DEPENDENCIES
   puppetlabs/stdlib (= 4.1.0)
   ramdisk (>= 0)
   razorsedge/network (= 3.2.0)
+  repo_centos (>= 0)
   repoforge (>= 0)
   root (>= 0)
   saz/sudo (= 2.2.0)
