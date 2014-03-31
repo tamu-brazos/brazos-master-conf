@@ -59,6 +59,9 @@ mod 'osg', :git => 'git://github.com/treydock/puppet-osg.git'
 mod 'ovirt', :git => 'git://github.com/treydock/puppet-ovirt.git'
 # TODO!! Remove augeasproviders_sysctl and use PR to upstream provider
 mod 'augeasproviders_sysctl', :git => 'git://github.com/treydock/puppet-augeasproviders_sysctl.git'
+# TODO!! Remove once upstream accepts PR
+# Upstream saz/timezone, '3.0.0'
+mod 'timezone', :git => 'git://github.com/treydock/puppet-timezone-1.git'
 mod 'zabbix20', :git => 'git://github.com/treydock/puppet-zabbix20.git'
 mod 'zfsonlinux', :git => 'git://github.com/treydock/puppet-zfsonlinux.git'
 mod 'zram', :git => 'git://github.com/treydock/puppet-zram.git'
@@ -73,7 +76,6 @@ mod 'iptables', :git => 'git@gitlab.tamu.edu:puppet-modules/puppet-iptables.git'
 mod 'logrotate', :git => 'git@gitlab.tamu.edu:puppet-modules/puppet-logrotate.git' # UPDATES PENDING
 mod 'openldap', :git => 'git@gitlab.tamu.edu:puppet-modules/puppet-openldap.git'
 mod 'root', :git => 'git@gitlab.tamu.edu:puppet-modules/puppet-root.git'
-#mod 'timezone', :git => 'git@gitlab.tamu.edu:puppet-modules/puppet-timezone.git' # MERGE with upstream
 mod 'webmin', :git => 'git@gitlab.tamu.edu:puppet-modules/puppet-webmin.git'
 #=end
 =begin

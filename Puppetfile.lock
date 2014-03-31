@@ -230,6 +230,14 @@ GIT
       puppetlabs/stdlib (>= 3.2.0)
 
 GIT
+  remote: git://github.com/treydock/puppet-timezone-1.git
+  ref: master
+  sha: fbef743768702f6ad6bc5eab2f5819d136d55ee0
+  specs:
+    timezone (3.0.0)
+      puppetlabs/stdlib (>= 2.3.0)
+
+GIT
   remote: git://github.com/treydock/puppet-zabbix20.git
   ref: master
   sha: 2ed8549e26ca9cbf2a0b0b6ccd7441a5a6ea7568
@@ -388,6 +396,7 @@ DEPENDENCIES
   theforeman/foreman (= 2.1.0)
   theforeman/puppet (= 2.1.0)
   theforeman/tftp (= 1.4.1)
+  timezone (>= 0)
   treydock/edac (= 0.0.4)
   treydock/gpg_key (= 0.0.2)
   treydock/infiniband (= 0.0.1)
