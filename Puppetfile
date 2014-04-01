@@ -67,8 +67,8 @@ mod 'zabbix20', :git => 'git://github.com/treydock/puppet-zabbix20.git'
 mod 'zfsonlinux', :git => 'git://github.com/treydock/puppet-zfsonlinux.git'
 mod 'zram', :git => 'git://github.com/treydock/puppet-zram.git'
 
-#=begin
 # Internal modules
+mod 'academy', :git => 'git@gitlab.tamu.edu:puppet-modules/puppet-academy.git'
 mod 'areca', :git => 'git@gitlab.tamu.edu:puppet-modules/puppet-areca.git'
 mod 'brazos', :git => 'git@gitlab.tamu.edu:puppet-modules/puppet-brazos.git'
 mod 'cron', :git => 'git@gitlab.tamu.edu:puppet-modules/puppet-cron.git'
@@ -78,23 +78,19 @@ mod 'logrotate', :git => 'git@gitlab.tamu.edu:puppet-modules/puppet-logrotate.gi
 mod 'openldap', :git => 'git@gitlab.tamu.edu:puppet-modules/puppet-openldap.git'
 mod 'root', :git => 'git@gitlab.tamu.edu:puppet-modules/puppet-root.git'
 mod 'webmin', :git => 'git@gitlab.tamu.edu:puppet-modules/puppet-webmin.git'
-#=end
+
 =begin
 Modules not being re-added
 
 csail-shell_config
 erwbgy-ntp (replaced with puppetlabs/ntp)
 freeipa
-hiera-puppet (necessary?)
-networking (replaced by ifcfg)
 slurm
 
 Modules TODO
 
 acpid
-brazos
 augeasproviders_sysctl
-ifcfg (Manage network interface configurations)
 slurm
 
 =end
