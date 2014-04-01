@@ -173,7 +173,7 @@ GIT
 
 GIT
   remote: git://github.com/treydock/puppet-nfs.git
-  ref: 0.3.0
+  ref: master
   sha: 0ef2b7822d05e15ff985dc933197e27f0bd4db1c
   specs:
     nfs (0.3.0)
@@ -228,7 +228,7 @@ GIT
       puppetlabs/stdlib (>= 3.2.0)
 
 GIT
-  remote: git://github.com/treydock/puppet-timezone-1.git
+  remote: git://github.com/treydock/puppet-timezone.git
   ref: master
   sha: fbef743768702f6ad6bc5eab2f5819d136d55ee0
   specs:
@@ -338,14 +338,6 @@ GIT
     logrotate (0.0.1)
 
 GIT
-  remote: git@gitlab.tamu.edu:puppet-modules/puppet-openldap.git
-  ref: master
-  sha: 9070527ce24c83f00a6477a92d942d6e708a05df
-  specs:
-    openldap (0.0.1)
-      puppetlabs/stdlib (>= 3.2.0)
-
-GIT
   remote: git@gitlab.tamu.edu:puppet-modules/puppet-root.git
   ref: master
   sha: cc0b4ca8ae3a82433f37b8745afb3f0b6d944662
@@ -384,7 +376,6 @@ DEPENDENCIES
   libvirt (>= 0)
   logrotate (>= 0)
   nfs (>= 0)
-  openldap (>= 0)
   osg (>= 0)
   ovirt (>= 0)
   puppetlabs/apache (= 1.0.1)
