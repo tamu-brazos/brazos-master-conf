@@ -294,7 +294,7 @@ GIT
 GIT
   remote: git@gitlab.tamu.edu:puppet-modules/puppet-brazos.git
   ref: master
-  sha: f22ee7f7741fc0306726922b120ead9136dd46a5
+  sha: c572b3561da83795853a3bb6a0c151e8bb3089d7
   specs:
     brazos (0.0.1)
       domcleal/augeasproviders (>= 1.0.2)
