@@ -277,9 +277,9 @@ GIT
 GIT
   remote: git@gitlab.tamu.edu:puppet-modules/puppet-academy.git
   ref: master
-  sha: e4493257472e7b3d26c5b09bd104fdcfd9c85b08
+  sha: 9167303419d94a6aa8f952845b0421781546adfb
   specs:
-    academy (0.3.0)
+    academy (0.4.0)
       CERNOps/motd (~> 0.1.2)
       puppetlabs/stdlib (< 5.0.0, >= 3.2.0)
 
