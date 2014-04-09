@@ -324,9 +324,9 @@ GIT
 GIT
   remote: git@gitlab.tamu.edu:puppet-modules/puppet-iptables.git
   ref: master
-  sha: 1b41a2597b3bd24ee2777836a6324d85a51fddb1
+  sha: 8ea5fe92b36c581067e88ddeacb94a0bf31e3e43
   specs:
-    iptables (1.0.1)
+    iptables (1.1.0)
       puppetlabs/firewall (>= 0.4.0)
       puppetlabs/stdlib (>= 3.2.0)
 
