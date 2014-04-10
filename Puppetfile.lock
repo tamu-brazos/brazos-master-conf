@@ -285,9 +285,9 @@ GIT
 GIT
   remote: git://github.com/treydock/repo_centos.git
   ref: master
-  sha: b7bb669df28a8a06bcd5d7e37553a50f808ad844
+  sha: a82279206fa4864aee9e8c4de97e25912f82e283
   specs:
-    repo_centos (1.0.0)
+    repo_centos (2.0.1)
       puppetlabs/stdlib (>= 2.0.0)
       treydock/gpg_key (~> 0.0.0)
 
