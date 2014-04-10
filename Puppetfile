@@ -49,6 +49,7 @@ mod 'jhoblitt/port389', '0.1.0'
 
 # Github modules
 mod 'acpid', :git => 'git://github.com/treydock/puppet-acpid.git'
+mod 'treydock/devtools', :git => 'git://github.com/treydock/puppet-devtools.git'
 #mod 'dynamic_hosts', :git => 'git://github.com/treydock/puppet-dynamic_hosts.git'
 #mod 'internet2_repo', :git => 'git://github.com/treydock/puppet-internet2_repo.git'
 mod 'nfs', :git => 'git://github.com/treydock/puppet-nfs.git'
@@ -63,6 +64,7 @@ mod 'ovirt', :git => 'git://github.com/treydock/puppet-ovirt.git'
 mod 'augeasproviders_sysctl', :git => 'git://github.com/treydock/puppet-augeasproviders_sysctl.git'
 # TODO!! Remove once upstream accepts PR
 # Upstream saz/timezone, '3.0.0'
+mod 'treydock/pulp', :git => 'git://github.com/treydock/puppet-pulp.git'
 mod 'timezone', :git => 'git://github.com/treydock/puppet-timezone.git'
 mod 'zabbix20', :git => 'git://github.com/treydock/puppet-zabbix20.git'
 mod 'zfsonlinux', :git => 'git://github.com/treydock/puppet-zfsonlinux.git'

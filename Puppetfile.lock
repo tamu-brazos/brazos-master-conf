@@ -147,6 +147,13 @@ GIT
       puppetlabs/stdlib (< 5.0.0, >= 3.2.0)
 
 GIT
+  remote: git://github.com/treydock/puppet-devtools.git
+  ref: master
+  sha: a830bb34c204546623394c5afd78054a74919684
+  specs:
+    treydock/devtools (1.0.0)
+
+GIT
   remote: git://github.com/treydock/puppet-foreman_proxy.git
   ref: master
   sha: b4c14b00e0c8b9fccf586f2d095dd9f6065c88b0
@@ -211,6 +218,13 @@ GIT
       puppetlabs/stdlib (< 5.0.0, >= 3.2.0)
       saz/sudo (< 4.0.0, >= 2.0.0)
       stahnma/epel (< 1.0.0, >= 0.0.1)
+
+GIT
+  remote: git://github.com/treydock/puppet-pulp.git
+  ref: master
+  sha: 8d9fca18340b058a217969c21db7cc427c4ef8a2
+  specs:
+    treydock/pulp (0.1.0)
 
 GIT
   remote: git://github.com/treydock/puppet-repoforge.git
@@ -409,9 +423,11 @@ DEPENDENCIES
   theforeman/puppet (= 2.1.0)
   theforeman/tftp (= 1.4.1)
   timezone (>= 0)
+  treydock/devtools (>= 0)
   treydock/edac (= 0.0.4)
   treydock/gpg_key (= 0.0.2)
   treydock/infiniband (= 0.0.1)
+  treydock/pulp (>= 0)
   treydock/scl (= 0.0.1)
   treydock/yum_cron (= 1.0.0)
   webmin (>= 0)
