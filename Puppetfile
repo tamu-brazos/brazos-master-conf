@@ -12,6 +12,7 @@ mod 'puppetlabs/concat', '1.0.0'
 mod 'puppetlabs/apache', '1.0.1'
 mod 'puppetlabs/postgresql', '3.3.0'
 mod 'puppetlabs/mcollective', '1.1.3'
+mod 'puppetlabs/mongodb', '0.7.0'
 mod 'stahnma/epel', '0.0.6'
 
 # Foreman modules
