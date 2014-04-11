@@ -45,6 +45,7 @@ FORGE
     puppetlabs/concat (1.0.0)
     puppetlabs/firewall (1.0.2)
     puppetlabs/gcc (0.1.0)
+    puppetlabs/git (0.0.3)
     puppetlabs/inifile (1.0.3)
     puppetlabs/java (1.1.0)
       puppetlabs/stdlib (>= 0.1.6)
@@ -149,9 +150,12 @@ GIT
 GIT
   remote: git://github.com/treydock/puppet-devtools.git
   ref: master
-  sha: a830bb34c204546623394c5afd78054a74919684
+  sha: 4f3d5b8894129365d18278f38ec0334188da76e4
   specs:
     treydock/devtools (1.0.0)
+      puppetlabs/gcc (~> 0.1.0)
+      puppetlabs/git (>= 0)
+      puppetlabs/stdlib (>= 2.6.0)
 
 GIT
   remote: git://github.com/treydock/puppet-foreman_proxy.git
