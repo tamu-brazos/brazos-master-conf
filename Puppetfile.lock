@@ -86,7 +86,6 @@ FORGE
       puppetlabs/stdlib (>= 2.3.0)
     richardc/datacat (0.4.2)
     rodjek/logrotate (1.1.1)
-    saz/limits (2.0.2)
     saz/sudo (2.2.0)
     stahnma/epel (0.0.6)
     stahnma/puppetlabs_yum (0.1.4)
@@ -116,6 +115,9 @@ FORGE
     treydock/infiniband (0.0.1)
       domcleal/augeasproviders (>= 1.0.2)
       puppetlabs/stdlib (>= 3.2.0)
+    treydock/mock (0.0.1)
+      puppetlabs/stdlib (< 5.0.0, >= 3.2.0)
+      stahnma/epel (< 1.0.0, >= 0.0.1)
     treydock/scl (0.0.1)
       puppetlabs/stdlib (< 5.0.0, >= 3.2.0)
     treydock/yum_cron (1.0.0)
@@ -127,7 +129,7 @@ GIT
   ref: master
   sha: c8ceb8419e83da66c3f129a3f5f60ee187fad7c6
   specs:
-    sssd (0.3.0)
+    treydock/sssd (0.3.0)
       puppetlabs/stdlib (>= 3.2.0)
 
 GIT
@@ -135,7 +137,7 @@ GIT
   ref: master
   sha: 375f512527284a2612739e2be90bdd82b8441e90
   specs:
-    acpid (0.0.1)
+    treydock/acpid (0.0.1)
       puppetlabs/stdlib (< 5.0.0, >= 3.2.0)
 
 GIT
@@ -143,7 +145,7 @@ GIT
   ref: master
   sha: 7d73b7902219c8eddc570e12cb00ab5b15423de1
   specs:
-    augeasproviders_sysctl (0.0.1)
+    treydock/augeasproviders_sysctl (0.0.1)
       domcleal/augeasproviders (>= 1.0.2)
       puppetlabs/stdlib (< 5.0.0, >= 3.2.0)
 
@@ -162,7 +164,7 @@ GIT
   ref: master
   sha: b4c14b00e0c8b9fccf586f2d095dd9f6065c88b0
   specs:
-    foreman_proxy (1.5.0)
+    theforeman/foreman_proxy (1.5.0)
       puppetlabs/stdlib (>= 2.0.0)
       theforeman/dhcp (>= 1.3.0)
       theforeman/dns (>= 1.3.0)
@@ -175,22 +177,29 @@ GIT
   ref: master
   sha: fb6493e10c67214b7fe2a5aeacfdd360f78c3255
   specs:
-    libvirt (0.2.3)
+    treydock/libvirt (0.2.3)
       puppetlabs/stdlib (>= 0)
+
+GIT
+  remote: git://github.com/treydock/puppet-limits.git
+  ref: master
+  sha: 37c47f4426cfb4b57968bdb2c9beef1c3752becc
+  specs:
+    saz/limits (2.0.2)
 
 GIT
   remote: git://github.com/treydock/puppet-module-ramdisk.git
   ref: master
   sha: 4c129fd2a084ae115181c8f031cbda805beb5c72
   specs:
-    ramdisk (0.0.1)
+    treydock/ramdisk (0.0.1)
 
 GIT
   remote: git://github.com/treydock/puppet-nfs.git
   ref: master
   sha: 0ef2b7822d05e15ff985dc933197e27f0bd4db1c
   specs:
-    nfs (0.3.0)
+    treydock/nfs (0.3.0)
       domcleal/augeasproviders (>= 1.0.2)
       puppetlabs/firewall (>= 0.4.0)
       puppetlabs/inifile (< 2.0.0, >= 1.0.1)
@@ -201,7 +210,7 @@ GIT
   ref: master
   sha: 1ec4cda756ff23bd467e50b6d6cae6b80bf455ab
   specs:
-    osg (0.0.4)
+    treydock/osg (0.0.4)
       puppetlabs/apache (< 2.0.0, >= 1.0.0)
       puppetlabs/firewall (< 2.0.0, >= 1.0.0)
       puppetlabs/mysql (>= 0.9.0)
@@ -215,7 +224,7 @@ GIT
   ref: master
   sha: 126f00b1c14d7d5f0c7c9de1a2d5c268fdc2ecad
   specs:
-    ovirt (0.0.1)
+    treydock/ovirt (0.0.1)
       puppetlabs/firewall (< 2.0.0, >= 1.0.0)
       puppetlabs/inifile (< 2.0.0, >= 1.0.0)
       puppetlabs/postgresql (< 4.0.0, >= 3.0.0)
@@ -235,7 +244,7 @@ GIT
   ref: master
   sha: 12020838c2a11cae81d7d3265f4ba387ce77b872
   specs:
-    repoforge (0.0.1)
+    treydock/repoforge (0.0.1)
       puppetlabs/stdlib (>= 3.2.0)
       treydock/gpg_key (>= 0)
 
@@ -244,7 +253,7 @@ GIT
   ref: master
   sha: 1f01d64f9c619008785408beed8859e498f5a190
   specs:
-    ssh (1.0.0)
+    treydock/ssh (1.0.0)
       domcleal/augeasproviders (>= 1.0.2)
       puppetlabs/stdlib (>= 3.2.0)
 
@@ -253,7 +262,7 @@ GIT
   ref: master
   sha: fbef743768702f6ad6bc5eab2f5819d136d55ee0
   specs:
-    timezone (3.0.0)
+    treydock/timezone (3.0.0)
       puppetlabs/stdlib (>= 2.3.0)
 
 GIT
@@ -261,7 +270,7 @@ GIT
   ref: master
   sha: 2ed8549e26ca9cbf2a0b0b6ccd7441a5a6ea7568
   specs:
-    zabbix20 (1.3.0)
+    treydock/zabbix20 (1.3.0)
       puppetlabs/firewall (< 2.0.0, >= 1.0.0)
       puppetlabs/mysql (>= 0.9.0)
       puppetlabs/stdlib (< 5.0.0, >= 3.2.0)
@@ -273,7 +282,7 @@ GIT
   ref: master
   sha: 7d4e29de11e39269e217a78668084cc615e3132a
   specs:
-    zfsonlinux (0.0.2)
+    treydock/zfsonlinux (0.0.2)
       puppetlabs/stdlib (>= 3.2.0)
       stahnma/epel (>= 0.0.5)
       treydock/gpg_key (~> 0.0.0)
@@ -283,7 +292,7 @@ GIT
   ref: master
   sha: 9d571f4f1b125b6e9f4b6c678688f3750abcb00a
   specs:
-    zram (0.0.1)
+    treydock/zram (0.0.1)
       puppetlabs/stdlib (>= 2.6.0)
 
 GIT
@@ -291,7 +300,7 @@ GIT
   ref: master
   sha: a82279206fa4864aee9e8c4de97e25912f82e283
   specs:
-    repo_centos (2.0.1)
+    flakrat/repo_centos (2.0.1)
       puppetlabs/stdlib (>= 2.0.0)
       treydock/gpg_key (~> 0.0.0)
 
@@ -300,7 +309,7 @@ GIT
   ref: master
   sha: 9c1b41ea59dda183d0410753f0b4cf556875ce71
   specs:
-    academy (1.0.0)
+    treydock/academy (1.0.0)
       CERNOps/motd (~> 0.1.2)
       puppetlabs/stdlib (< 5.0.0, >= 3.2.0)
 
@@ -309,7 +318,7 @@ GIT
   ref: master
   sha: f5a0bef84672046d7cc46bfd37f32808e79ee5fa
   specs:
-    areca (0.0.1)
+    treydock/areca (0.0.1)
       puppetlabs/stdlib (< 5.0.0, >= 3.2.0)
 
 GIT
@@ -317,7 +326,7 @@ GIT
   ref: master
   sha: a294fafd3ced7dedababfd0011f086a25a726ea7
   specs:
-    brazos (0.0.1)
+    treydock/brazos (0.0.1)
       domcleal/augeasproviders (>= 1.0.2)
       puppetlabs/firewall (< 2.0.0, >= 1.0.0)
       puppetlabs/stdlib (< 5.0.0, >= 3.2.0)
@@ -330,7 +339,7 @@ GIT
   ref: master
   sha: 4c8fc4b1511144a136cc80d040851e612eceb093
   specs:
-    cron (1.0.0)
+    treydock/cron (1.0.0)
       puppetlabs/stdlib (>= 3.2.0)
 
 GIT
@@ -338,7 +347,7 @@ GIT
   ref: master
   sha: e0e9485871754dfc779af0d9d7ca8cf635a03359
   specs:
-    fhgfs (0.0.1)
+    treydock/fhgfs (0.0.1)
       puppetlabs/stdlib (< 5.0.0, >= 3.2.0)
       treydock/gpg_key (>= 0.0.2)
 
@@ -347,7 +356,7 @@ GIT
   ref: master
   sha: 8ea5fe92b36c581067e88ddeacb94a0bf31e3e43
   specs:
-    iptables (1.1.0)
+    treydock/iptables (1.1.0)
       puppetlabs/firewall (>= 0.4.0)
       puppetlabs/stdlib (>= 3.2.0)
 
@@ -356,14 +365,14 @@ GIT
   ref: master
   sha: 96ca2910a704294ce8f5284bf12259428cfb335e
   specs:
-    logrotate (0.0.1)
+    treydock/logrotate (0.0.1)
 
 GIT
   remote: git@gitlab.tamu.edu:puppet-modules/puppet-root.git
   ref: master
   sha: cc0b4ca8ae3a82433f37b8745afb3f0b6d944662
   specs:
-    root (0.0.3)
+    treydock/root (0.0.3)
       puppetlabs/stdlib (>= 3.2.0)
 
 GIT
@@ -371,34 +380,21 @@ GIT
   ref: master
   sha: f1479e7ce31e1cdcb7091e5a0261b48117aa26ff
   specs:
-    webmin (0.1.0)
+    treydock/ebmin (0.1.0)
       puppetlabs/firewall (>= 0.4.2)
       puppetlabs/stdlib (>= 3.2.0)
       treydock/gpg_key (~> 0.0.0)
 
 DEPENDENCIES
   CERNOps/motd (= 0.1.2)
-  academy (>= 0)
-  acpid (>= 0)
-  areca (>= 0)
-  augeasproviders_sysctl (>= 0)
   bashtoni/timezone (= 0.1.1)
-  brazos (>= 0)
-  cron (>= 0)
   domcleal/augeasproviders (= 1.0.2)
-  fhgfs (>= 0)
-  foreman_proxy (>= 0)
+  flakrat/repo_centos (>= 0)
   fsalum/redis (= 0.0.6)
   ghoneycutt/dnsclient (= 3.1.0)
-  iptables (>= 0)
   jhoblitt/ksm (= 0.0.1)
   jhoblitt/port389 (= 0.1.0)
   jhoblitt/smartd (= 2.0.0)
-  libvirt (>= 0)
-  logrotate (>= 0)
-  nfs (>= 0)
-  osg (>= 0)
-  ovirt (>= 0)
   puppetlabs/apache (= 1.0.1)
   puppetlabs/concat (= 1.0.0)
   puppetlabs/firewall (= 1.0.2)
@@ -411,31 +407,46 @@ DEPENDENCIES
   puppetlabs/puppetdb (= 3.0.1)
   puppetlabs/ruby (= 0.1.0)
   puppetlabs/stdlib (= 4.1.0)
-  ramdisk (>= 0)
   razorsedge/network (= 3.2.0)
-  repo_centos (>= 0)
-  repoforge (>= 0)
-  root (>= 0)
+  saz/limits (>= 0)
   saz/sudo (= 2.2.0)
-  ssh (>= 0)
-  sssd (>= 0)
   stahnma/epel (= 0.0.6)
   stahnma/puppetlabs_yum (= 0.1.4)
   theforeman/dhcp (= 1.3.1)
   theforeman/dns (= 1.4.0)
   theforeman/foreman (= 2.1.0)
+  theforeman/foreman_proxy (>= 0)
   theforeman/puppet (= 2.1.0)
   theforeman/tftp (= 1.4.1)
-  timezone (>= 0)
+  treydock/academy (>= 0)
+  treydock/acpid (>= 0)
+  treydock/areca (>= 0)
+  treydock/augeasproviders_sysctl (>= 0)
+  treydock/brazos (>= 0)
+  treydock/cron (>= 0)
   treydock/devtools (>= 0)
+  treydock/ebmin (>= 0)
   treydock/edac (= 0.0.4)
+  treydock/fhgfs (>= 0)
   treydock/gpg_key (= 0.0.2)
   treydock/infiniband (= 0.0.1)
+  treydock/iptables (>= 0)
+  treydock/libvirt (>= 0)
+  treydock/logrotate (>= 0)
+  treydock/mock (= 0.0.1)
+  treydock/nfs (>= 0)
+  treydock/osg (>= 0)
+  treydock/ovirt (>= 0)
   treydock/pulp (>= 0)
+  treydock/ramdisk (>= 0)
+  treydock/repoforge (>= 0)
+  treydock/root (>= 0)
   treydock/scl (= 0.0.1)
+  treydock/ssh (>= 0)
+  treydock/sssd (>= 0)
+  treydock/timezone (>= 0)
   treydock/yum_cron (= 1.0.0)
-  webmin (>= 0)
-  zabbix20 (>= 0)
-  zfsonlinux (>= 0)
-  zram (>= 0)
+  treydock/zabbix20 (>= 0)
+  treydock/zfsonlinux (>= 0)
+  treydock/zram (>= 0)
 
