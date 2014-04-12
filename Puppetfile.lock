@@ -416,6 +416,7 @@ DEPENDENCIES
   theforeman/dns (= 1.4.0)
   theforeman/foreman (= 2.1.0)
   theforeman/foreman_proxy (>= 0)
+  theforeman/git (= 1.3.0)
   theforeman/puppet (= 2.1.0)
   theforeman/tftp (= 1.4.1)
   treydock/academy (>= 0)

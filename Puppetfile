@@ -24,10 +24,11 @@ mod 'theforeman/foreman_proxy', :git => 'git://github.com/treydock/puppet-forema
 mod 'theforeman/dhcp', '1.3.1'
 mod 'theforeman/dns', '1.4.0'
 mod 'theforeman/tftp', '1.4.1'
+mod 'theforeman/git', '1.3.0'
 
 # Community modules
 # saz/limits: Temporary to fix symlink issue causing read-only when installed
-# See: 
+# See: https://github.com/saz/puppet-limits/pull/9
 mod 'saz/limits', :git => 'git://github.com/treydock/puppet-limits.git'
 mod 'CERNOps/motd', '0.1.2'
 mod 'fsalum/redis', '0.0.6'
