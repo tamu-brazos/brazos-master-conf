@@ -4,6 +4,7 @@ FORGE
     CERNOps/motd (0.1.2)
       puppetlabs/concat (>= 1.0.0)
       puppetlabs/stdlib (>= 3.0.0)
+    adamstrawson/byobu (0.0.1)
     bashtoni/timezone (0.1.1)
     camptocamp/openldap (0.1.0)
       domcleal/augeasproviders (>= 0.0.0)
@@ -387,6 +388,7 @@ GIT
 
 DEPENDENCIES
   CERNOps/motd (= 0.1.2)
+  adamstrawson/byobu (= 0.0.1)
   bashtoni/timezone (= 0.1.1)
   domcleal/augeasproviders (= 1.0.2)
   flakrat/repo_centos (>= 0)
