@@ -6,13 +6,12 @@ FORGE
       puppetlabs/stdlib (>= 3.0.0)
     adamstrawson/byobu (0.0.1)
     bashtoni/timezone (0.1.1)
-    camptocamp/openldap (0.1.0)
+    camptocamp/openldap (0.1.1)
       domcleal/augeasproviders (>= 0.0.0)
       puppetlabs/stdlib (>= 0.0.0)
     camptocamp/openssl (0.2.0)
       puppetlabs/stdlib (>= 2.0.0)
     csail/shell_config (0.0.1)
-    domcleal/augeasproviders (1.0.2)
     fsalum/redis (0.0.6)
     garethr/erlang (0.2.0)
       puppetlabs/apt (>= 0.0.0)
@@ -85,7 +84,7 @@ FORGE
       puppetlabs/stdlib (>= 2.2.1)
     razorsedge/network (3.2.0)
       puppetlabs/stdlib (>= 2.3.0)
-    richardc/datacat (0.4.2)
+    richardc/datacat (0.4.3)
     rodjek/logrotate (1.1.1)
     saz/sudo (2.2.0)
     stahnma/epel (0.0.6)
@@ -126,6 +125,14 @@ FORGE
       puppetlabs/stdlib (>= 2.2.1)
 
 GIT
+  remote: git://github.com/hercules-team/augeasproviders.git
+  ref: 5da239d23c
+  sha: 5da239d23c24396f8883639530ae0662a11b05d0
+  specs:
+    domcleal/augeasproviders (1.0.2)
+      puppetlabs/stdlib (< 5.0.0, >= 3.2.0)
+
+GIT
   remote: git://github.com/treydock/evenup-sssd.git
   ref: master
   sha: c8ceb8419e83da66c3f129a3f5f60ee187fad7c6
@@ -142,15 +149,6 @@ GIT
       puppetlabs/stdlib (< 5.0.0, >= 3.2.0)
 
 GIT
-  remote: git://github.com/treydock/puppet-augeasproviders_sysctl.git
-  ref: master
-  sha: 7d73b7902219c8eddc570e12cb00ab5b15423de1
-  specs:
-    treydock/augeasproviders_sysctl (0.0.1)
-      domcleal/augeasproviders (>= 1.0.2)
-      puppetlabs/stdlib (< 5.0.0, >= 3.2.0)
-
-GIT
   remote: git://github.com/treydock/puppet-devtools.git
   ref: master
   sha: 4f3d5b8894129365d18278f38ec0334188da76e4
@@ -163,7 +161,7 @@ GIT
 GIT
   remote: git://github.com/treydock/puppet-foreman_proxy.git
   ref: master
-  sha: b4c14b00e0c8b9fccf586f2d095dd9f6065c88b0
+  sha: dd33a918daf8e91b4731b2b409590f26af7d0a20
   specs:
     theforeman/foreman_proxy (1.5.0)
       puppetlabs/stdlib (>= 2.0.0)
@@ -223,7 +221,7 @@ GIT
 GIT
   remote: git://github.com/treydock/puppet-ovirt.git
   ref: master
-  sha: 126f00b1c14d7d5f0c7c9de1a2d5c268fdc2ecad
+  sha: 9b361cc7c36246f23feeb933d2c364ed99f3cd8d
   specs:
     treydock/ovirt (0.0.1)
       puppetlabs/firewall (< 2.0.0, >= 1.0.0)
@@ -390,7 +388,7 @@ DEPENDENCIES
   CERNOps/motd (= 0.1.2)
   adamstrawson/byobu (= 0.0.1)
   bashtoni/timezone (= 0.1.1)
-  domcleal/augeasproviders (= 1.0.2)
+  domcleal/augeasproviders (>= 0)
   flakrat/repo_centos (>= 0)
   fsalum/redis (= 0.0.6)
   ghoneycutt/dnsclient (= 3.1.0)
@@ -424,7 +422,6 @@ DEPENDENCIES
   treydock/academy (>= 0)
   treydock/acpid (>= 0)
   treydock/areca (>= 0)
-  treydock/augeasproviders_sysctl (>= 0)
   treydock/brazos (>= 0)
   treydock/cron (>= 0)
   treydock/devtools (>= 0)
