@@ -82,7 +82,7 @@ mod 'treydock/fhgfs', :git => 'git@gitlab.tamu.edu:puppet-modules/puppet-fhgfs.g
 mod 'treydock/iptables', :git => 'git@gitlab.tamu.edu:puppet-modules/puppet-iptables.git'
 mod 'treydock/logrotate', :git => 'git@gitlab.tamu.edu:puppet-modules/puppet-logrotate.git' # UPDATES PENDING
 mod 'treydock/root', :git => 'git@gitlab.tamu.edu:puppet-modules/puppet-root.git'
-mod 'treydock/ebmin', :git => 'git@gitlab.tamu.edu:puppet-modules/puppet-webmin.git'
+mod 'treydock/webmin', :git => 'git@gitlab.tamu.edu:puppet-modules/puppet-webmin.git'
 
 =begin
 Modules not being re-added

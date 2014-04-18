@@ -379,7 +379,7 @@ GIT
   ref: master
   sha: f1479e7ce31e1cdcb7091e5a0261b48117aa26ff
   specs:
-    treydock/ebmin (0.1.0)
+    treydock/webmin (0.1.0)
       puppetlabs/firewall (>= 0.4.2)
       puppetlabs/stdlib (>= 3.2.0)
       treydock/gpg_key (~> 0.0.0)
@@ -425,7 +425,6 @@ DEPENDENCIES
   treydock/brazos (>= 0)
   treydock/cron (>= 0)
   treydock/devtools (>= 0)
-  treydock/ebmin (>= 0)
   treydock/edac (= 0.0.4)
   treydock/fhgfs (>= 0)
   treydock/gpg_key (= 0.0.2)
@@ -445,6 +444,7 @@ DEPENDENCIES
   treydock/ssh (>= 0)
   treydock/sssd (>= 0)
   treydock/timezone (>= 0)
+  treydock/webmin (>= 0)
   treydock/yum_cron (= 1.0.0)
   treydock/zabbix20 (>= 0)
   treydock/zfsonlinux (>= 0)
