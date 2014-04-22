@@ -224,7 +224,7 @@ GIT
 GIT
   remote: git://github.com/treydock/puppet-ovirt.git
   ref: master
-  sha: 9b361cc7c36246f23feeb933d2c364ed99f3cd8d
+  sha: 769e2e929402fde374844424e36b3340a7386da5
   specs:
     treydock/ovirt (0.0.1)
       puppetlabs/firewall (< 2.0.0, >= 1.0.0)
@@ -347,7 +347,7 @@ GIT
 GIT
   remote: git@gitlab.tamu.edu:puppet-modules/puppet-fhgfs.git
   ref: master
-  sha: e0e9485871754dfc779af0d9d7ca8cf635a03359
+  sha: b76b794b36ba5e07add97bef4fb4b1d3e0f1112b
   specs:
     treydock/fhgfs (0.0.1)
       puppetlabs/stdlib (< 5.0.0, >= 3.2.0)
