@@ -328,7 +328,7 @@ GIT
 GIT
   remote: git@gitlab.tamu.edu:puppet-modules/puppet-brazos.git
   ref: master
-  sha: a294fafd3ced7dedababfd0011f086a25a726ea7
+  sha: 8871d41dc2cb0a40573a2985c48f7c5cfe2877ce
   specs:
     treydock/brazos (0.0.1)
       domcleal/augeasproviders (>= 1.0.2)
