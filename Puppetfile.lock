@@ -12,6 +12,7 @@ FORGE
     camptocamp/openssl (0.2.0)
       puppetlabs/stdlib (>= 2.0.0)
     csail/shell_config (0.0.1)
+    dalen/puppetdbquery (1.4.0)
     fsalum/redis (0.0.6)
     garethr/erlang (0.2.0)
       puppetlabs/apt (>= 0.0.0)
@@ -126,6 +127,7 @@ FORGE
     treydock/yum_cron (1.0.0)
       domcleal/augeasproviders (>= 1.0.2)
       puppetlabs/stdlib (>= 2.2.1)
+    zack/exports (0.0.4)
 
 GIT
   remote: git://github.com/hercules-team/augeasproviders.git
@@ -391,6 +393,7 @@ DEPENDENCIES
   CERNOps/motd (= 0.1.2)
   adamstrawson/byobu (= 0.0.1)
   bashtoni/timezone (= 0.1.1)
+  dalen/puppetdbquery (= 1.4.0)
   domcleal/augeasproviders (>= 0)
   flakrat/repo_centos (>= 0)
   fsalum/redis (= 0.0.6)
@@ -453,4 +456,5 @@ DEPENDENCIES
   treydock/zabbix20 (>= 0)
   treydock/zfsonlinux (>= 0)
   treydock/zram (>= 0)
+  zack/exports (= 0.0.4)
 

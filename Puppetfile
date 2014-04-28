@@ -53,6 +53,8 @@ mod 'flakrat/repo_centos', :git => 'git://github.com/treydock/repo_centos.git'
 mod 'jhoblitt/port389', '0.1.0'
 #mod 'eirc/single_user_rvm', '0.3.0' #FORK! Does not currently support EL
 mod 'adamstrawson/byobu', '0.0.1'
+mod 'dalen/puppetdbquery', '1.4.0'
+mod 'zack/exports', '0.0.4'
 
 # Github modules
 mod 'treydock/acpid', :git => 'git://github.com/treydock/puppet-acpid.git'
