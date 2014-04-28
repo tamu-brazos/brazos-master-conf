@@ -311,11 +311,16 @@ GIT
 GIT
   remote: git@gitlab.tamu.edu:puppet-modules/puppet-academy.git
   ref: master
-  sha: 9c1b41ea59dda183d0410753f0b4cf556875ce71
+  sha: 013eeb4bf4f28efdcad724d115eb0af2e94965ad
   specs:
     treydock/academy (1.0.0)
       CERNOps/motd (~> 0.1.2)
+      domcleal/augeasproviders (>= 1.0.2)
+      puppetlabs/firewall (< 2.0.0, >= 1.0.0)
       puppetlabs/stdlib (< 5.0.0, >= 3.2.0)
+      razorsedge/network (< 4.0.0, >= 3.2.0)
+      theforeman/dhcp (< 1.4.0, >= 1.3.0)
+      theforeman/dns (< 1.5.0, >= 1.4.0)
 
 GIT
   remote: git@gitlab.tamu.edu:puppet-modules/puppet-areca.git
