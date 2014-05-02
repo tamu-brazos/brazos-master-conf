@@ -370,13 +370,6 @@ GIT
       puppetlabs/stdlib (>= 3.2.0)
 
 GIT
-  remote: git@gitlab.tamu.edu:puppet-modules/puppet-logrotate.git
-  ref: master
-  sha: 96ca2910a704294ce8f5284bf12259428cfb335e
-  specs:
-    treydock/logrotate (0.0.1)
-
-GIT
   remote: git@gitlab.tamu.edu:puppet-modules/puppet-root.git
   ref: master
   sha: cc0b4ca8ae3a82433f37b8745afb3f0b6d944662
@@ -419,6 +412,7 @@ DEPENDENCIES
   puppetlabs/ruby (= 0.1.0)
   puppetlabs/stdlib (= 4.1.0)
   razorsedge/network (= 3.2.0)
+  rodjek/logrotate (= 1.1.1)
   saz/limits (>= 0)
   saz/sudo (= 2.2.0)
   stahnma/epel (= 0.0.6)
@@ -443,7 +437,6 @@ DEPENDENCIES
   treydock/infiniband (= 0.0.1)
   treydock/iptables (>= 0)
   treydock/libvirt (>= 0)
-  treydock/logrotate (>= 0)
   treydock/mock (= 0.0.1)
   treydock/nfs (>= 0)
   treydock/osg (>= 0)

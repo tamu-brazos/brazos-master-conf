@@ -55,6 +55,7 @@ mod 'jhoblitt/port389', '0.1.0'
 mod 'adamstrawson/byobu', '0.0.1'
 mod 'dalen/puppetdbquery', '1.4.0'
 mod 'zack/exports', '0.0.4'
+mod 'rodjek/logrotate', '1.1.1'
 
 # Github modules
 mod 'treydock/acpid', :git => 'git://github.com/treydock/puppet-acpid.git'
@@ -83,7 +84,6 @@ mod 'treydock/brazos', :git => 'git@gitlab.tamu.edu:puppet-modules/puppet-brazos
 mod 'treydock/cron', :git => 'git@gitlab.tamu.edu:puppet-modules/puppet-cron.git'
 mod 'treydock/fhgfs', :git => 'git@gitlab.tamu.edu:puppet-modules/puppet-fhgfs.git'
 mod 'treydock/iptables', :git => 'git@gitlab.tamu.edu:puppet-modules/puppet-iptables.git'
-mod 'treydock/logrotate', :git => 'git@gitlab.tamu.edu:puppet-modules/puppet-logrotate.git' # UPDATES PENDING
 mod 'treydock/root', :git => 'git@gitlab.tamu.edu:puppet-modules/puppet-root.git'
 mod 'treydock/webmin', :git => 'git@gitlab.tamu.edu:puppet-modules/puppet-webmin.git'
 
