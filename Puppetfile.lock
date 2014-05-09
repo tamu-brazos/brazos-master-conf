@@ -116,7 +116,7 @@ FORGE
       puppetlabs/stdlib (>= 0.0.0)
       theforeman/concat_native (>= 0.0.0)
     treydock/gpg_key (0.0.2)
-    treydock/infiniband (0.0.1)
+    treydock/infiniband (0.0.2)
       domcleal/augeasproviders (>= 1.0.2)
       puppetlabs/stdlib (>= 3.2.0)
     treydock/mock (0.0.1)
@@ -272,9 +272,9 @@ GIT
 GIT
   remote: git://github.com/treydock/puppet-zabbix20.git
   ref: master
-  sha: 2ed8549e26ca9cbf2a0b0b6ccd7441a5a6ea7568
+  sha: a2f87a4428efc9cf0f38abea677d96888f64fd9d
   specs:
-    treydock/zabbix20 (1.3.0)
+    treydock/zabbix20 (1.4.0)
       puppetlabs/firewall (< 2.0.0, >= 1.0.0)
       puppetlabs/mysql (>= 0.9.0)
       puppetlabs/stdlib (< 5.0.0, >= 3.2.0)
@@ -333,7 +333,7 @@ GIT
 GIT
   remote: git@gitlab.tamu.edu:puppet-modules/puppet-brazos.git
   ref: master
-  sha: 8871d41dc2cb0a40573a2985c48f7c5cfe2877ce
+  sha: baa8713a6bf0d7b398f65a2dee19289156db92f8
   specs:
     treydock/brazos (0.0.1)
       domcleal/augeasproviders (>= 1.0.2)
@@ -372,9 +372,9 @@ GIT
 GIT
   remote: git@gitlab.tamu.edu:puppet-modules/puppet-root.git
   ref: master
-  sha: cc0b4ca8ae3a82433f37b8745afb3f0b6d944662
+  sha: 268c6b1265f6ab4cc26cc53af880e4760e93c944
   specs:
-    treydock/root (0.0.3)
+    treydock/root (1.0.0)
       puppetlabs/stdlib (>= 3.2.0)
 
 GIT
@@ -434,7 +434,7 @@ DEPENDENCIES
   treydock/edac (= 0.0.4)
   treydock/fhgfs (>= 0)
   treydock/gpg_key (= 0.0.2)
-  treydock/infiniband (= 0.0.1)
+  treydock/infiniband (= 0.0.2)
   treydock/iptables (>= 0)
   treydock/libvirt (>= 0)
   treydock/mock (= 0.0.1)
