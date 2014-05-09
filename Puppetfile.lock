@@ -192,6 +192,18 @@ GIT
     saz/limits (2.0.2)
 
 GIT
+  remote: git://github.com/treydock/puppet-lmod.git
+  ref: master
+  sha: 9d861e5d7fbda2d96420db96bddfd249d311c352
+  specs:
+    treydock/lmod (0.0.1)
+      puppetlabs/gcc (~> 0.0)
+      puppetlabs/git (~> 0.0)
+      puppetlabs/java (~> 1.0)
+      puppetlabs/stdlib (< 5.0.0, >= 3.2.0)
+      stahnma/epel (~> 0.0)
+
+GIT
   remote: git://github.com/treydock/puppet-module-ramdisk.git
   ref: master
   sha: 4c129fd2a084ae115181c8f031cbda805beb5c72
@@ -437,6 +449,7 @@ DEPENDENCIES
   treydock/infiniband (= 0.0.2)
   treydock/iptables (>= 0)
   treydock/libvirt (>= 0)
+  treydock/lmod (>= 0)
   treydock/mock (= 0.0.1)
   treydock/nfs (>= 0)
   treydock/osg (>= 0)
