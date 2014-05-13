@@ -87,7 +87,8 @@ FORGE
       puppetlabs/stdlib (>= 2.3.0)
     richardc/datacat (0.4.3)
     rodjek/logrotate (1.1.1)
-    saz/sudo (2.2.0)
+    saz/sudo (3.0.6)
+      puppetlabs/stdlib (>= 2.3.0)
     stahnma/epel (0.0.6)
     stahnma/puppetlabs_yum (0.1.4)
     theforeman/concat_native (1.3.1)
@@ -238,7 +239,7 @@ GIT
 GIT
   remote: git://github.com/treydock/puppet-ovirt.git
   ref: master
-  sha: 769e2e929402fde374844424e36b3340a7386da5
+  sha: 6ef6bc8696297be2af27d87ae128603ce71de19f
   specs:
     treydock/ovirt (0.0.1)
       puppetlabs/firewall (< 2.0.0, >= 1.0.0)
@@ -426,7 +427,7 @@ DEPENDENCIES
   razorsedge/network (= 3.2.0)
   rodjek/logrotate (= 1.1.1)
   saz/limits (>= 0)
-  saz/sudo (= 2.2.0)
+  saz/sudo (= 3.0.6)
   stahnma/epel (= 0.0.6)
   stahnma/puppetlabs_yum (= 0.1.4)
   theforeman/dhcp (= 1.3.1)
