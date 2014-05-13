@@ -239,15 +239,15 @@ GIT
 GIT
   remote: git://github.com/treydock/puppet-ovirt.git
   ref: master
-  sha: 6ef6bc8696297be2af27d87ae128603ce71de19f
+  sha: 883be0c3bc6599fd74f99d01d6d4e20390476554
   specs:
     treydock/ovirt (0.0.1)
-      puppetlabs/firewall (< 2.0.0, >= 1.0.0)
-      puppetlabs/inifile (< 2.0.0, >= 1.0.0)
-      puppetlabs/postgresql (< 4.0.0, >= 3.0.0)
+      puppetlabs/firewall (~> 1.0)
+      puppetlabs/inifile (~> 1.0)
+      puppetlabs/postgresql (~> 3.0)
       puppetlabs/stdlib (< 5.0.0, >= 3.2.0)
-      saz/sudo (< 4.0.0, >= 2.0.0)
-      stahnma/epel (< 1.0.0, >= 0.0.1)
+      saz/sudo (~> 3.0)
+      stahnma/epel (~> 0.0)
 
 GIT
   remote: git://github.com/treydock/puppet-pulp.git
