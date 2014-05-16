@@ -178,7 +178,7 @@ GIT
 GIT
   remote: git://github.com/treydock/puppet-infiniband.git
   ref: master
-  sha: 34983938d7bbcd7cb0c70c6a9930e7b680e02a88
+  sha: 556b25929aff75475b7a8c7dcbc6083dbb2e4cf1
   specs:
     treydock/infiniband (0.0.4)
       domcleal/augeasproviders (>= 1.0.2)
