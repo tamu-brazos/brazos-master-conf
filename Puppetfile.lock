@@ -246,7 +246,7 @@ GIT
 GIT
   remote: git://github.com/treydock/puppet-ovirt.git
   ref: master
-  sha: 883be0c3bc6599fd74f99d01d6d4e20390476554
+  sha: 5939db048d61311657a938408b32fd613bb41ce0
   specs:
     treydock/ovirt (0.0.1)
       puppetlabs/firewall (~> 1.0)
