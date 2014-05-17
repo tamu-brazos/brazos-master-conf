@@ -375,7 +375,7 @@ GIT
 GIT
   remote: git@gitlab.tamu.edu:puppet-modules/puppet-fhgfs.git
   ref: master
-  sha: b76b794b36ba5e07add97bef4fb4b1d3e0f1112b
+  sha: 4000787b44fafa65174be3caa73ea2214af01f48
   specs:
     treydock/fhgfs (0.0.1)
       puppetlabs/stdlib (< 5.0.0, >= 3.2.0)
