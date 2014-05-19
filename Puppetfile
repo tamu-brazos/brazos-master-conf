@@ -17,7 +17,7 @@ mod 'stahnma/epel', '0.0.6'
 
 # Foreman modules
 mod 'theforeman/foreman', '2.1.0'
-mod 'theforeman/puppet', '2.1.0'
+mod 'theforeman/puppet', :git => 'git://github.com/treydock/puppet-puppet.git'#'2.1.0'
 # Use treydock repo till PR merged
 #mod 'theforeman/foreman_proxy', '1.5.0'
 mod 'theforeman/foreman_proxy', :git => 'git://github.com/treydock/puppet-foreman_proxy.git'

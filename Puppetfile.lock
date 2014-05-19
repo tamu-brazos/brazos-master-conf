@@ -103,12 +103,6 @@ FORGE
       puppetlabs/stdlib (>= 2.0.0)
       theforeman/concat_native (>= 1.3.0)
     theforeman/git (1.3.0)
-    theforeman/puppet (2.1.0)
-      puppetlabs/apache (< 2.0.0, >= 1.0.0)
-      puppetlabs/stdlib (>= 2.0.0)
-      theforeman/concat_native (>= 1.3.0)
-      theforeman/foreman (>= 1.3.0)
-      theforeman/git (>= 1.3.0)
     theforeman/tftp (1.4.1)
       puppetlabs/xinetd (~> 1.1)
     treydock/cmake (0.0.1)
@@ -262,6 +256,18 @@ GIT
   sha: 8d9fca18340b058a217969c21db7cc427c4ef8a2
   specs:
     treydock/pulp (0.1.0)
+
+GIT
+  remote: git://github.com/treydock/puppet-puppet.git
+  ref: master
+  sha: 831df068d213028d3e208e331fc082b3ffe9b718
+  specs:
+    theforeman/puppet (2.1.2)
+      puppetlabs/apache (< 2.0.0, >= 1.0.0)
+      puppetlabs/stdlib (>= 2.0.0)
+      theforeman/concat_native (>= 1.3.0)
+      theforeman/foreman (>= 1.3.0)
+      theforeman/git (>= 1.3.0)
 
 GIT
   remote: git://github.com/treydock/puppet-repoforge.git
@@ -443,7 +449,7 @@ DEPENDENCIES
   theforeman/foreman (= 2.1.0)
   theforeman/foreman_proxy (>= 0)
   theforeman/git (= 1.3.0)
-  theforeman/puppet (= 2.1.0)
+  theforeman/puppet (>= 0)
   theforeman/tftp (= 1.4.1)
   treydock/academy (>= 0)
   treydock/acpid (>= 0)
