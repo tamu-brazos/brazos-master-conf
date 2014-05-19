@@ -18,8 +18,6 @@ FORGE
       puppetlabs/apt (>= 0.0.0)
       puppetlabs/stdlib (>= 0.0.0)
       stahnma/epel (>= 0.0.0)
-    ghoneycutt/dnsclient (3.1.0)
-      puppetlabs/stdlib (>= 3.2.0)
     jhoblitt/ksm (0.0.1)
       puppetlabs/stdlib (>= 4.0.0)
       rodjek/logrotate (>= 1.1.1)
@@ -123,6 +121,14 @@ FORGE
     zack/exports (0.0.4)
 
 GIT
+  remote: git://github.com/ghoneycutt/puppet-module-dnsclient
+  ref: v3.1.0
+  sha: 79d175e9fa524c64ea80487af3bfc091011d40ee
+  specs:
+    ghoneycutt/dnsclient (3.1.0)
+      puppetlabs/stdlib (>= 3.2.0)
+
+GIT
   remote: git://github.com/hercules-team/augeasproviders.git
   ref: 5da239d23c
   sha: 5da239d23c24396f8883639530ae0662a11b05d0
@@ -172,7 +178,7 @@ GIT
 GIT
   remote: git://github.com/treydock/puppet-infiniband.git
   ref: master
-  sha: ff2b12f67ad2e6f3adcf21bed70950738cf6fa1c
+  sha: 514f374a6e408c7d824ad78f8bea043a5be63b28
   specs:
     treydock/infiniband (0.0.4)
       domcleal/augeasproviders (>= 1.0.2)
@@ -215,7 +221,7 @@ GIT
 GIT
   remote: git://github.com/treydock/puppet-nfs.git
   ref: master
-  sha: 0ef2b7822d05e15ff985dc933197e27f0bd4db1c
+  sha: d85338a9701b1faff266cb190a09a6347b453c7d
   specs:
     treydock/nfs (0.3.0)
       domcleal/augeasproviders (>= 1.0.2)
@@ -226,7 +232,7 @@ GIT
 GIT
   remote: git://github.com/treydock/puppet-osg.git
   ref: master
-  sha: 1ec4cda756ff23bd467e50b6d6cae6b80bf455ab
+  sha: cc0bee88cc3b2ffaafd5a1fb0d82f97a3c76b26c
   specs:
     treydock/osg (0.0.4)
       puppetlabs/apache (< 2.0.0, >= 1.0.0)
@@ -298,7 +304,7 @@ GIT
 GIT
   remote: git://github.com/treydock/puppet-zabbix20.git
   ref: master
-  sha: 7e4b0c01f86476100675f5f11c8250bd8a11f313
+  sha: 49806febdbecfbe7e27ed7467c508c58b6a17fb7
   specs:
     treydock/zabbix20 (1.4.0)
       puppetlabs/firewall (< 2.0.0, >= 1.0.0)
@@ -422,7 +428,7 @@ DEPENDENCIES
   domcleal/augeasproviders (>= 0)
   flakrat/repo_centos (>= 0)
   fsalum/redis (= 0.0.6)
-  ghoneycutt/dnsclient (= 3.1.0)
+  ghoneycutt/dnsclient (>= 0)
   jhoblitt/ksm (= 0.0.1)
   jhoblitt/port389 (= 0.1.0)
   jhoblitt/smartd (= 2.0.0)
