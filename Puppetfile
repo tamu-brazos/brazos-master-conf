@@ -34,7 +34,7 @@ mod 'CERNOps/motd', '0.1.2'
 mod 'fsalum/redis', '0.0.6'
 mod 'jhoblitt/ksm', '0.0.1'
 mod 'jhoblitt/smartd', '2.0.0'
-mod 'domcleal/augeasproviders', :git => 'git://github.com/hercules-team/augeasproviders.git', :ref => '5da239d23c'
+mod 'domcleal/augeasproviders', '1.1.0'
 mod 'saz/sudo', '3.0.6'
 mod 'bashtoni/timezone', '0.1.1'
 mod 'treydock/libvirt', :git => 'git://github.com/treydock/puppet-libvirt.git'
@@ -95,12 +95,9 @@ Modules not being re-added
 csail-shell_config
 erwbgy-ntp (replaced with puppetlabs/ntp)
 freeipa
-slurm
 
 Modules TODO
 
 acpid
-augeasproviders_sysctl
-slurm
 
 =end

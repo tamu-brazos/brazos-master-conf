@@ -13,6 +13,8 @@ FORGE
       puppetlabs/stdlib (>= 2.0.0)
     csail/shell_config (0.0.1)
     dalen/puppetdbquery (1.4.0)
+    domcleal/augeasproviders (1.1.0)
+      puppetlabs/stdlib (< 5.0.0, >= 3.2.0)
     fsalum/redis (0.0.6)
     garethr/erlang (0.2.0)
       puppetlabs/apt (>= 0.0.0)
@@ -127,14 +129,6 @@ GIT
   specs:
     ghoneycutt/dnsclient (3.1.0)
       puppetlabs/stdlib (>= 3.2.0)
-
-GIT
-  remote: git://github.com/hercules-team/augeasproviders.git
-  ref: 5da239d23c
-  sha: 5da239d23c24396f8883639530ae0662a11b05d0
-  specs:
-    domcleal/augeasproviders (1.0.2)
-      puppetlabs/stdlib (< 5.0.0, >= 3.2.0)
 
 GIT
   remote: git://github.com/treydock/evenup-sssd.git
@@ -425,7 +419,7 @@ DEPENDENCIES
   adamstrawson/byobu (= 0.0.1)
   bashtoni/timezone (= 0.1.1)
   dalen/puppetdbquery (= 1.4.0)
-  domcleal/augeasproviders (>= 0)
+  domcleal/augeasproviders (= 1.1.0)
   flakrat/repo_centos (>= 0)
   fsalum/redis (= 0.0.6)
   ghoneycutt/dnsclient (>= 0)
