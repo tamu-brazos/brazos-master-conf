@@ -170,7 +170,7 @@ if __FILE__ == $0 then
     # if you use this option below, make sure that you don't send facts to foreman via the rake task or push facts alternatives.
     #
     # ssl_cert and key are required if require_ssl_puppetmasters is enabled in Foreman
-    SETTINGS[:ssl_cert ] = "/var/lib/puppet/ssl/certs/#{certname}.pem",    # e.g. /var/lib/puppet/ssl/certs/FQDN.pem
+    SETTINGS[:ssl_cert] = "/var/lib/puppet/ssl/certs/#{certname}.pem"    # e.g. /var/lib/puppet/ssl/certs/FQDN.pem
     SETTINGS[:ssl_key] = "/var/lib/puppet/ssl/private_keys/#{certname}.pem"      # e.g. /var/lib/puppet/ssl/private_keys/FQDN.pem
 
     if SETTINGS[:facts]
