@@ -196,7 +196,7 @@ GIT
 GIT
   remote: git://github.com/treydock/puppet-lmod.git
   ref: master
-  sha: 63dd10c273953b811a48cdea7cad49219b21b2cc
+  sha: 06080d6b7625a6292b0396d57eec1078d4becb03
   specs:
     treydock/lmod (0.0.1)
       puppetlabs/gcc (~> 0.0)
