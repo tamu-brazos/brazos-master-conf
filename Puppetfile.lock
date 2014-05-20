@@ -5,7 +5,6 @@ FORGE
       puppetlabs/concat (>= 1.0.0)
       puppetlabs/stdlib (>= 3.0.0)
     adamstrawson/byobu (0.0.1)
-    bashtoni/timezone (0.1.1)
     camptocamp/openldap (0.1.1)
       domcleal/augeasproviders (>= 0.0.0)
       puppetlabs/stdlib (>= 0.0.0)
@@ -89,6 +88,8 @@ FORGE
     richardc/datacat (0.4.3)
     rodjek/logrotate (1.1.1)
     saz/sudo (3.0.6)
+      puppetlabs/stdlib (>= 2.3.0)
+    saz/timezone (3.0.1)
       puppetlabs/stdlib (>= 2.3.0)
     stahnma/epel (0.0.6)
     stahnma/puppetlabs_yum (0.1.4)
@@ -288,14 +289,6 @@ GIT
       puppetlabs/stdlib (>= 3.2.0)
 
 GIT
-  remote: git://github.com/treydock/puppet-timezone.git
-  ref: master
-  sha: fbef743768702f6ad6bc5eab2f5819d136d55ee0
-  specs:
-    treydock/timezone (3.0.0)
-      puppetlabs/stdlib (>= 2.3.0)
-
-GIT
   remote: git://github.com/treydock/puppet-zabbix20.git
   ref: master
   sha: 49806febdbecfbe7e27ed7467c508c58b6a17fb7
@@ -417,7 +410,6 @@ GIT
 DEPENDENCIES
   CERNOps/motd (= 0.1.2)
   adamstrawson/byobu (= 0.0.1)
-  bashtoni/timezone (= 0.1.1)
   dalen/puppetdbquery (= 1.4.0)
   domcleal/augeasproviders (= 1.1.0)
   flakrat/repo_centos (>= 0)
@@ -442,6 +434,7 @@ DEPENDENCIES
   rodjek/logrotate (= 1.1.1)
   saz/limits (>= 0)
   saz/sudo (= 3.0.6)
+  saz/timezone (= 3.0.1)
   stahnma/epel (= 0.0.6)
   stahnma/puppetlabs_yum (= 0.1.4)
   theforeman/dhcp (= 1.3.1)
@@ -476,7 +469,6 @@ DEPENDENCIES
   treydock/scl (= 0.0.1)
   treydock/ssh (>= 0)
   treydock/sssd (>= 0)
-  treydock/timezone (>= 0)
   treydock/webmin (>= 0)
   treydock/yum_cron (= 1.0.0)
   treydock/zabbix20 (>= 0)
