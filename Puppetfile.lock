@@ -49,7 +49,7 @@ FORGE
     puppetlabs/gcc (0.1.0)
     puppetlabs/git (0.0.3)
     puppetlabs/inifile (1.0.3)
-    puppetlabs/java (1.1.0)
+    puppetlabs/java (1.1.1)
       puppetlabs/stdlib (>= 0.1.6)
     puppetlabs/java_ks (1.2.3)
     puppetlabs/mcollective (1.1.3)
@@ -196,7 +196,7 @@ GIT
 GIT
   remote: git://github.com/treydock/puppet-lmod.git
   ref: master
-  sha: 9d861e5d7fbda2d96420db96bddfd249d311c352
+  sha: 63dd10c273953b811a48cdea7cad49219b21b2cc
   specs:
     treydock/lmod (0.0.1)
       puppetlabs/gcc (~> 0.0)
@@ -360,7 +360,7 @@ GIT
 GIT
   remote: git@gitlab.tamu.edu:puppet-modules/puppet-brazos.git
   ref: master
-  sha: bf9a204272bc4664a71d60487b6fae65006a1cf1
+  sha: ee4bd57d273bd0053d5618c920c1fccfd650746e
   specs:
     treydock/brazos (0.0.1)
       domcleal/augeasproviders (>= 1.0.2)
