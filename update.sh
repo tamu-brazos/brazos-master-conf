@@ -18,7 +18,7 @@ git pull origin master
 exit_if_failed $?
 
 echo "Executing: bundle install"
-bundle install
+bundle install --path vendor/bundle
 exit_if_failed $?
 
 echo "Executing: bundle exec librarian-puppet install"
