@@ -23,3 +23,5 @@ Database {
 Database_user {
   require => Class['mysql::server'],
 }
+
+Yumrepo <| name != 'zfs' or name != 'zfs-source' |> -> Package <| title != 'yum-plugin-priorities' |>
