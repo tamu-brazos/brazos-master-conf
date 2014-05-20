@@ -133,7 +133,7 @@ GIT
 GIT
   remote: git://github.com/treydock/evenup-sssd.git
   ref: master
-  sha: 0e7b00d3632ef0adbffc9cc39df68510f2201e22
+  sha: 6d92595db97b8e495eca7fe1874c0e965f7c5941
   specs:
     treydock/sssd (0.3.0)
       puppetlabs/stdlib (>= 3.2.0)
