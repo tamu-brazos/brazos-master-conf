@@ -16,8 +16,8 @@ environment="$2"
 echo "Executing: r10k deploy environment $environment -p"
 r10k deploy environment $environment -p
 
-echo "${basedir}/${environment}/modules: chmod all directories to 2775"
-find ${basedir}/${environment}/modules -mindepth 1 -type d -exec chmod 2775 {} \;
+echo "${basedir}/${environment}/modules: chmod all directories to 0775"
+find ${basedir}/${environment}/modules -mindepth 1 -type d -exec chmod 0775 {} \;
 
 echo "${basedir}/${environment}/modules: chmod all files to 0664"
 find ${basedir}/${environment}/modules -type f -exec chmod 0664 {} \;
