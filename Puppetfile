@@ -57,6 +57,7 @@ mod 'adamstrawson/byobu', '0.0.1'
 mod 'dalen/puppetdbquery', '1.4.0'
 mod 'zack/exports', '0.0.4'
 mod 'rodjek/logrotate', '1.1.1'
+mod 'zack/r10k', '1.0.2'
 
 # Github modules
 mod 'treydock/acpid', :git => 'git://github.com/treydock/puppet-acpid.git'
