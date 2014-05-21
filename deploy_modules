@@ -1,0 +1,19 @@
+#!/bin/bash
+
+if [ -z "$1" ]; then
+  echo "Must provide environment name argument"
+  exit 1
+fi
+
+environment="$1"
+
+echo "Executing: r10k deploy environment $environment -p"
+r10k deploy environment $environment -p
+
+echo "/apps/puppet/environments/${environment}/modules: chmod all directories to 2775"
+find /apps/puppet/environments/${environment}/modules -mindepth 1 -type d -exec chmod 2775 {} \;
+
+echo "/apps/puppet/environments/${environment}/modules: chmod all files to 0664"
+find /apps/puppet/environments/${environment}/modules -type f -exec chmod 0664 {} \;
+
+exit 0
