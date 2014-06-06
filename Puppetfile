@@ -1,6 +1,6 @@
 forge "http://forge.puppetlabs.com"
 
-mod 'CERNOps/motd', '0.1.2'
+mod 'CERNOps/motd', '0.1.3'
 mod 'adamstrawson/byobu', '0.0.1'
 mod 'camptocamp/openldap', '0.1.1'
 mod 'camptocamp/openssl', '0.2.0'
