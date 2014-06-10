@@ -23,7 +23,7 @@ mod 'puppetlabs/git', '0.0.3'
 mod 'puppetlabs/inifile', '1.0.3'
 mod 'puppetlabs/java', '1.1.1'
 mod 'puppetlabs/java_ks', '1.2.3'
-mod 'puppetlabs/mcollective',
+mod 'mcollective',
   :git => 'git://github.com/puppetlabs/puppetlabs-mcollective.git',
   :ref => '1.1.5'
 mod 'puppetlabs/mongodb', '0.7.0'
