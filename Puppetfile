@@ -27,7 +27,9 @@ mod 'mcollective',
   :git => 'git://github.com/puppetlabs/puppetlabs-mcollective.git',
   :ref => '1.1.5'
 mod 'puppetlabs/mongodb', '0.7.0'
-mod 'puppetlabs/mysql', '2.2.3'
+mod 'mysql',
+  :git => 'git://github.com/puppetlabs/puppetlabs-mysql.git',
+  :ref => '2.3.x'
 mod 'puppetlabs/ntp', '3.0.3'
 mod 'puppetlabs/postgresql', '3.3.0'
 mod 'puppetlabs/puppetdb', '3.0.1'
@@ -79,6 +81,7 @@ mod 'iptables', :git => 'git@gitlab.tamu.edu:puppet-modules/puppet-iptables.git'
 mod 'libvirt', :git => 'git://github.com/treydock/puppet-libvirt.git'
 mod 'limits', :git => 'git://github.com/treydock/puppet-limits.git'
 mod 'lmod', :git => 'git://github.com/treydock/puppet-lmod.git'
+mod 'munge', :git => 'git://github.com/treydock/puppet-munge.git'
 mod 'nfs', :git => 'git://github.com/treydock/puppet-nfs.git'
 mod 'osg', :git => 'git://github.com/treydock/puppet-osg.git'
 mod 'ossec', :git => 'git://github.com/treydock/puppet-ossec.git'
