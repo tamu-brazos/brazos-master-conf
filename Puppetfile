@@ -62,8 +62,8 @@ mod 'treydock/scl', '0.0.1'
 mod 'treydock/yum_cron', '1.0.0'
 mod 'zack/exports', '0.0.4'
 mod 'r10k',
-  :git => 'https://github.com/acidprime/r10k.git',
-  :ref => 'v2.1.2'
+  :git => 'https://github.com/treydock/r10k.git',
+  :ref => 'master'
 
 mod 'academy', :git => 'git@gitlab.tamu.edu:puppet-modules/puppet-academy.git'
 mod 'acpid', :git => 'git://github.com/treydock/puppet-acpid.git'
