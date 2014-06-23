@@ -85,6 +85,9 @@ mod 'iptables', :git => 'git@gitlab.tamu.edu:puppet-modules/puppet-iptables.git'
 mod 'libvirt', :git => 'git://github.com/treydock/puppet-libvirt.git'
 mod 'limits', :git => 'git://github.com/treydock/puppet-limits.git'
 mod 'lmod', :git => 'git://github.com/treydock/puppet-lmod.git'
+mod 'mit_krb5',
+  :git => 'git://github.com/treydock/puppet-mit_krb5.git',
+  :ref => 'master'
 mod 'munge', :git => 'git://github.com/treydock/puppet-munge.git'
 mod 'nfs', :git => 'git://github.com/treydock/puppet-nfs.git'
 mod 'osg', :git => 'git://github.com/treydock/puppet-osg.git'
