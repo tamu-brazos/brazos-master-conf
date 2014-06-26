@@ -68,6 +68,10 @@ mod 'r10k',
   :git => 'https://github.com/treydock/r10k.git',
   :ref => 'master'
 
+mod 'hiera',
+  :git => 'git://github.com/hunner/puppet-hiera.git',
+  :ref => '1.0.2'
+
 mod 'academy', :git => 'git@gitlab.tamu.edu:puppet-modules/puppet-academy.git'
 mod 'acpid', :git => 'git://github.com/treydock/puppet-acpid.git'
 mod 'areca', :git => 'git@gitlab.tamu.edu:puppet-modules/puppet-areca.git'
