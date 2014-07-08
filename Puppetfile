@@ -99,7 +99,9 @@ mod 'osg', :git => 'git://github.com/treydock/puppet-osg.git'
 mod 'ossec', :git => 'git://github.com/treydock/puppet-ossec.git'
 mod 'ovirt', :git => 'git://github.com/treydock/puppet-ovirt.git'
 mod 'pulp', :git => 'git://github.com/treydock/puppet-pulp.git'
-mod 'puppet', :git => 'git://github.com/treydock/puppet-puppet.git'#'2.1.0'
+mod 'puppet',
+  :git => 'git://github.com/treydock/puppet-puppet.git',
+  :ref => 'master' #'2.1.0'
 mod 'ramdisk', :git => 'git://github.com/treydock/puppet-module-ramdisk.git'
 mod 'repoforge', :git => 'git://github.com/treydock/puppet-repoforge-old.git'
 mod 'repo_centos', :git => 'git://github.com/treydock/repo_centos.git'
