@@ -1,2 +1,4 @@
 ---
+classes:
+  - brazos::proxy
 brazos::proxy::url: http_proxy = http://squid.brazos.tamu.edu:3128/
