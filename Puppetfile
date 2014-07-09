@@ -3,7 +3,7 @@ forge "http://forge.puppetlabs.com"
 mod 'CERNOps/motd', '0.1.3'
 mod 'adamstrawson/byobu', '0.0.1'
 mod 'openldap',
-  :git => 'git://github.com/camptocamp/puppetlabs-openldap.git',
+  :git => 'git://github.com/camptocamp/puppet-openldap.git',
   :ref => '0.1.2'
 mod 'camptocamp/openssl', '0.2.0'
 mod 'dalen/puppetdbquery', '1.4.0'
