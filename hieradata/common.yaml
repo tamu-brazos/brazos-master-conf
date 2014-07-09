@@ -1,4 +1,0 @@
----
-classes:
-  - brazos::proxy
-brazos::proxy::url: http://squid.brazos.tamu.edu:3128/
