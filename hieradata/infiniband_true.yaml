@@ -1,0 +1,2 @@
+---
+brazos::proxy::url: http_proxy = http://squid-ib.brazos.tamu.edu:3128/

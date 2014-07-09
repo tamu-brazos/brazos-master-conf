@@ -1,6 +1,8 @@
 # site.pp
 import "nodes"
 
+hiera_include('classes')
+
 # Global modules
 Firewall {
   before  => Class['iptables::post'],
