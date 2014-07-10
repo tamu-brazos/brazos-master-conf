@@ -42,7 +42,10 @@ mod 'puppetlabs/vcsrepo', '0.2.0'
 mod 'puppetlabs/xinetd', '1.2.0'
 mod 'razorsedge/network', '3.2.0'
 mod 'richardc/datacat', '0.4.3'
-mod 'rodjek/logrotate', '1.1.1'
+#mod 'rodjek/logrotate', '1.1.1'
+mod 'logrotate',
+  :git  => 'https://github.com/treydock/puppet-logrotate.git',
+  :ref  => 'master'
 mod 'saz/rsyslog', '3.2.0'
 mod 'saz/sudo', '3.0.6'
 mod 'saz/timezone', '3.0.1'
