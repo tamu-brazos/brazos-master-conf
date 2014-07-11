@@ -49,7 +49,7 @@ mod 'logrotate',
 mod 'saz/rsyslog', '3.2.0'
 mod 'saz/sudo', '3.0.6'
 mod 'saz/timezone', '3.0.1'
-mod 'stahnma/epel', '0.0.6'
+mod 'stahnma/epel', '0.1.0'
 mod 'stahnma/puppetlabs_yum', '0.1.4'
 mod 'stankevich/python', '1.7.5'
 mod 'theforeman/concat_native', '1.3.1'
