@@ -20,7 +20,9 @@ mod 'puppetlabs/apache', '1.0.1'
 #  :git => 'git://github.com/treydock/puppetlabs-apache.git',
 #  :ref => 'master'
 mod 'puppetlabs/concat', '1.1.0'
-mod 'puppetlabs/firewall', '1.0.2'
+mod 'firewall',
+  :git => 'https://github.com/treydock/puppetlabs-firewall.git',
+  :ref => 'master' #'1.0.2'
 mod 'puppetlabs/gcc', '0.2.0'
 mod 'puppetlabs/git', '0.0.3'
 mod 'puppetlabs/inifile', '1.0.3'
