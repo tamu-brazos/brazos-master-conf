@@ -15,7 +15,9 @@ mod 'jhoblitt/port389', '0.1.0'
 mod 'jhoblitt/smartd', '2.0.0'
 mod 'mhuffnagle/make', '0.0.2'
 mod 'puppetlabs/activemq', '0.2.0'
-mod 'puppetlabs/apache', '1.0.1'
+mod 'apache',
+:git => 'git://github.com/puppetlabs/puppetlabs-apache.git',
+:ref => '1.1.0' #'1.0.1'
 #mod 'apache',
 #  :git => 'git://github.com/treydock/puppetlabs-apache.git',
 #  :ref => 'master'
