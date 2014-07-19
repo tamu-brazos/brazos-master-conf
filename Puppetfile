@@ -73,6 +73,9 @@ mod 'zack/exports', '0.0.4'
 mod 'r10k',
   :git => 'https://github.com/treydock/r10k.git',
   :ref => 'master'
+mod 'selinux',
+  :git => 'https://github.com/treydock/puppet-selinux.git',
+  :ref => 'master'
 
 mod 'academy', :git => 'git@github.tamu.edu:treydock/puppet-academy.git'
 mod 'acpid', :git => 'git://github.com/treydock/puppet-acpid.git'
