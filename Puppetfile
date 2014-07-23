@@ -16,8 +16,8 @@ mod 'jhoblitt/smartd', '2.0.0'
 mod 'mhuffnagle/make', '0.0.2'
 mod 'puppetlabs/activemq', '0.2.0'
 mod 'apache',
-:git => 'git://github.com/puppetlabs/puppetlabs-apache.git',
-:ref => '1.1.0' #'1.0.1'
+  :git => 'git://github.com/puppetlabs/puppetlabs-apache.git',
+  :ref => '1.1.0' #'1.0.1'
 #mod 'apache',
 #  :git => 'git://github.com/treydock/puppetlabs-apache.git',
 #  :ref => 'master'
@@ -36,7 +36,7 @@ mod 'mcollective',
 mod 'puppetlabs/mongodb', '0.7.0'
 mod 'mysql',
   :git => 'git://github.com/puppetlabs/puppetlabs-mysql.git',
-  :ref => '2.3.x'
+  :ref => '2b21f69'
 mod 'puppetlabs/ntp', '3.0.3'
 mod 'puppetlabs/postgresql', '3.3.0'
 mod 'puppetlabs/puppetdb', '3.0.1'
