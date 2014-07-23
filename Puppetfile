@@ -38,7 +38,9 @@ mod 'mysql',
   :git => 'git://github.com/puppetlabs/puppetlabs-mysql.git',
   :ref => '2b21f69'
 mod 'puppetlabs/ntp', '3.0.3'
-mod 'puppetlabs/postgresql', '3.3.0'
+mod 'postgresql',
+  :git => 'git://github.com/puppetlabs/puppetlabs-postgresql.git',
+  :ref => '3.4.1'
 mod 'puppetlabs/puppetdb', '3.0.1'
 mod 'puppetlabs/ruby', '0.1.0'
 mod 'puppetlabs/stdlib', '4.2.2'
