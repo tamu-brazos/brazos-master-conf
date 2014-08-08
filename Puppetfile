@@ -101,6 +101,7 @@ mod 'mit_krb5',
   :ref => 'master'
 mod 'munge', :git => 'git://github.com/treydock/puppet-munge.git'
 mod 'nfs', :git => 'git://github.com/treydock/puppet-nfs.git', :ref => '1.x'
+mod 'nsswitch', :git => 'git://github.com/treydock/puppet-module-nsswitch.git'
 mod 'osg', :git => 'git://github.com/treydock/puppet-osg.git'
 mod 'ossec', :git => 'git://github.com/treydock/puppet-ossec.git'
 mod 'ovirt', :git => 'git://github.com/treydock/puppet-ovirt.git'
