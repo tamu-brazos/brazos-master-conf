@@ -106,7 +106,7 @@ mod 'nfs', :git => 'git://github.com/treydock/puppet-nfs.git', :ref => '1.x'
 mod 'nsswitch', :git => 'git://github.com/treydock/puppet-module-nsswitch.git'
 mod 'osg', :git => 'git://github.com/treydock/puppet-osg.git'
 mod 'ossec', :git => 'git://github.com/treydock/puppet-ossec.git'
-mod 'ovirt', :git => 'git://github.com/treydock/puppet-ovirt.git'
+mod 'ovirt', :git => 'git://github.com/treydock/puppet-ovirt.git', :ref => '1.x'
 mod 'pam', :git => 'git://github.com/treydock/puppet-module-pam.git'
 mod 'pulp', :git => 'git://github.com/treydock/puppet-pulp.git'
 mod 'puppet',
