@@ -109,14 +109,10 @@ def process_all_facts(http_requests)
 end
 
 def build_body(certname)
-  # Copy of facter-2.x method for pulling in Puppet facts
+  # Copy of puppetlabs-mcollective method for pulling in Puppet facts
   require 'facter'
-  require 'puppet'
-  Puppet.parse_config
-
-  unless $LOAD_PATH.include?(Puppet[:libdir])
-    $LOAD_PATH << Puppet[:libdir]
-  end
+  require 'facter/application'
+  Facter::Application.load_puppet
 
   # Pull facts from Facter
   facts        = Facter.to_hash
