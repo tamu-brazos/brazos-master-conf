@@ -96,7 +96,7 @@ mod 'foreman_proxy', :git => 'git://github.com/treydock/puppet-foreman_proxy.git
 mod 'infiniband', :git => 'git://github.com/treydock/puppet-infiniband.git'
 mod 'iptables', :git => 'git@github.tamu.edu:treydock/puppet-iptables.git'
 mod 'libvirt', :git => 'git://github.com/treydock/puppet-libvirt.git'
-#mod 'limits', :git => 'git://github.com/treydock/puppet-limits.git'
+mod 'limits', :git => 'git://github.com/treydock/puppet-limits.git'
 mod 'lmod', :git => 'git://github.com/treydock/puppet-lmod.git'
 mod 'mit_krb5',
   :git => 'git://github.com/treydock/puppet-mit_krb5.git',
