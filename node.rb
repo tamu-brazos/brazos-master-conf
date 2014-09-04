@@ -4,11 +4,25 @@
 SETTINGS = {
   :url          => "https://foreman.brazos.tamu.edu",  # e.g. https://foreman.example.com
   :puppetdir    => "/var/lib/puppet",  # e.g. /var/lib/puppet
+  :puppetuser   => "root",  # e.g. puppet
   :facts        => true,          # true/false to upload facts
   :timeout      => 10,
+  :threads      => nil,
   # if CA is specified, remote Foreman host will be verified
   :ssl_ca       => "/var/lib/puppet/ssl/certs/ca.pem",      # e.g. /var/lib/puppet/ssl/certs/ca.pem
+  # ssl_cert and key are required if require_ssl_puppetmasters is enabled in Foreman
+  :ssl_cert     => "/var/lib/puppet/ssl/certs/puppetmaster01.brazos.tamu.edu.pem",    # e.g. /var/lib/puppet/ssl/certs/FQDN.pem
+  :ssl_key      => "/var/lib/puppet/ssl/private_keys/puppetmaster01.brazos.tamu.edu.pem"      # e.g. /var/lib/puppet/ssl/private_keys/FQDN.pem
 }
+
+# Script usually acts as an ENC for a single host, with the certname supplied as argument
+#   if 'facts' is true, the YAML facts for the host are uploaded
+#   ENC output is printed and cached
+#
+# If --push-facts is given as the only arg, it uploads facts for all hosts and then exits.
+# Useful in scenarios where the ENC isn't used.
+
+### Do not edit below this line
 
 def url
   SETTINGS[:url] || raise("Must provide URL - please edit file")
@@ -18,6 +32,10 @@ def puppetdir
   SETTINGS[:puppetdir] || raise("Must provide puppet base directory - please edit file")
 end
 
+def puppetuser
+  SETTINGS[:puppetuser] || 'puppet'
+end
+
 def stat_file(certname)
   FileUtils.mkdir_p "#{puppetdir}/yaml/foreman/"
   "#{puppetdir}/yaml/foreman/#{certname}.yaml"
@@ -25,6 +43,13 @@ end
 
 def tsecs
   SETTINGS[:timeout] || 3
+end
+
+def thread_count
+  return SETTINGS[:threads].to_i if not SETTINGS[:threads].nil? and SETTINGS[:threads].to_i > 0
+  require 'facter'
+  processors = Facter.value(:processorcount).to_i
+  processors > 0 ? processors : 1
 end
 
 class Http_Fact_Requests
@@ -68,18 +93,30 @@ rescue LoadError
   end
 end
 
-def build_body(certname)
-  # Copy of facter-2.x method for pulling in Puppet facts
-  require 'facter'
-  require 'puppet'
-  Puppet.parse_config
-
-  unless $LOAD_PATH.include?(Puppet[:libdir])
-    $LOAD_PATH << Puppet[:libdir]
+def process_all_facts(http_requests)
+  Dir["#{puppetdir}/yaml/facts/*.yaml"].each do |f|
+    certname = File.basename(f, ".yaml")
+    # Skip empty host fact yaml files
+    if File.size(f) != 0
+      req = generate_fact_request(certname, f)
+      if http_requests
+        http_requests << [certname, req]
+      elsif req
+        upload_facts(certname, req)
+      end
+    end
   end
+end
+
+def build_body(certname)
+  # Copy of puppetlabs-mcollective method for pulling in Puppet facts
+  require 'facter'
+  require 'facter/application'
+  Facter::Application.load_puppet
 
   # Pull facts from Facter
-  puppet_facts = Facter.to_hash
+  facts        = Facter.to_hash
+  puppet_facts = facts
   hostname     = puppet_facts['fqdn'] || certname
   {'facts' => puppet_facts, 'name' => hostname, 'certname' => certname}
 end
@@ -102,17 +139,23 @@ def initialize_http(uri)
   res
 end
 
-def generate_fact_request(certname)
-  begin
-    uri = URI.parse("#{url}/api/hosts/facts")
-    req = Net::HTTP::Post.new(uri.request_uri)
-    req.add_field('Accept', 'application/json,version=2' )
-    req.content_type = 'application/json'
-    req.body         = build_body(certname).to_json
-    req
-  rescue => e
-    raise "Could not generate facts for Foreman: #{e}"
-  end
+def generate_fact_request(certname, filename)
+  # Temp file keeping the last run time
+  stat = stat_file("#{certname}-push-facts")
+  last_run = File.exists?(stat) ? File.stat(stat).mtime.utc : Time.now - 365*24*60*60
+  last_fact = File.stat(filename).mtime.utc
+#  if last_fact > last_run
+    begin
+      uri = URI.parse("#{url}/api/hosts/facts")
+      req = Net::HTTP::Post.new(uri.request_uri)
+      req.add_field('Accept', 'application/json,version=2' )
+      req.content_type = 'application/json'
+      req.body         = build_body(certname).to_json
+      req
+    rescue => e
+      raise "Could not generate facts for Foreman: #{e}"
+    end
+#  end
 end
 
 def cache(certname, result)
@@ -161,38 +204,161 @@ def upload_facts(certname, req)
   end
 end
 
+def upload_facts_parallel(http_fact_requests, wait = true)
+  t = thread_count.times.map {
+    Thread.new(http_fact_requests) do |fact_requests|
+    while factref = fact_requests.pop
+      certname         = factref[0]
+      httpobj          = factref[1]
+      if httpobj
+        upload_facts(certname, httpobj)
+      end
+    end
+    end
+  }
+  if wait
+    t.each(&:join)
+  end
+end
+
+def watch_and_send_facts(parallel)
+  begin
+    require 'inotify'
+  rescue LoadError
+    puts "You need the `ruby-inotify` (not inotify!) gem to watch for fact updates"
+    exit 2
+  end
+
+  watch_descriptors = []
+  pending = []
+  threads = thread_count
+  last_send = Time.now
+
+  inotify_limit = `sysctl fs.inotify.max_user_watches`.gsub(/[^\d]/, '').to_i
+
+  inotify = Inotify.new
+
+  inotify.add_watch("#{puppetdir}/yaml/facts", Inotify::CREATE)
+
+  yamls = Dir["#{puppetdir}/yaml/facts/*.yaml"]
+
+  if yamls.length > inotify_limit
+    puts "Looks like your inotify watch limit is #{inotify_limit} but you are asking to watch at least #{yamls.length} fact files."
+    puts "Increase the watch limit via the system tunable fs.inotify.max_user_watches, exiting."
+    exit 2
+  end
+
+  yamls.each do |f|
+    begin
+      watch_descriptors[inotify.add_watch(f, Inotify::CLOSE_WRITE)] = f
+    end
+  end
+
+  inotify.each_event do |ev|
+    fn = watch_descriptors[ev.wd]
+    add_watch = false
+
+    if !fn
+      fn = ev.name
+      add_watch = true
+    end
+
+    if File.extname(fn) != ".yaml"
+      next
+    end
+
+    if add_watch || (ev.mask & Inotify::ONESHOT)
+      watch_descriptors[inotify.add_watch(fn, Inotify::CLOSE_WRITE)] = fn
+    end
+
+    if fn
+      certname = File.basename(fn, ".yaml")
+      req = generate_fact_request certname, fn
+      if parallel
+        pending << [certname,req]
+      else
+        upload_facts(certname,req)
+      end
+    end
+    if parallel && (pending.length >= threads || ((last_send + 5) < Time.now))
+      if pending.length > 0
+        upload_facts_parallel(pending, false)
+        pending = []
+      end
+      last_send = Time.now
+    end
+  end
+end
+
 # Actual code starts here
 
 if __FILE__ == $0 then
+  # Setuid to puppet user if we can
   begin
-    certname = ARGV[0] || raise("Must provide certname as an argument")
-    # send facts to Foreman - enable 'facts' setting to activate
-    # if you use this option below, make sure that you don't send facts to foreman via the rake task or push facts alternatives.
-    #
-    # ssl_cert and key are required if require_ssl_puppetmasters is enabled in Foreman
-    SETTINGS[:ssl_cert] = "/var/lib/puppet/ssl/certs/#{certname}.pem"    # e.g. /var/lib/puppet/ssl/certs/FQDN.pem
-    SETTINGS[:ssl_key] = "/var/lib/puppet/ssl/private_keys/#{certname}.pem"      # e.g. /var/lib/puppet/ssl/private_keys/FQDN.pem
+    Process::GID.change_privilege(Etc.getgrnam(puppetuser).gid) unless Etc.getpwuid.name == puppetuser
+    Process::UID.change_privilege(Etc.getpwnam(puppetuser).uid) unless Etc.getpwuid.name == puppetuser
+    # Facter (in thread_count) tries to read from $HOME, which is still /root after the UID change
+    ENV['HOME'] = Etc.getpwnam(puppetuser).dir
+  rescue
+    $stderr.puts "cannot switch to user #{puppetuser}, continuing as '#{Etc.getpwuid.name}'"
+  end
 
-    if SETTINGS[:facts]
-      req = generate_fact_request certname
-      upload_facts(certname, req)
+  begin
+    no_env = ARGV.delete("--no-environment")
+    watch = ARGV.delete("--watch-facts")
+    push_facts_parallel = ARGV.delete("--push-facts-parallel")
+    push_facts = ARGV.delete("--push-facts")
+    if watch && ! ( push_facts || push_facts_parallel )
+        raise "Cannot watch for facts without specifying --push-facts or --push-facts-parallel"
     end
-    #
-    # query External node
-    begin
-      result = ""
-      timeout(tsecs) do
-        result = enc(certname)
-        cache(certname, result)
+    if push_facts
+      # push all facts files to Foreman and don't act as an ENC
+      process_all_facts(false)
+    elsif push_facts_parallel
+      http_fact_requests = Http_Fact_Requests.new
+      process_all_facts(http_fact_requests)
+      upload_facts_parallel(http_fact_requests)
+    else
+      certname = ARGV[0] || raise("Must provide certname as an argument")
+      # send facts to Foreman - enable 'facts' setting to activate
+      # if you use this option below, make sure that you don't send facts to foreman via the rake task or push facts alternatives.
+      #
+      # ssl_cert and key are required if require_ssl_puppetmasters is enabled in Foreman
+      SETTINGS[:ssl_cert] = "/var/lib/puppet/ssl/certs/#{certname}.pem" # e.g. /var/lib/puppet/ssl/certs/FQDN.pem
+      SETTINGS[:ssl_key] = "/var/lib/puppet/ssl/private_keys/#{certname}.pem" # e.g. /var/lib/puppet/ssl/private_keys/FQDN.pem
+
+      if SETTINGS[:facts]
+        req = generate_fact_request certname, "#{puppetdir}/state/state.yaml"
+        upload_facts(certname, req)
       end
-    rescue TimeoutError, SocketError, Errno::EHOSTUNREACH, Errno::ECONNREFUSED
-      # Read from cache, we got some sort of an error.
-      result = read_cache(certname)
-    end
+      #
+      # query External node
+      begin
+        result = ""
+        timeout(tsecs) do
+          result = enc(certname)
+          cache(certname, result)
+        end
+      rescue TimeoutError, SocketError, Errno::EHOSTUNREACH, Errno::ECONNREFUSED
+        # Read from cache, we got some sort of an error.
+        result = read_cache(certname)
+      end
 
-    puts result
+      if no_env
+        require 'yaml'
+        yaml = YAML.load(result)
+        yaml.delete('environment')
+        # Always reset the result to back to clean yaml on our end
+        puts yaml.to_yaml
+      else
+        puts result
+      end
+    end
   rescue => e
     warn e
     exit 1
+  end
+  if watch
+    watch_and_send_facts(push_facts_parallel)
   end
 end

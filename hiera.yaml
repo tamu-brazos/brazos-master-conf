@@ -1,0 +1,17 @@
+---
+:backends:
+  - yaml
+  - puppetdb
+:logger: console
+:hierarchy:
+  - "fqdn/%{::fqdn}"
+  - "%{::hostgroup}"
+  - "infiniband_%{::has_infiniband}"
+  - "public_facing_%{::public_facing}"
+  - "%{::osfamily}%{::operatingsystemmajrelease}"
+  - common
+  - common/packages
+  - common/site
+
+:yaml:
+   :datadir: "/apps/puppet/hiera/%{::environment}/hieradata"
