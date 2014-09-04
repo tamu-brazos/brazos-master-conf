@@ -4,7 +4,7 @@
 SETTINGS = {
   :url          => "https://foreman.brazos.tamu.edu",  # e.g. https://foreman.example.com
   :puppetdir    => "/var/lib/puppet",  # e.g. /var/lib/puppet
-  :puppetuser   => "puppet",  # e.g. puppet
+  :puppetuser   => "root",  # e.g. puppet
   :facts        => true,          # true/false to upload facts
   :timeout      => 10,
   :threads      => nil,
@@ -109,11 +109,20 @@ def process_all_facts(http_requests)
 end
 
 def build_body(certname,filename)
-  # Strip the Puppet:: ruby objects and keep the plain hash
-  facts        = File.read(filename)
-  puppet_facts = YAML::load(facts.gsub(/\!ruby\/object.*$/,''))
-  hostname     = puppet_facts['values']['fqdn'] || certname
-  {'facts' => puppet_facts['values'], 'name' => hostname, 'certname' => certname}
+  # Copy of facter-2.x method for pulling in Puppet facts
+  require 'facter'
+  require 'puppet'
+  Puppet.parse_config
+
+  unless $LOAD_PATH.include?(Puppet[:libdir])
+    $LOAD_PATH << Puppet[:libdir]
+  end
+
+  # Pull facts from Facter
+  facts        = Facter.to_hash
+  puppet_facts = facts
+  hostname     = puppet_facts['fqdn'] || certname
+  {'facts' => puppet_facts, 'name' => hostname, 'certname' => certname}
 end
 
 def initialize_http(uri)
@@ -318,6 +327,10 @@ if __FILE__ == $0 then
       # send facts to Foreman - enable 'facts' setting to activate
       # if you use this option below, make sure that you don't send facts to foreman via the rake task or push facts alternatives.
       #
+      # ssl_cert and key are required if require_ssl_puppetmasters is enabled in Foreman
+      SETTINGS[:ssl_cert] = "/var/lib/puppet/ssl/certs/#{certname}.pem" # e.g. /var/lib/puppet/ssl/certs/FQDN.pem
+      SETTINGS[:ssl_key] = "/var/lib/puppet/ssl/private_keys/#{certname}.pem" # e.g. /var/lib/puppet/ssl/private_keys/FQDN.pem
+
       if SETTINGS[:facts]
         req = generate_fact_request certname, "#{puppetdir}/yaml/facts/#{certname}.yaml"
         upload_facts(certname, req)
