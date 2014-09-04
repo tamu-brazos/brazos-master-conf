@@ -108,7 +108,7 @@ def process_all_facts(http_requests)
   end
 end
 
-def build_body(certname,filename)
+def build_body(certname)
   # Copy of facter-2.x method for pulling in Puppet facts
   require 'facter'
   require 'puppet'
@@ -148,18 +148,18 @@ def generate_fact_request(certname, filename)
   stat = stat_file("#{certname}-push-facts")
   last_run = File.exists?(stat) ? File.stat(stat).mtime.utc : Time.now - 365*24*60*60
   last_fact = File.stat(filename).mtime.utc
-  if last_fact > last_run
+#  if last_fact > last_run
     begin
       uri = URI.parse("#{url}/api/hosts/facts")
       req = Net::HTTP::Post.new(uri.request_uri)
       req.add_field('Accept', 'application/json,version=2' )
       req.content_type = 'application/json'
-      req.body         = build_body(certname, filename).to_json
+      req.body         = build_body(certname).to_json
       req
     rescue => e
       raise "Could not generate facts for Foreman: #{e}"
     end
-  end
+#  end
 end
 
 def cache(certname, result)
@@ -332,7 +332,7 @@ if __FILE__ == $0 then
       SETTINGS[:ssl_key] = "/var/lib/puppet/ssl/private_keys/#{certname}.pem" # e.g. /var/lib/puppet/ssl/private_keys/FQDN.pem
 
       if SETTINGS[:facts]
-        req = generate_fact_request certname, "#{puppetdir}/yaml/facts/#{certname}.yaml"
+        req = generate_fact_request certname, "#{puppetdir}/state/state.yaml"
         upload_facts(certname, req)
       end
       #
