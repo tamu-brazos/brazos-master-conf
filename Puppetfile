@@ -121,6 +121,7 @@ mod 'slurm_providers', :git => 'git://github.com/treydock/puppet-slurm_providers
 mod 'ssh', :git => 'git://github.com/treydock/puppet-ssh-old.git'
 mod 'sssd', :git => 'git://github.com/treydock/evenup-sssd.git'
 mod 'webmin', :git => 'git@github.tamu.edu:treydock/puppet-webmin.git'
+mod 'xdmod', :git => 'git://github.com/treydock/puppet-module-xdmod.git'
 mod 'zabbix', :git => 'git://github.com/treydock/puppet-module-zabbix.git'
 mod 'zabbix20', :git => 'git://github.com/treydock/puppet-zabbix20.git'
 mod 'zfsonlinux', :git => 'git://github.com/treydock/puppet-zfsonlinux.git'
