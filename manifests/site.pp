@@ -9,7 +9,7 @@ Firewall {
 }
 
 filebucket { 'main':
-  server  => "puppet.brazos.tamu.edu",
+  server  => "puppetmaster01.brazos.tamu.edu",
   path    => false,
 }
 
