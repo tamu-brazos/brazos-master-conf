@@ -74,9 +74,10 @@ mod 'treydock/mock', '0.0.2'
 mod 'treydock/scl', '0.0.1'
 mod 'treydock/yum_cron', '1.0.0'
 mod 'zack/exports', '0.0.4'
-mod 'r10k',
-  :git => 'https://github.com/treydock/r10k.git',
-  :ref => 'master'
+mod 'zack/r10k', '2.3.0'
+#mod 'r10k',
+#  :git => 'https://github.com/treydock/r10k.git',
+#  :ref => 'master'
 mod 'selinux',
   :git => 'https://github.com/treydock/puppet-selinux.git',
   :ref => 'master'
