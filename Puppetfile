@@ -76,9 +76,10 @@ mod 'treydock/mock', '0.0.2'
 mod 'treydock/scl', '0.0.1'
 mod 'treydock/yum_cron', '1.0.0'
 mod 'zack/exports', '0.0.4'
-mod 'r10k',
-  :git => 'https://github.com/treydock/r10k.git',
-  :ref => 'master'
+mod 'zack/r10k', '2.3.0'
+#mod 'r10k',
+#  :git => 'https://github.com/treydock/r10k.git',
+#  :ref => 'master'
 mod 'selinux',
   :git => 'https://github.com/treydock/puppet-selinux.git',
   :ref => 'master'
@@ -91,6 +92,7 @@ mod 'atomic', :git => 'git://github.com/treydock/puppet-atomic.git'
 mod 'blcr', :git => 'git://github.com/treydock/puppet-module-blcr.git'
 mod 'brazos', :git => 'git@github.tamu.edu:brazos/puppet-brazos.git'
 mod 'brazoslib', :git => 'git@github.tamu.edu:brazos/puppet-brazoslib.git'
+mod 'clustershell', :git => 'git://github.com/treydock/puppet-clustershell.git'
 mod 'cron', :git => 'git://github.com/treydock/puppet-cron.git'
 mod 'devtools', :git => 'git://github.com/treydock/puppet-devtools.git'
 mod 'dnsclient', :git => 'git://github.com/ghoneycutt/puppet-module-dnsclient', :ref => 'v3.1.0'
@@ -125,6 +127,7 @@ mod 'slurm', :git => 'git://github.com/treydock/puppet-slurm.git'
 mod 'slurm_providers', :git => 'git://github.com/treydock/puppet-slurm_providers.git'
 mod 'ssh', :git => 'git://github.com/treydock/puppet-ssh-old.git'
 mod 'sssd', :git => 'git://github.com/treydock/evenup-sssd.git'
+mod 'warewulf', :git => 'git://github.com/treydock/puppet-module-warewulf.git'
 mod 'webmin', :git => 'git@github.tamu.edu:treydock/puppet-webmin.git'
 mod 'xdmod', :git => 'git://github.com/treydock/puppet-module-xdmod.git'
 mod 'zabbix', :git => 'git://github.com/treydock/puppet-module-zabbix.git'
