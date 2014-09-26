@@ -1,6 +1,7 @@
 forge "http://forge.puppetlabs.com"
 
-mod 'CERNOps/motd', '0.1.3'
+#mod 'CERNOps/motd', '0.1.3'
+mod 'motd', :git => 'git://github.com/treydock/puppet-motd.git'
 mod 'adamstrawson/byobu', '0.0.1'
 mod 'openldap',
   :git => 'git://github.com/camptocamp/puppet-openldap.git',
