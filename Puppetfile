@@ -17,6 +17,7 @@ mod 'jhoblitt/nsstools', '1.0.2'
 mod 'jhoblitt/port389', '0.1.0'
 mod 'jhoblitt/smartd', '2.0.0'
 mod 'mhuffnagle/make', '0.0.2'
+mod 'netmanagers/fail2ban', '1.4.0'
 mod 'puppetlabs/activemq', '0.2.0'
 mod 'apache',
   :git => 'git://github.com/puppetlabs/puppetlabs-apache.git',
