@@ -41,7 +41,7 @@ mod 'mcollective',
 mod 'puppetlabs/mongodb', '0.7.0'
 mod 'mysql',
   :git => 'git://github.com/puppetlabs/puppetlabs-mysql.git',
-  :ref => '2b21f69'
+  :ref => 'b338635'
 mod 'puppetlabs/ntp', '3.0.3'
 mod 'postgresql',
   :git => 'git://github.com/puppetlabs/puppetlabs-postgresql.git',
