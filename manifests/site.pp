@@ -18,14 +18,8 @@ File { backup => 'main' }
 
 Exec { path => "/sbin:/bin:/usr/sbin:/usr/bin" }
 
-Database {
-  require => Class['mysql::server'],
-}
-Database_user {
-  require => Class['mysql::server'],
-}
-
-Yumrepo <| name != 'zfs' or name != 'zfs-source' |> -> Package <| title != 'yum-plugin-priorities' |>
+#Yumrepo <| name != 'zfs' or name != 'zfs-source' |> -> Package <| title != 'yum-plugin-priorities' |>
+Yumrepo <| |> -> Package <| |>
 
 # Fix deprecation warnings for Puppet >= 3.6.1
 if versioncmp($::puppetversion,'3.6.1') >= 0 {

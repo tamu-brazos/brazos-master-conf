@@ -135,7 +135,6 @@ mod 'webmin', :git => 'git@github.tamu.edu:treydock/puppet-webmin.git'
 mod 'xdmod', :git => 'git://github.com/treydock/puppet-module-xdmod.git'
 mod 'zabbix', :git => 'git://github.com/treydock/puppet-module-zabbix.git'
 mod 'zabbix_extras', :git => 'git://github.com/treydock/puppet-module-zabbix_extras.git'
-mod 'zabbix20', :git => 'git://github.com/treydock/puppet-zabbix20.git'
 mod 'zfsonlinux', :git => 'git://github.com/treydock/puppet-zfsonlinux.git'
 mod 'zram', :git => 'git://github.com/treydock/puppet-zram.git'
 
