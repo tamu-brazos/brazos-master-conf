@@ -58,6 +58,7 @@ mod 'logrotate',
   :git  => 'https://github.com/treydock/puppet-logrotate.git',
   :ref  => 'master'
 mod 'saz/rsyslog', '3.2.0'
+mod 'saz/ssh', '2.4.0'
 mod 'saz/sudo', '3.0.6'
 mod 'saz/timezone', '3.0.1'
 mod 'stahnma/epel', '0.1.0'
@@ -129,7 +130,7 @@ mod 'site_slurm', :git => 'git@github.tamu.edu:brazos/puppet-module-site_slurm.g
 mod 'site_zfs', :git => 'git://github.com/treydock/puppet-module-site_zfs.git'
 mod 'slurm', :git => 'git://github.com/treydock/puppet-slurm.git'
 mod 'slurm_providers', :git => 'git://github.com/treydock/puppet-slurm_providers.git'
-mod 'ssh', :git => 'git://github.com/treydock/puppet-ssh-old.git'
+#mod 'ssh', :git => 'git://github.com/treydock/puppet-ssh-old.git'
 mod 'sssd', :git => 'git://github.com/treydock/evenup-sssd.git'
 mod 'warewulf', :git => 'git://github.com/treydock/puppet-module-warewulf.git'
 mod 'webmin', :git => 'git@github.tamu.edu:treydock/puppet-webmin.git'
