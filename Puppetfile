@@ -130,7 +130,6 @@ mod 'site_slurm', :git => 'git@github.tamu.edu:brazos/puppet-module-site_slurm.g
 mod 'site_zfs', :git => 'git://github.com/treydock/puppet-module-site_zfs.git'
 mod 'slurm', :git => 'git://github.com/treydock/puppet-slurm.git'
 mod 'slurm_providers', :git => 'git://github.com/treydock/puppet-slurm_providers.git'
-#mod 'ssh', :git => 'git://github.com/treydock/puppet-ssh-old.git'
 mod 'sssd', :git => 'git://github.com/treydock/evenup-sssd.git'
 mod 'warewulf', :git => 'git://github.com/treydock/puppet-module-warewulf.git'
 mod 'webmin', :git => 'git@github.tamu.edu:treydock/puppet-webmin.git'
