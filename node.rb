@@ -74,7 +74,7 @@ rescue LoadError
   end
 end
 
-def build_body(certname,filename)
+def build_body(certname)
   require 'facter'
   require 'facter/application'
   Facter::Application.load_puppet
@@ -103,13 +103,13 @@ def initialize_http(uri)
   res
 end
 
-def generate_fact_request(certname, filename)
+def generate_fact_request(certname)
   begin
     uri = URI.parse("#{url}/api/hosts/facts")
     req = Net::HTTP::Post.new(uri.request_uri)
     req.add_field('Accept', 'application/json,version=2' )
     req.content_type = 'application/json'
-    req.body         = build_body(certname, filename).to_json
+    req.body         = build_body(certname).to_json
     req
   rescue => e
     raise "Could not generate facts for Foreman: #{e}"
@@ -201,15 +201,7 @@ if __FILE__ == $0 then
       result = read_cache(certname)
     end
 
-    if no_env
-      require 'yaml'
-      yaml = YAML.load(result)
-      yaml.delete('environment')
-      # Always reset the result to back to clean yaml on our end
-      puts yaml.to_yaml
-    else
-      puts result
-    end
+    puts result
   rescue => e
     warn e
     exit 1
