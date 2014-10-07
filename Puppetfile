@@ -3,9 +3,7 @@ forge "http://forge.puppetlabs.com"
 #mod 'CERNOps/motd', '0.1.3'
 mod 'motd', :git => 'git://github.com/treydock/puppet-motd.git'
 mod 'adamstrawson/byobu', '0.0.1'
-mod 'openldap',
-  :git => 'git://github.com/camptocamp/puppet-openldap.git',
-  :ref => '0.1.2'
+mod 'openldap', :git => 'git://github.com/camptocamp/puppet-openldap.git', :ref => '0.1.2'
 mod 'camptocamp/openssl', '0.2.0'
 mod 'dalen/puppetdbquery', '1.4.0'
 mod 'domcleal/augeasproviders', '1.1.0'
@@ -20,32 +18,20 @@ mod 'jhoblitt/smartd', '2.0.0'
 mod 'mhuffnagle/make', '0.0.2'
 mod 'netmanagers/fail2ban', '1.4.0'
 mod 'puppetlabs/activemq', '0.2.0'
-mod 'apache',
-  :git => 'git://github.com/puppetlabs/puppetlabs-apache.git',
-  :ref => '1.1.0' #'1.0.1'
-#mod 'apache',
-#  :git => 'git://github.com/treydock/puppetlabs-apache.git',
-#  :ref => 'master'
+mod 'apache', :git => 'git://github.com/puppetlabs/puppetlabs-apache.git', :ref => '1.1.0'
 mod 'puppetlabs/concat', '1.1.0'
-mod 'firewall',
-  :git => 'https://github.com/treydock/puppetlabs-firewall.git',
-  :ref => 'master' #'1.0.2'
+#mod 'puppetlabs/firewall', '1.0.2'
+mod 'firewall', :git => 'https://github.com/treydock/puppetlabs-firewall.git', :ref => 'master'
 mod 'puppetlabs/gcc', '0.2.0'
 mod 'puppetlabs/git', '0.0.3'
 mod 'puppetlabs/inifile', '1.1.3'
 mod 'puppetlabs/java', '1.1.1'
 mod 'puppetlabs/java_ks', '1.2.3'
-mod 'mcollective',
-  :git => 'git://github.com/puppetlabs/puppetlabs-mcollective.git',
-  :ref => '1.1.5'
+mod 'mcollective', :git => 'git://github.com/puppetlabs/puppetlabs-mcollective.git', :ref => '1.1.5'
 mod 'puppetlabs/mongodb', '0.7.0'
-mod 'mysql',
-  :git => 'git://github.com/puppetlabs/puppetlabs-mysql.git',
-  :ref => 'b338635'
+mod 'mysql', :git => 'git://github.com/puppetlabs/puppetlabs-mysql.git', :ref => 'b338635'
 mod 'puppetlabs/ntp', '3.0.3'
-mod 'postgresql',
-  :git => 'git://github.com/puppetlabs/puppetlabs-postgresql.git',
-  :ref => '3.4.1'
+mod 'postgresql', :git => 'git://github.com/puppetlabs/puppetlabs-postgresql.git', :ref => '3.4.1'
 mod 'puppetlabs/puppetdb', '3.0.1'
 mod 'puppetlabs/ruby', '0.1.0'
 mod 'puppetlabs/stdlib', '4.2.2'
@@ -54,9 +40,7 @@ mod 'puppetlabs/xinetd', '1.2.0'
 mod 'razorsedge/network', '3.2.0'
 mod 'richardc/datacat', '0.6.0'
 #mod 'rodjek/logrotate', '1.1.1'
-mod 'logrotate',
-  :git  => 'https://github.com/treydock/puppet-logrotate.git',
-  :ref  => 'master'
+mod 'logrotate', :git  => 'https://github.com/treydock/puppet-logrotate.git', :ref  => 'master'
 mod 'saz/rsyslog', '3.2.0'
 mod 'saz/ssh', '2.4.0'
 mod 'saz/sudo', '3.0.6'
@@ -72,9 +56,7 @@ mod 'theforeman/foreman', '2.2.3'
 #mod 'theforeman/foreman_proxy', '2.0.1'
 mod 'foreman_proxy', :git => 'git://github.com/treydock/puppet-foreman_proxy.git'
 #mod 'theforeman/git', '1.3.1'
-#mod 'puppet',
-#  :git => 'git://github.com/treydock/puppet-puppet.git',
-#  :ref => 'master' #'2.1.0'
+#mod 'puppet', :git => 'git://github.com/treydock/puppet-puppet.git', :ref => 'master'
 mod 'theforeman/puppet', '2.2.1'
 mod 'theforeman/tftp', '1.4.3'
 mod 'trlinkin/nsswitch', '0.0.8'
@@ -87,12 +69,8 @@ mod 'treydock/scl', '0.0.1'
 mod 'treydock/yum_cron', '1.0.0'
 mod 'zack/exports', '0.0.4'
 mod 'zack/r10k', '2.3.0'
-#mod 'r10k',
-#  :git => 'https://github.com/treydock/r10k.git',
-#  :ref => 'master'
-mod 'selinux',
-  :git => 'https://github.com/treydock/puppet-selinux.git',
-  :ref => 'master'
+#mod 'r10k', :git => 'https://github.com/treydock/r10k.git', :ref => 'master'
+mod 'selinux', :git => 'https://github.com/treydock/puppet-selinux.git', :ref => 'master'
 
 mod 'academy', :git => 'git@github.tamu.edu:treydock/puppet-academy.git'
 mod 'acpid', :git => 'git://github.com/treydock/puppet-acpid.git'
@@ -112,9 +90,7 @@ mod 'iptables', :git => 'git@github.tamu.edu:treydock/puppet-iptables.git'
 mod 'libvirt', :git => 'git://github.com/treydock/puppet-libvirt.git'
 mod 'limits', :git => 'git://github.com/treydock/puppet-limits.git'
 mod 'lmod', :git => 'git://github.com/treydock/puppet-lmod.git'
-mod 'mit_krb5',
-  :git => 'git://github.com/treydock/puppet-mit_krb5.git',
-  :ref => 'master'
+mod 'mit_krb5', :git => 'git://github.com/treydock/puppet-mit_krb5.git', :ref => 'master'
 mod 'munge', :git => 'git://github.com/treydock/puppet-munge.git'
 mod 'nfs', :git => 'git://github.com/treydock/puppet-nfs.git', :ref => '1.x'
 mod 'osg', :git => 'git://github.com/treydock/puppet-osg.git'
