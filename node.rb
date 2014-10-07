@@ -9,7 +9,7 @@
 
 require 'yaml'
 
-$settings_file = File.expand_path(File.join(File.dirname(__FILE__), "foreman.yaml"))
+$settings_file = "/etc/puppet/foreman.yaml"
 
 SETTINGS = YAML.load_file($settings_file)
 
