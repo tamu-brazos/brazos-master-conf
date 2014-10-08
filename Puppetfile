@@ -89,6 +89,7 @@ mod 'dnsclient', :git => 'git://github.com/ghoneycutt/puppet-module-dnsclient', 
 mod 'fhgfs', :git => 'git@github.tamu.edu:treydock/puppet-fhgfs.git', :ref => 'develop'
 mod 'infiniband', :git => 'git://github.com/treydock/puppet-infiniband.git'
 mod 'iptables', :git => 'git@github.tamu.edu:treydock/puppet-iptables.git'
+mod 'kernel', :git => 'git://github.com/treydock/puppet-module-kernel.git'
 mod 'libvirt', :git => 'git://github.com/treydock/puppet-libvirt.git'
 mod 'limits', :git => 'git://github.com/treydock/puppet-limits.git'
 mod 'lmod', :git => 'git://github.com/treydock/puppet-lmod.git'
