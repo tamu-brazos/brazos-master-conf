@@ -29,3 +29,6 @@ if versioncmp($::puppetversion,'3.6.1') >= 0 {
     allow_virtual => $allow_virtual_packages,
   }
 }
+
+$dhcp_pools = hiera('dhcp_pools', {})
+create_resources('dhcp::pool', $dhcp_pools)
