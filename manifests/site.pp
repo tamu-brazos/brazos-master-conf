@@ -33,6 +33,9 @@ if versioncmp($::puppetversion,'3.6.1') >= 0 {
 $dhcp_pools = hiera('dhcp_pools', {})
 create_resources('dhcp::pool', $dhcp_pools)
 
-Service <| title == 'mcollective' |> {
-  subscribe => Package['mcollective']
-}
+Class['mcollective::server::install']~>
+Class['mcollective::server::service']
+
+#Service <| title == 'mcollective' |> {
+#  subscribe => Package['mcollective']
+#}
