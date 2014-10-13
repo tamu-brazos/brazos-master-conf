@@ -36,5 +36,8 @@ create_resources('dhcp::pool', $dhcp_pools)
 Class['mcollective::server::install']~>
 Class['mcollective::server::service']
 
-Class['sssd::service']->
-Class['slurm::user']
+#$classes = hiera_array('classes', [])
+#if member($classes, 'slurm::node') {
+#  Class['sssd::service']->
+#  Class['slurm::user']
+#}
