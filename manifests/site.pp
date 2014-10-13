@@ -36,6 +36,5 @@ create_resources('dhcp::pool', $dhcp_pools)
 Class['mcollective::server::install']~>
 Class['mcollective::server::service']
 
-#Service <| title == 'mcollective' |> {
-#  subscribe => Package['mcollective']
-#}
+Class['sssd::service']->
+Class['slurm::user']
