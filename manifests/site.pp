@@ -39,6 +39,9 @@ create_resources('dns::zone', $dns_zones)
 $shellvars = hiera('shellvars', {})
 create_resources('shellvar', $shellvars)
 
+$firewall_rules = hiera('firewall_rules', {})
+create_resources('firewall', $firewall_rules)
+
 Class['mcollective::server::install']~>
 Class['mcollective::server::service']
 
