@@ -33,6 +33,12 @@ if versioncmp($::puppetversion,'3.6.1') >= 0 {
 $dhcp_pools = hiera('dhcp_pools', {})
 create_resources('dhcp::pool', $dhcp_pools)
 
+$dns_zones = hiera('dns_zones', {})
+create_resources('dns::zone', $dns_zones)
+
+$shellvars = hiera('shellvars', {})
+create_resources('shellvar', $shellvars)
+
 Class['mcollective::server::install']~>
 Class['mcollective::server::service']
 
