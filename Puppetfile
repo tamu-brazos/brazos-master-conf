@@ -56,7 +56,8 @@ mod 'puppetlabs_yum', :git => 'https://github.com/treydock/puppet-module-puppetl
 mod 'stankevich/python', '1.7.5'
 mod 'theforeman/concat_native', '1.3.1'
 mod 'theforeman/dhcp', '1.4.0' #TODO - new options
-mod 'theforeman/dns', '1.4.0'
+#mod 'theforeman/dns', '1.4.0'
+mod 'dns', :git => 'git://github.com/treydock/puppet-dns.git'
 mod 'theforeman/foreman', '2.2.3'
 #mod 'theforeman/foreman_proxy', '2.0.1'
 mod 'foreman_proxy', :git => 'git://github.com/treydock/puppet-foreman_proxy.git'
