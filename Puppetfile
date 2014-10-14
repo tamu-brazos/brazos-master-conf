@@ -7,6 +7,7 @@ mod 'openldap', :git => 'git://github.com/camptocamp/puppet-openldap.git', :ref 
 mod 'camptocamp/openssl', '0.2.0'
 mod 'dalen/puppetdbquery', '1.4.0'
 mod 'domcleal/augeasproviders', '1.1.0'
+mod 'evenup/postfix', '0.7.0'
 mod 'fsalum/redis', '0.0.12'
 mod 'ghoneycutt/common', '1.2.0'
 mod 'ghoneycutt/facter', '1.2.1'
