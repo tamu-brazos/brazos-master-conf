@@ -30,6 +30,8 @@ if versioncmp($::puppetversion,'3.6.1') >= 0 {
   }
 }
 
+### create_resources ###
+
 $dhcp_pools = hiera('dhcp_pools', {})
 create_resources('dhcp::pool', $dhcp_pools)
 
@@ -42,11 +44,10 @@ create_resources('shellvar', $shellvars)
 $firewall_rules = hiera('firewall_rules', {})
 create_resources('firewall', $firewall_rules)
 
+$logstash_configfiles = hiera('logstash_configfiles', {})
+create_resources('logstash::configfile', $logstash_configfiles)
+
+### Resource ordering ###
+
 Class['mcollective::server::install']~>
 Class['mcollective::server::service']
-
-#$classes = hiera_array('classes', [])
-#if member($classes, 'slurm::node') {
-#  Class['sssd::service']->
-#  Class['slurm::user']
-#}
