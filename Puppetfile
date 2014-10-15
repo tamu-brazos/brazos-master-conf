@@ -12,6 +12,7 @@ mod 'logstash', :git => 'git://github.com/elasticsearch/puppet-logstash.git', :r
 mod 'fsalum/redis', '0.0.12'
 mod 'ghoneycutt/common', '1.2.0'
 mod 'ghoneycutt/facter', '1.2.1'
+mod 'ispavailability/file_concat', '0.1.0'
 mod 'jhoblitt/ksm', '0.0.1'
 mod 'jhoblitt/nsstools', '1.0.2'
 #mod 'jhoblitt/port389', '0.1.0'
