@@ -9,6 +9,7 @@
   - "infiniband_%{::has_infiniband}"
   - "public_facing_%{::public_facing}"
   - "%{::osfamily}%{::operatingsystemmajrelease}"
+  - "virtual/%{::virtual}"
   - common
   - common/packages
   - common/site
