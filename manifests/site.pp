@@ -47,6 +47,9 @@ create_resources('firewall', $firewall_rules)
 $logstash_configfiles = hiera('logstash_configfiles', {})
 create_resources('logstash::configfile', $logstash_configfiles)
 
+$postfix_files = hiera('postfix_files', {})
+create_resources('postfix::file', $postfix_files)
+
 ### Resource ordering ###
 
 Class['mcollective::server::install']~>
