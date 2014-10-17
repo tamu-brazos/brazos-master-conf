@@ -22,12 +22,8 @@ Exec { path => "/sbin:/bin:/usr/sbin:/usr/bin" }
 Yumrepo <| |> -> Package <| |>
 
 # Fix deprecation warnings for Puppet >= 3.6.1
-if versioncmp($::puppetversion,'3.6.1') >= 0 {
-  $allow_virtual_packages = hiera('allow_virtual_packages',false)
-
-  Package {
-    allow_virtual => $allow_virtual_packages,
-  }
+Package {
+  allow_virtual => true,
 }
 
 ### create_resources ###
