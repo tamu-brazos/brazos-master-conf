@@ -26,7 +26,22 @@ Package {
   allow_virtual => true,
 }
 
+Mailalias {
+  notify  => Exec['site newaliases']
+}
+
+### Global resources ###
+
+exec { 'site newaliases':
+  command     => 'newaliases',
+  path        => ['/usr/bin','/usr/sbin','/bin','/sbin'],
+  refreshonly => true,
+}
+
 ### create_resources ###
+
+$apache_vhosts = hiera('apache_vhosts', {})
+create_resources('apache::vhost', $apache_vhosts)
 
 $dhcp_pools = hiera('dhcp_pools', {})
 create_resources('dhcp::pool', $dhcp_pools)
@@ -45,6 +60,9 @@ create_resources('logstash::configfile', $logstash_configfiles)
 
 $postfix_files = hiera('postfix_files', {})
 create_resources('postfix::file', $postfix_files)
+
+$mailaliases = hiera('mailaliases', {})
+create_resources('mailaliases', $mailaliases)
 
 ### Resource ordering ###
 
