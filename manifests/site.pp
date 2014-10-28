@@ -64,6 +64,9 @@ create_resources('postfix::file', $postfix_files)
 $mailaliases = hiera('mailaliases', {})
 create_resources('mailaliases', $mailaliases)
 
+$network_aliases = hiera('network_aliases' {})
+create_resources('network::alias', $network_aliases)
+
 ### Resource ordering ###
 
 Class['mcollective::server::install']~>
