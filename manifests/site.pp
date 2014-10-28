@@ -62,7 +62,7 @@ $postfix_files = hiera('postfix_files', {})
 create_resources('postfix::file', $postfix_files)
 
 $mailaliases = hiera('mailaliases', {})
-create_resources('mailaliases', $mailaliases)
+create_resources('mailalias', $mailaliases)
 
 $network_aliases = hiera('network_aliases' {})
 create_resources('network::alias', $network_aliases)
