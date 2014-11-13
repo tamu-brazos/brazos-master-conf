@@ -43,14 +43,14 @@ exec { 'site newaliases':
 $apache_vhosts = hiera('apache_vhosts', {})
 create_resources('apache::vhost', $apache_vhosts)
 
+$brazos_firewall_ssh_reject_out = hiera('brazos_firewall_ssh_reject_out', {})
+create_resources('brazos::firewall::ssh_reject_out', $brazos_firewall_ssh_reject_out)
+
 $dhcp_pools = hiera('dhcp_pools', {})
 create_resources('dhcp::pool', $dhcp_pools)
 
 $dns_zones = hiera('dns_zones', {})
 create_resources('dns::zone', $dns_zones)
-
-$shellvars = hiera('shellvars', {})
-create_resources('shellvar', $shellvars)
 
 $firewall_rules = hiera('firewall_rules', {})
 create_resources('firewall', $firewall_rules)
@@ -58,14 +58,17 @@ create_resources('firewall', $firewall_rules)
 $logstash_configfiles = hiera('logstash_configfiles', {})
 create_resources('logstash::configfile', $logstash_configfiles)
 
-$postfix_files = hiera('postfix_files', {})
-create_resources('postfix::file', $postfix_files)
-
 $mailaliases = hiera('mailaliases', {})
 create_resources('mailalias', $mailaliases)
 
 $network_aliases = hiera('network_aliases', {})
 create_resources('network::alias', $network_aliases)
+
+$postfix_files = hiera('postfix_files', {})
+create_resources('postfix::file', $postfix_files)
+
+$shellvars = hiera('shellvars', {})
+create_resources('shellvar', $shellvars)
 
 ### Resource ordering ###
 
