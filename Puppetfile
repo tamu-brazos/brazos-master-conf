@@ -91,7 +91,7 @@ mod 'zack/r10k', '2.3.0'
 #mod 'r10k', :git => 'https://github.com/treydock/r10k.git', :ref => 'master'
 mod 'selinux', :git => 'https://github.com/treydock/puppet-selinux.git', :ref => 'master'
 
-mod 'academy', :git => 'git@github.tamu.edu:treydock/puppet-academy.git'
+mod 'academylib', :git => 'git@github.tamu.edu:academy/puppet-academylib.git'
 mod 'acpid', :git => 'git://github.com/treydock/puppet-acpid.git'
 #mod 'areca', :git => 'git@gitlab.tamu.edu:puppet-modules/puppet-areca.git'
 mod 'atd', :git => 'git://github.com/treydock/puppet-atd.git'
