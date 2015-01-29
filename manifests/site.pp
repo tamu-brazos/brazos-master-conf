@@ -52,6 +52,9 @@ create_resources('dhcp::pool', $dhcp_pools)
 $dns_zones = hiera('dns_zones', {})
 create_resources('dns::zone', $dns_zones)
 
+$file_lines = hiera('file_lines', {})
+create_resources('file_line', $file_lines)
+
 $firewall_rules = hiera('firewall_rules', {})
 create_resources('firewall', $firewall_rules)
 
