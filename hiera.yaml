@@ -10,6 +10,7 @@
   - "public_facing_%{::public_facing}"
   - "%{::osfamily}%{::operatingsystemmajrelease}"
   - "virtual/%{::virtual}"
+  - "compute_type/%{::compute_type}"
   - common
   - common/packages
   - common/site
