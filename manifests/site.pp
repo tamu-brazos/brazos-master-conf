@@ -58,6 +58,9 @@ create_resources('file_line', $file_lines)
 $firewall_rules = hiera('firewall_rules', {})
 create_resources('firewall', $firewall_rules)
 
+$ini_settings = hiera_hash('ini_settings', {})
+create_resources('ini_setting', $ini_settings)
+
 $logstash_configfiles = hiera('logstash_configfiles', {})
 create_resources('logstash::configfile', $logstash_configfiles)
 
