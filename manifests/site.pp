@@ -76,6 +76,9 @@ create_resources('postfix::file', $postfix_files)
 $shellvars = hiera('shellvars', {})
 create_resources('shellvar', $shellvars)
 
+$slurm_qoses = hiera('slurm_qoses', {})
+create_resources('slurm_qos', $slurm_qoses)
+
 ### Resource ordering ###
 
 Class['mcollective::server::install']~>
