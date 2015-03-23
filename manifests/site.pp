@@ -46,6 +46,9 @@ create_resources('apache::vhost', $apache_vhosts)
 $brazos_firewall_ssh_reject_out = hiera('brazos_firewall_ssh_reject_out', {})
 create_resources('brazos::firewall::ssh_reject_out', $brazos_firewall_ssh_reject_out)
 
+$dhcp_hosts = hiera('dhcp_hosts', {})
+create_resources('dhcp::host', $dhcp_hosts)
+
 $dhcp_pools = hiera('dhcp_pools', {})
 create_resources('dhcp::pool', $dhcp_pools)
 
