@@ -58,7 +58,7 @@ create_resources('dns::zone', $dns_zones)
 $file_lines = hiera('file_lines', {})
 create_resources('file_line', $file_lines)
 
-$firewall_rules = hiera('firewall_rules', {})
+$firewall_rules = hiera_hash('firewall_rules', {})
 create_resources('firewall', $firewall_rules)
 
 $ini_settings = hiera_hash('ini_settings', {})
